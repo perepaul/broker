@@ -15,7 +15,10 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
   @include('layouts.global_components.back.admin_sidebar')
 
   <!-- Dynamic Content !-->
+  <div class="app-content content">
   @yield('content')
+  </div>
+
   <!-- ////////////////////////////////////////////////////////////////////////////-->
   @include('layouts.global_components.back.admin_footer')
   <!-- BEGIN VENDOR JS-->

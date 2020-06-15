@@ -2,9 +2,9 @@
 
 @section('content')
 
-{{-- <h1>Hello World</h1> --}}
-<div class="app-content content">
-    <div class="content-wrapper">
+<h1>Hello World</h1>
+
+    {{-- <div class="content-wrapper">
       <div class="content-header row">
       </div>
       <div class="content-body">
@@ -944,7 +944,6 @@
         </div>
         <!-- Active Orders -->
       </div>
-    </div>
-</div>
+    </div> --}}
     
 @endsection
