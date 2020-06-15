@@ -23,3 +23,8 @@ Route::get('index', function(){
     return view('main');
 
 });
+
+Route::get('admin', function(){
+    
+    return view('dashboard');
+});
