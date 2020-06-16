@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
 
 Route::get('index', function(){
 
@@ -28,3 +29,40 @@ Route::get('admin', function(){
     
     return view('dashboard');
 });
+
+Route::get('about', function(){
+
+    return view('front.about');
+
+});
+
+Route::get('get-started', function(){
+
+    return view('front.get_started');
+
+});
+
+Route::get('tour', function(){
+
+    return view('front.tour');
+    
+});
+
+Route::get('contact', function(){
+
+    return view('front.contact_us');
+});
+
+Route::get('login-form', function(){
+
+    return view('login_form');
+
+});
+
+Route::get('register-form', function(){
+
+    return view('register_form');
+
+});
+
+Route::get('/home', 'HomeController@index')->name('home');

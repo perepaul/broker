@@ -14,9 +14,13 @@
 
     <link rel="stylesheet" href="{{asset('assets/front/css/aos.css')}}">
 
-    <link rel="stylesheet" href="{{asset('assets/front/css/ionicons.min.css')}}">
-    
-    <link rel="stylesheet" href="{{asset('assets/front/css/flaticon.css')}}">
+    {{-- <link rel="stylesheet" href="{{asset('assets/front/css/ionicons.min.css')}}"> --}}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.6.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+    {{-- <link rel="stylesheet" href="{{asset('assets/front/css/flaticon.css')}}"> --}}
     <link rel="stylesheet" href="{{asset('assets/front/css/icomoon.css')}}">
     <link rel="stylesheet" href="{{asset('assets/front/css/style.css')}}">
   </head>

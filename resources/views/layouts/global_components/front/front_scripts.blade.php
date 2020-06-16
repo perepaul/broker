@@ -10,6 +10,7 @@
   <script src="{{asset('assets/front/js/aos.js')}}"></script>
   <script src="{{asset('assets/front/js/jquery.animateNumber.min.js')}}"></script>
   <script src="{{asset('assets/front/js/scrollax.min.js')}}"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="{{asset('assets/front/js/google-map.js')}}"></script>
+  {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> --}}
+  {{-- <script src="{{asset('assets/front/js/google-map.js')}}"></script> --}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
   <script src="{{asset('assets/front/js/main.js')}}"></script>

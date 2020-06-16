@@ -8,6 +8,7 @@
 <script src="{{asset('assets/back/app-assets/js/core/app-menu.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/back/app-assets/js/core/app.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/back/app-assets/js/scripts/customizer.js')}}" type="text/javascript"></script>
+
 <!-- END MODERN JS-->
 <!-- BEGIN PAGE LEVEL JS-->
 <script src="{{asset('assets/back/app-assets/js/scripts/pages/dashboard-crypto.js')}}" type="text/javascript"></script>

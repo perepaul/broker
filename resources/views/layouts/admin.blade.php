@@ -4,8 +4,8 @@
 <!-- Css Here !-->
 @include('layouts.global_components.back.admin_head')
 
-<body class="vertical-layout vertical-menu 2-columns   menu-expanded fixed-navbar"
-data-open="click" data-menu="vertical-menu" data-col="2-columns">
+<body class="vertical-layout vertical-compact-menu 2-columns   menu-expanded fixed-navbar"
+data-open="click" data-menu="vertical-compact-menu" data-col="2-columns">
 
   <!-- fixed-top-->
   @include('layouts.global_components.back.admin_nav')
@@ -16,7 +16,11 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
   <!-- Dynamic Content !-->
   <div class="app-content content">
-  @yield('content')
+    <div class="content-wrapper">
+
+      @yield('content')
+
+    </div>
   </div>
 
   <!-- ////////////////////////////////////////////////////////////////////////////-->

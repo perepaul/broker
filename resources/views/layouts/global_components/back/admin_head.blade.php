@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/css/app.css')}}">
     <!-- END MODERN CSS-->
     <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/css/core/menu/menu-types/vertical-menu.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/css/core/menu/menu-types/vertical-compact-menu.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/css/core/colors/palette-gradient.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/vendors/css/cryptocoins/cryptocoins.css')}}">
     <!-- END Page Level CSS-->
