@@ -1,16 +1,19 @@
-  <script src="{{asset('assets/front/js/jquery.min.js')}}"></script>
-  <script src="{{asset('assets/front/js/jquery-migrate-3.0.1.min.js')}}"></script>
-  <script src="{{asset('assets/front/js/popper.min.js')}}"></script>
-  <script src="{{asset('assets/front/js/bootstrap.min.js')}}"></script>
-  <script src="{{asset('assets/front/js/jquery.easing.1.3.js')}}"></script>
-  <script src="{{asset('assets/front/js/jquery.waypoints.min.js')}}"></script>
-  <script src="{{asset('assets/front/js/jquery.stellar.min.js')}}"></script>
-  <script src="{{asset('assets/front/js/owl.carousel.min.js')}}"></script>
-  <script src="{{asset('assets/front/js/jquery.magnific-popup.min.js')}}"></script>
-  <script src="{{asset('assets/front/js/aos.js')}}"></script>
-  <script src="{{asset('assets/front/js/jquery.animateNumber.min.js')}}"></script>
-  <script src="{{asset('assets/front/js/scrollax.min.js')}}"></script>
-  {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> --}}
-  {{-- <script src="{{asset('assets/front/js/google-map.js')}}"></script> --}}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
-  <script src="{{asset('assets/front/js/main.js')}}"></script>
+<noscript id="deferred-styles">
+  <link href="{{asset('assets/front/static.cdnpub.info/lp/mobile/assets/styles/commonb663.css?v=7dbb85d')}}" rel="stylesheet"
+      type="text/css"></noscript>
+<script>
+  var loadDeferredStyles = function () {
+          var e = document.getElementById("deferred-styles"),
+              t = document.createElement("div");
+          t.innerHTML = e.textContent, document.body.appendChild(t), e.parentElement.removeChild(e)
+      },
+      raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame ||
+      msRequestAnimationFrame;
+  raf ? raf(function () {
+      window.setTimeout(loadDeferredStyles, 0)
+  }) : window.addEventListener("load", loadDeferredStyles);
+</script>
+<script src="{{asset('assets/front/static.cdnpub.info/lp/mobile/assets/scripts/change_imgsca7c.js?v=70ad7cc')}}" defer="defer"
+  async></script>
+<script src="{{asset('assets/front/static.cdnpub.info/lp/mobile/assets/scripts/vendore607.js?v=4da8f54')}}" defer="defer" async>
+</script>
