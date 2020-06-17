@@ -13,7 +13,7 @@
                   </g>
               </svg></div>
       </div>
-      <div class="nav__lang"><input class="lang__input" id="lang-1" type="checkbox"><label class="lang__label"
+      {{-- <div class="nav__lang"><input class="lang__input" id="lang-1" type="checkbox"><label class="lang__label"
               for="lang-1"><span class="arrowed">English</span>
               <div class="lang__menu--wrap">
                   <div class="lang__menu"><a class="lang__item" href="#" title="中文" data-lang="cn"
@@ -56,7 +56,8 @@
                           onclick="document.location = document.location.pathname.replace(new RegExp('/?('+ $land.lang +'/?|)$'), '/bn/' + document.location.search); return false;">বাঙালি</a>
                   </div>
               </div>
-          </label></div>
+          </label>
+        </div> --}}
       <div class="nav__btn btn-non-regulated"><a class="btn access__btn js-btn-app" href="#reg">Sign Up</a>
       </div>
   </div>

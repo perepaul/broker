@@ -35,12 +35,14 @@
                             Info</a></span></div><button id="cookies-accept-btn">Got it</button>
             </div>
         </div>
-    </div><svg width="0" height="0" style="display:block">
+    </div>
+    <svg width="0" height="0" style="display:block">
         <lineargradient x1="0%" y1="0%" x2="0%" y2="100%" id="positive-gradient">
             <stop offset="0%" stop-color="#35a947" />
             <stop offset="100%" stop-color="#fff" />
         </lineargradient>
-    </svg><svg width="0" height="0" style="display:block">
+    </svg>
+    <svg width="0" height="0" style="display:block">
         <lineargradient x1="0%" y1="0%" x2="0%" y2="100%" id="negative-gradient">
             <stop offset="0%" stop-color="#e34828" />
             <stop offset="100%" stop-color="#fff" />
