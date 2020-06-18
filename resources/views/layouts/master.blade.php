@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-    <svg width="0" height="0" style="display:block">
+    {{-- <svg width="0" height="0" style="display:block">
         <lineargradient x1="0%" y1="0%" x2="0%" y2="100%" id="positive-gradient">
             <stop offset="0%" stop-color="#35a947" />
             <stop offset="100%" stop-color="#fff" />
@@ -47,26 +47,26 @@
             <stop offset="0%" stop-color="#e34828" />
             <stop offset="100%" stop-color="#fff" />
         </lineargradient>
-    </svg>
+    </svg> --}}
     <div class="btn-sticky__wrap">
         @include('layouts.global_components.front.front_nav')
 
         @include('layouts.global_components.front.front_wallpaper')
-        
+
         @yield('content-why-invest')
-        
+
         <div class="get-started">
-          <div class="wrap">
+            <div class="wrap">
 
-            @yield('content')
+                @yield('content')
 
-          </div>
+            </div>
         </div>
-  
+
         @yield('content-client')
 
     </div>
-    
+
     @include('layouts.global_components.front.front_numbers')
 
     @include('layouts.global_components.front.front_footer')

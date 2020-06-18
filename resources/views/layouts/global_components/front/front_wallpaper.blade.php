@@ -11,14 +11,22 @@
                 <div class="btn-non-regulated"><a class="btn access__btn js-btn-app" href="#reg"><span
                             class="hide-desktop">Download app</span><span class="show-desktop">Get started for
                             free</span><svg width="12px" height="14px">
-                            <use xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_icon_download')}}" /></svg></a></div>
+                            <use
+                                xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_icon_download')}}" />
+                            </svg></a></div>
                 <div class="links welcome__links">
                     <div class="welcome__link link__desktop-ios"><svg width="20px" height="23px">
-                            <use xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_desktop_ios')}}" /></svg></div>
+                            <use
+                                xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_desktop_ios')}}" />
+                            </svg></div>
                     <div class="welcome__link link__desktop-windows"><svg width="20px" height="20px">
-                            <use xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_desktop_windows')}}" /></svg></div>
+                            <use
+                                xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_desktop_windows')}}" />
+                            </svg></div>
                     <div class="welcome__link link__web"><svg width="23px" height="22px">
-                            <use xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_web')}}" /></svg></div>
+                            <use
+                                xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_web')}}" />
+                            </svg></div>
                 </div>
             </div>
             <picture class="welcome__pic">

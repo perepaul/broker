@@ -1,12 +1,4 @@
-<script>
-    window.dataLayer = window.dataLayer || [], dataLayer.push({
-        event: "owox_pageview",
-        path: window.location.pathname,
-        title: document.title,
-        hostname: window.location.hostname,
-        userAuth: 0
-    });
-</script><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVT65V5" height="0" width="0"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVT65V5" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
 <script>
     function fadePreloader() {
