@@ -19,50 +19,64 @@ Route::get('/', function () {
 
 Auth::routes();
 
-// Route::get('index', function(){
+Route::get('/home', 'HomeController@index')->name('home');
 
-//     return view('main');
-
-// });
-
-Route::get('admin', function(){
-    
-    return view('dashboard');
-});
 
 Route::get('about', function(){
-
+    
     return view('front.about');
-
+    
 });
 
 Route::get('get-started', function(){
-
+    
     return view('front.get_started');
-
+    
 });
 
 Route::get('tour', function(){
-
+    
     return view('front.tour');
     
 });
 
 Route::get('contact', function(){
-
+    
     return view('front.contact_us');
 });
 
 Route::get('login-form', function(){
-
+    
     return view('login_form');
-
+    
 });
 
 Route::get('register-form', function(){
-
+    
     return view('register_form');
-
+    
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('admin', function(){
+    
+    return view('dashboard');
+});
+//basic admin route for now
+Route::group(['prefix' => 'admin'], function () {
+    
+    Route::get('/profile', function () {
+        return view('admin.profile.profile');
+    });
+
+    Route::get('/profile/cards', function () {
+        return view('admin.profile.profile_cards');
+        
+    });
+
+    Route::get('/profile/list', function () {
+        return view('admin.profile.profile_list');
+        
+    });
+
+
+});
