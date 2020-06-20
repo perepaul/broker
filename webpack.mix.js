@@ -11,5 +11,10 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix
+    .js('resources/js/custom-front.js', 'public/js')
+    .js('resources/js/custom-admin.js', 'public/js')
+    .js('resources/js/custom-user.js', 'public/js')
+    .sass('resources/sass/custom-front.scss', 'public/css')
+    .sass('resources/sass/custom-user.scss', 'public/css')
+    .sass('resources/sass/custom-admin.scss', 'public/css');

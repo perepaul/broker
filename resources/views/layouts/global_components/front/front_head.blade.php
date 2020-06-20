@@ -27,6 +27,7 @@
     <meta name="msapplication-TileImage"
         content="https://static.cdnpub.info/lp/vendor/images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    @include('layouts.notify')
 
     <title>Instant access to investing, anytime and anywhere</title>
     <style>
@@ -82,7 +83,7 @@
         }
     </style>
     <style>
-        a,
+        a,s
         button {
             background: 0 0
         }

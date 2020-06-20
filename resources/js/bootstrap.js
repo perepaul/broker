@@ -11,7 +11,7 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
-} catch (e) {}
+} catch (e) { }
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -22,6 +22,43 @@ try {
 window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
+window.iziToast = require('izitoast')
+
+iziToast.settings({
+    timeout: 10000,
+    resetOnHover: true,
+    icon: 'material-icons',
+    transitionIn: 'flipInX',
+    transitionOut: 'flipOutX',
+    onOpening: function () {
+        console.log('callback abriu!');
+    },
+    onClosing: function () {
+        console.log("callback fechou!");
+    }
+});
+
+window.notify = (msg, type) => {
+    var t = 'error';
+    switch (type) {
+        case 'error':
+            iziToast.error({
+                message: msg
+            })
+            break;
+        case 'success':
+            iziToast.success({
+                message: msg
+            })
+            break;
+        case 'warning':
+            iziToast.warning({
+                message: msg
+            })
+            break;
+    }
+}
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

@@ -8,7 +8,7 @@
                         data-i18n="nav.templates.main">Deposit</span></a>
             </li>
             <li class=" nav-item"><a href="#"><i class="la la-briefcase"></i><span class="menu-title"
-                        data-i18n="nav.page_layouts.main">Widrawals</span></a>
+                        data-i18n="nav.page_layouts.main">withdrawal</span></a>
                 {{-- <ul class="menu-content">
                     <li><a class="menu-item" href="layout-1-column.html" data-i18n="nav.page_layouts.1_column">1
                             column</a>
