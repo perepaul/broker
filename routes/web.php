@@ -22,67 +22,72 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('about', function(){
-    
+Route::get('about', function () {
+
     return view('front.about');
-    
 });
 
-Route::get('get-started', function(){
-    
+Route::get('get-started', function () {
+
     return view('front.get_started');
-    
 });
 
-Route::get('tour', function(){
-    
+Route::get('tour', function () {
+
     return view('front.tour');
-    
 });
 
-Route::get('contact', function(){
-    
+Route::get('contact', function () {
+
     return view('front.contact_us');
 });
 
-Route::get('login-form', function(){
-    
+Route::get('login-form', function () {
+
     return view('login_form');
-    
 });
 
-Route::get('register-form', function(){
-    
+Route::get('register-form', function () {
+
     return view('register_form');
-    
 });
 
-Route::get('admin', function(){
-    
-    return view('dashboard');
-});
+// Route::get('admin', function () {
+
+//     return view('dashboard');
+// });
 //basic admin route for now
 Route::group(['prefix' => 'admin'], function () {
-    
-    Route::get('/profile', function () {
-        return view('admin.profile.profile');
-    });
 
-    Route::get('/profile/cards', function () {
-        return view('admin.profile.profile_cards');
-        
-    });
+    Route::get('/', function () {
+        return view('dashboard');
+    })->name('admin');
 
-    Route::get('/profile/list', function () {
-        return view('admin.profile.profile_list');
-        
-    });
+    Route::get('users', function () {
+        return view('admin.users');
+    })->name('users');
 
+    // Route::get('/profile/cards', function () {
+    //     return view('admin.profile.profile_cards');
+    // });
 
+    Route::get('withdrawals', function () {
+        return view('admin.withdrawals');
+    })->name('withdrawals');
+
+    Route::get('deposits', function () {
+        return view('admin.deposits');
+    })->name('deposits');
+    Route::get('trades', function () {
+        return view('admin.trades');
+    })->name('trades');
+
+    Route::get('tickets', function () {
+        return view('admin.tickets');
+    })->name('tickets');
 });
 
 Route::get('users', function () {
 
     return view('users.users_home');
-    
 });

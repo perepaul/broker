@@ -1,14 +1,14 @@
 <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-            <li class=" nav-item"><a href="index.html"><i class="la la-home"></i><span class="menu-title"
+            <li class=" nav-item"><a href="{{route('admin')}}"><i class="la la-home"></i><span class="menu-title"
                         data-i18n="nav.dash.main">Dashboard</span></a>
             </li>
-            <li class=" nav-item"><a href="#"><i class="la la-money"></i><span class="menu-title"
-                        data-i18n="nav.templates.main">Deposit</span></a>
+            <li class=" nav-item"><a href="{{route('deposits')}}"><i class="la la-money"></i><span class="menu-title"
+                        data-i18n="nav.templates.main">Deposits</span></a>
             </li>
-            <li class=" nav-item"><a href="#"><i class="la la-briefcase"></i><span class="menu-title"
-                        data-i18n="nav.page_layouts.main">withdrawal</span></a>
+            <li class=" nav-item"><a href="{{route('withdrawals')}}"><i class="la la-briefcase"></i><span
+                        class="menu-title" data-i18n="nav.page_layouts.main">withdrawals</span></a>
                 {{-- <ul class="menu-content">
                     <li><a class="menu-item" href="layout-1-column.html" data-i18n="nav.page_layouts.1_column">1
                             column</a>
@@ -85,10 +85,13 @@
                     </li>
                 </ul> --}}
             </li>
-            <li class=" nav-item"><a href="#"><i class="la la-server"></i><span class="menu-title"
-                        data-i18n="nav.navbars.main">Statements</span></a>
+            <li class=" nav-item"><a href="{{route('trades')}}"><i class="ft-bar-chart"></i><span class="menu-title"
+                        data-i18n="nav.navbars.main">Trades</span></a>
             </li>
-            <li class=" nav-item"><a href="#"><i class="la la-book"></i><span class="menu-title"
+            {{-- <li class=" nav-item"><a href="#"><i class="la la-server"></i><span class="menu-title"
+                        data-i18n="nav.navbars.main">Statements</span></a>
+            </li> --}}
+            <li class=" nav-item"><a href="{{route('tickets')}}"><i class="la la-book"></i><span class="menu-title"
                         data-i18n="nav.vertical_nav.main">Tickets</span></a>
                 {{-- <ul class="menu-content">
                     <li><a class="menu-item" href="#"
@@ -160,19 +163,10 @@
 
 
             {{-- For Admin --}}
-            <li class=" nav-item"><a href="#"><i class="la la-user"></i><span class="menu-title"
-                        data-i18n="nav.users.main">Profile</span></a>
-                <ul class="menu-content">
-                    <li><a class="menu-item" href="user-profile.html" data-i18n="nav.users.user_profile">Users
-                            Profile</a>
-                    </li>
-                    <li><a class="menu-item" href="user-cards.html" data-i18n="nav.users.user_cards">Users Cards</a>
-                    </li>
-                    <li><a class="menu-item" href="users-contacts.html" data-i18n="nav.users.users_contacts">Users
-                            List</a>
-                    </li>
-                </ul>
+            <li class=" nav-item"><a href="{{route('users')}}"><i class="la la-users"></i><span class="menu-title"
+                        data-i18n="nav.users.main">Users</span></a>
             </li>
         </ul>
+
     </div>
 </div>
