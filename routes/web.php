@@ -80,3 +80,9 @@ Route::group(['prefix' => 'admin'], function () {
 
 
 });
+
+Route::get('users', function () {
+
+    return view('users.users_home');
+    
+});
