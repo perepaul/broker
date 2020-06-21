@@ -36,8 +36,8 @@
                     <i class="img">
                         <img src="{{asset('assets/back/users/data/crypto-dash/icons/4.png')}}" alt="" class="width-20">
                     </i>
-                    <span class="title">ICO Admin</span>
-                    <span class="label label-accent">HOT</span>
+                    <span class="title">View Chart</span>
+                    {{-- <span class="label label-accent">HOT</span> --}}
                 </a>
             </li>
             <li class="">

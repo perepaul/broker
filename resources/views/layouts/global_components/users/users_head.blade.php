@@ -36,6 +36,7 @@
     <link href="{{asset('assets/back/users/assets/plugins/calendar/fullcalendar.css')}}" rel="stylesheet" type="text/css" media="screen"/>
     <link href="{{asset('assets/back/users/assets/plugins/icheck/skins/minimal/minimal.css')}}" rel="stylesheet" type="text/css" media="screen"/>
     <link href="{{asset('assets/back/users/assets/plugins/swiper/swiper.css')}}" rel="stylesheet" type="text/css">
+    
 
     <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
 

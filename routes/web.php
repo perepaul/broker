@@ -71,10 +71,6 @@ Route::group(['prefix' => 'admin'], function () {
     //     return view('admin.profile.profile_cards');
     // });
 
-    Route::get('/trade', function () {
-        return view('admin.trade.trade_chart');
-        
-    });
 
     Route::get('/deposit', function () {
         return view('admin.deposit.deposit');
@@ -100,6 +96,7 @@ Route::group(['prefix' => 'admin'], function () {
     })->name('tickets');
 });
 
+//users Route
 Route::get('users', function () {
 
     return view('users.users_home');
@@ -107,4 +104,9 @@ Route::get('users', function () {
 Route::get('users/profile', function () {
 
     return view('users.users_profile');
+});
+
+Route::get('users/trade', function () {
+    return view('users.chart.trade_chart');
+    
 });
