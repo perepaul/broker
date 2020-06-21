@@ -78,6 +78,16 @@ Route::group(['prefix' => 'admin'], function () {
         
     });
 
+    Route::get('/trade', function () {
+        return view('admin.trade.trade_chart');
+        
+    });
+
+    Route::get('/deposit', function () {
+        return view('admin.deposit.deposit');
+        
+    });
+
 
 });
 
