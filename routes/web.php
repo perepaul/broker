@@ -95,9 +95,16 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('tickets', function () {
         return view('admin.tickets');
     })->name('tickets');
+     Route::get('profile', function () {
+        return view('admin.profile');
+    })->name('tickets');
 });
 
 Route::get('users', function () {
 
     return view('users.users_home');
+});
+Route::get('users/profile', function () {
+
+    return view('users.users_profile');
 });

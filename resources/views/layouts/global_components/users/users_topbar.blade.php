@@ -1,6 +1,7 @@
 <div class='page-topbar gradient-blue1'>
     <div class='logo-area crypto'>
         <!-- Logo here !-->
+    <img height="50" src="{{asset('assets/images/logo/logo.png')}}" alt="">
     </div>
     <div class='quick-area'>
         <div class='pull-left'>
@@ -44,7 +45,7 @@
             <ul class="info-menu right-links list-inline list-unstyled">
                 <li class="profile">
                     <a href="#" data-toggle="dropdown" class="toggle">
-                        <img src="assets/back/users/data/profile/profile.jpg" alt="user-image" class="img-circle img-inline">
+                        <img src="{{asset('assets/images/profile/default.png')}}" alt="user-image" class="img-circle img-inline">
                         <span>Arnold Ramsy <i class="fa fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-menu profile animated fadeIn">
