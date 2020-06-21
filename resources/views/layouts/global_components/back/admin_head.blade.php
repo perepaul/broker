@@ -14,13 +14,20 @@
     rel="stylesheet">
     {{-- <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet"> --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/vendors/css/tables/extensions/rowReorder.dataTables.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/vendors/css/tables/extensions/responsive.dataTables.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/vendors/css/forms/icheck/icheck.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/vendors/css/forms/icheck/custom.css')}}">
 
     <!-- BEGIN VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/css/vendors.css')}}">
     <!-- END VENDOR CSS-->
     <!-- BEGIN MODERN CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/css/app.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.2.1/line-awesome/css/line-awesome.min.css"> --}}
     <!-- END MODERN CSS-->
     <!-- BEGIN Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/back/app-assets/css/core/menu/menu-types/vertical-compact-menu.css')}}">

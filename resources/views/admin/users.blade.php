@@ -62,7 +62,7 @@
                                                 <div class="media">
                                                     <div class="media-left pr-1">
                                                         <span class="avatar avatar-sm avatar-online rounded-circle">
-                                                            <img src="../../../app-assets/images/portrait/small/avatar-s-2.png"
+                                                            <img src="{{asset('assets/images/profile/default.png')}}"
                                                                 alt="avatar"><i></i></span>
                                                     </div>
                                                     <div class="media-body media-middle">
@@ -111,7 +111,7 @@
                     <div class="media p-1">
                         <div class="media-left pr-1">
                             <span class="avatar avatar-sm avatar-online rounded-circle">
-                                <img src="../../../app-assets/images/portrait/small/avatar-s-1.png"
+                                <img src="/assets/images/profile/default.png"
                                     alt="avatar"><i></i></span>
                         </div>
                         <div class="media-body media-middle">
