@@ -8,7 +8,7 @@
         <ul class='wraplist'>
             <li class='menusection'>Main</li>
             <li class="">
-                <a href="index-crypto-dashboard.html">
+                <a href="/users">
                     <i class="img relative crypto-ic ">
                         <img src="{{asset('assets/back/users/data/crypto-dash/icons/1.png')}}" alt="" class="ic1 width-20">
                     </i>
@@ -16,44 +16,44 @@
                 </a>
             </li>
             <li class="">
-                <a href="crypto-wallet.html">
+                <a href="/users/withdraw">
                     <i class="img">
                         <img src="{{asset('assets/back/users/data/crypto-dash/icons/2.png')}}" alt="" class="width-20">
                     </i>
-                    <span class="title">Crypto Wallet</span>
+                    <span class="title">Withdraw</span>
                 </a>
             </li>
             <li class="">
-                <a href="crypto-buy-sell.html">
+                <a href="/users/deposit">
                     <i class="img">
                         <img src="{{asset('assets/back/users/data/crypto-dash/icons/6.png')}}" alt="" class="width-20">
                     </i>
-                    <span class="title">Buy & Sell</span>
+                    <span class="title">Deposit Btc</span>
                 </a>
             </li>
             <li class="">
-                <a href="crypto-ico-admin.html">
+                <a href="/users/trade">
                     <i class="img">
                         <img src="{{asset('assets/back/users/data/crypto-dash/icons/4.png')}}" alt="" class="width-20">
                     </i>
-                    <span class="title">View Chart</span>
+                    <span class="title">View Trade Chart</span>
                     {{-- <span class="label label-accent">HOT</span> --}}
                 </a>
             </li>
             <li class="">
-                <a href="crypto-affiliate.html">
+                <a href="/users/add-account">
                     <i class="img">
                         <img src="{{asset('assets/back/users/data/crypto-dash/icons/8.png')}}" alt="" class="width-20">
                     </i>
-                    <span class="title">Affiliate Program</span>
+                    <span class="title">Linked Account</span>
                 </a>
             </li>
             <li class="">
-                <a href="crypto-profile.html">
+                <a href="/users/profile">
                     <i class="img">
                         <img src="{{asset('assets/back/users/data/crypto-dash/icons/10.png')}}" alt="" class="width-20">
                     </i>
-                    <span class="title">Trader Profile</span>
+                    <span class="title">Profile</span>
                 </a>
             </li>
             

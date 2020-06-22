@@ -11,14 +11,14 @@
                         <i class="fa fa-bars"></i>
                     </a>
                 </li>
-                <li class="topnav-item item1">
+                {{-- <li class="topnav-item item1">
                     <a href="#" class="new-link w-text">Schedule
                       <span class="badge badge-primary ml-5">New</span>
                     </a>
-                </li>
+                </li> --}}
                 <li class="topnav-item active item2">
                     <a href="#" class="nav-link w-text">
-                      <i class="fa fa-area-chart mr-10"></i>Reports
+                      <i class="fa fa-area-chart mr-10"></i>Trasncation Histroy
                     </a>
                 </li>
                 <li class="topnav-item item3">

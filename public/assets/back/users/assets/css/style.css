@@ -9180,7 +9180,7 @@ ul.info p {
     padding: 60px 40px;
     overflow: hidden;
     border-radius: 20px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 .ref-box{
     padding: 40px 15px 25px;
@@ -10727,7 +10727,7 @@ ul.info p {
 
     .page-topbar .logo-area,
     .page-topbar.sidebar_shift .logo-area{
-        width: 100%;
+        width: 250px;
     }
 
     .page-topbar.sidebar_shift .logo-area{

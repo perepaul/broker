@@ -101,6 +101,7 @@ Route::get('users', function () {
 
     return view('users.users_home');
 });
+
 Route::get('users/profile', function () {
 
     return view('users.users_profile');
@@ -109,4 +110,20 @@ Route::get('users/profile', function () {
 Route::get('users/trade', function () {
     return view('users.chart.trade_chart');
     
+});
+
+Route::get('users/deposit', function () {
+    return view('users.deposit.users_deposit');
+    
+});
+
+Route::get('users/withdraw', function () {
+    return view('users.withdraw.users_withdraw');
+    
+});
+
+Route::get('users/add-account', function(){
+
+    return view('users.accounts.bank_account');
+
 });
