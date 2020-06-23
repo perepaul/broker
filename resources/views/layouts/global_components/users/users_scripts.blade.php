@@ -18,7 +18,9 @@
 
 <script src="{{asset('assets/back/users/assets/plugins/chartjs-chart/Chart.min.js')}}"></script>
 
-
+<script src="{{asset('assets/back/users/assets/plugins/jquery-validation/js/jquery.validate.min.js')}}"></script>
+<script src="{{asset('assets/back/users/assets/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js')}}"></script>
+<script src="{{asset('assets/back/users/assets/js/form-validation.js')}}"></script>
 <script src="{{asset('assets/back/users/assets/plugins/swiper/swiper.js')}}"></script>
 <script src="{{asset('assets/back/users/assets/js/dashboard-crypto.js')}}"></script>
 
