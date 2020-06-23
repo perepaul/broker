@@ -139,3 +139,9 @@ Route::get('users/support', function(){
     return view('users.support.request_support');
 
 });
+
+Route::get('users/buy-or-sell-crypto', function(){
+
+    return view('users.buy_or_sell_btc');
+
+});
