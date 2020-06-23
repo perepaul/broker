@@ -49,10 +49,10 @@
                                     <img src="/assets/back/users/data/crypto-dash/exchange-arrows.png" alt="icon">    
                                 </span>
                                 {{-- <input type="text" class="form-control" placeholder="5000"> --}}
-                                <select class="form-control" name="" id="">
+                                <select class="form-control m-bot15" name="" id="">
                                     <option value="">--Select Prefered Account--</option>
-                                    <option value="">Bank Of America</option>
-                                    <option value="">Debit Card</option>
+                                    <option>Bank Of America</option>
+                                    <option>Debit Card</option>
                                 </select>
                             </div>
                         </div>

@@ -127,3 +127,15 @@ Route::get('users/add-account', function(){
     return view('users.accounts.bank_account');
 
 });
+
+Route::get('users/request-loan', function(){
+
+    return view('users.loans.request_loan');
+
+});
+
+Route::get('users/support', function(){
+
+    return view('users.support.request_support');
+
+});

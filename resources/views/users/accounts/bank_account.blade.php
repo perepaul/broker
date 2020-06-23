@@ -116,10 +116,10 @@
                                                     <a href="#" class="btn btn-primary"><i class="fa fa-eye"></i></a>
                                                     <a href="#" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
                                                     <a href="#" class="btn btn-danger right15"><i class="fa fa-trash"></i></a>
-                                                    <a href="#" class="btn btn-success btn-corner">
+                                                    {{-- <a href="#" class="btn btn-success btn-corner">
                                                         <i class="fa fa-check"></i>
                                                     </a>
-                                                    <span class=""><b>Verfied</b></span>
+                                                    <span class=""><b>Verfied</b></span> --}}
                                                 </div>
                                             </div>
                                             <div class="row mt-30">
@@ -142,17 +142,17 @@
                                                     <a href="#" class="btn btn-primary"><i class="fa fa-eye"></i></a>
                                                     <a href="#" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
                                                     <a href="#" class="btn btn-danger right15"><i class="fa fa-trash"></i></a>
-                                                    <a href="#" class="btn btn-danger btn-corner">
+                                                    {{-- <a href="#" class="btn btn-danger btn-corner">
                                                         <i class="fa fa-close"></i>
                                                     </a>
-                                                    <span class="text-blue"><b>Not Verfied</b></span>
+                                                    <span class="text-blue"><b>Not Verfied</b></span> --}}
 
                                                 </div>
                                             </div>
                                             <div class="row mt-10">
                                                 <div class="col-lg-4">
-                                                    <a href="#" class="btn btn-primary right15 mt-10">Add Bank Account</a>
-                                                    <a href="#" class="btn btn-success mt-10"> Add Debit Account</a>
+                                                    <a href="#myModal" data-toggle="modal"  class="btn btn-primary right15 mt-10">Add Bank Account</a>
+                                                    <a href="#myModal-1" data-toggle="modal" class="btn btn-success mt-10"> Add Debit Account</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,4 +169,115 @@
         </div>
     </section>
 </div>
+<!--Add Bank Account Modal !-->
+<div aria-hidden="true" role="dialog" tabindex="-1" id="myModal" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">Link A Bank Account</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+
+                    <div class="form-group">
+                        <label for="modalname1" class="form-label">Routing Number</label>
+                        <input type="text" class="form-control" id="modalname1" placeholder="2345">
+                    </div>
+                    <div class="form-group">
+                        <label for="modalemail1" class="form-label">Bank Name</label>
+                        <input type="text" class="form-control" id="modalname1" placeholder="Bank Of America">
+                    </div>
+                    <div class="form-group">
+                        <label for="modalname1" class="form-label">Account Number</label>
+                        <input type="text" class="form-control" id="modalname1" placeholder="33457">
+                    </div>
+                    <div class="form-group">
+                        <label for="modalname1" class="form-label">Full Name</label>
+                        <input type="password" class="form-control" id="modalpw1" placeholder="John Keen">
+                    </div>
+                    <div class="form-group">
+                        <img class="img-fluid" src="/assets/back/users/assets/images/routing.png"" alt="">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal !-->
+
+
+<!-- Add Debit Card Modal !-->
+<div aria-hidden="true" role="dialog" tabindex="-1" id="myModal-1" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">Link a debit card</h4>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="modelname1" class="form-label">Name On Card</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                            <span class="arrow"></span>
+                            <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Josh Moleen" id='inputEmail2' value=''>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                    <label for="modalname1" class="form-label">Card Number</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                        <span class="arrow"></span>
+                        <i class="fa fa-lock"></i>
+                        </span>
+                        <input type="password" class="form-control" placeholder="2344 7889 8990 2123" id='inputpw2' value=''>
+                    </div>
+                    </div>
+
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-3 ml-10">
+                            <div class="form-group">
+                                <label for="modalname1" class="form-label">Expiration</label>
+                                <input type="text" name="" class="form-control" placeholder="10/12" id="modalname1">
+                            </div>
+                        </div>
+                        <div class="col-xs-3 ml-10">
+                            <div class="form-group">
+                                <label for="modalname1" class="form-label">CVC</label>
+                                <input type="text" name="" class="form-control" placeholder="222" id="modalname1">
+                            </div>
+                        </div>
+                        <div class="col-xs-3 ml-10">
+                            <div class="form-group">
+                                <label for="modalname1" class="form-label">Postal Code</label>
+                                <input type="text" name="" class="form-control" placeholder="2368" id="modalname1">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Save</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- End Modal !-->
+
+
 @endsection

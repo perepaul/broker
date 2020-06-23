@@ -58,13 +58,23 @@
             </li>
             
             <li class="">
-                <a href="crypto-faq.html">
+                <a href="/users/support">
                     <i class="img">
                         <img src="{{asset('assets/back/users/data/crypto-dash/icons/12.png')}}" alt="" class="width-20">
                     </i>
-                    <span class="title">Support</span>
+                    <span class="title">FAQ</span>
                 </a>
             </li>
+
+            <li class="">
+                <a href="/users/request-loan">
+                    <i class="img">
+                        <img src="{{asset('assets/back/users/data/crypto-dash/icons/13.png')}}" alt="" class="width-20">
+                    </i>
+                    <span class="title">Request Loan</span>
+                </a>
+            </li>
+
             <li class="">
                 <a href="javascript:;">
                     <i class="img">
