@@ -38612,6 +38612,46 @@ window.notify = function (msg, type) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+getModal = function getModal(options) {
+  $.ajax({
+    url: '/getmodal/' + options.type,
+    method: 'get',
+    data: options
+  }).then(function (response) {
+    $('.modal').remove();
+    $('body').append(response.data);
+    $('.modal').modal();
+  }, function () {
+    notify('Oops! error occured!', 'error');
+  });
+};
+
+addElement = function addElement(options) {
+  $.ajax({
+    url: '/add-element/' + options.type,
+    method: 'get',
+    data: options
+  }).then(function (response) {
+    $(options.append_to).append(response.data);
+  }, function (error) {
+    notify('Oops! error occured!', 'error');
+  });
+};
+
+removeElement = function removeElement(element) {
+  $(element).remove();
+};
+
+removePlanFeature = function removePlanFeature(options) {
+  $.ajax({
+    url: options.url
+  }).then(function (response) {
+    $(options.element).parentsUntil('.form-group').remove();
+  }, function (error) {
+    notify('Oops! error occured!', 'error');
+  });
+};
+
 /***/ }),
 
 /***/ 1:

@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="{{asset('css/custom-user.css')}}" type="text/css">
 </head>
 
-<body>
+<body class="bg-dark">
 
     <div class="app-content content">
         @yield('content')

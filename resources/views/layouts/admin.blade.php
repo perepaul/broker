@@ -3,7 +3,7 @@
 <!-- Css Here !-->
 @include('layouts.global_components.back.admin_head')
 
-<body class="vertical-layout vertical-compact-menu 2-columns   menu-expanded fixed-navbar" data-open="click"
+<body class="vertical-layout vertical-compact-menu 2-columns menu-expanded fixed-navbar" data-open="click"
     data-menu="vertical-compact-menu" data-col="2-columns">
     <!-- fixed-top-->
     @include('layouts.global_components.back.admin_nav')

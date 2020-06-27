@@ -1,12 +1,4 @@
-@extends('layouts.admin')
-
-@section('content')
-
-{{-- <h1>Hello World</h1> --}}
-
-<div class="content-header row">
-</div>
-{{-- <div class="content-body">
+<div class="content-body">
     <div id="crypto-stats-3" class="row">
         <div class="col-xl-4 col-12">
             <div class="card crypto-card-3 pull-up">
@@ -1014,10 +1006,4 @@
         </div>
     </div>
     <!-- Active Orders -->
-</div> --}}
-
-@include('partials.user-dashboard')
-
-
-
-@endsection
+</div>
