@@ -5,47 +5,74 @@
     <div class="content-body">
         <section class="flexbox-container">
             <div class="col-12 d-flex align-items-center justify-content-center p-0">
-                <div class="col-lg-5 col-md-12 box-shadow-2 p-0">
+                <div class="col-lg-7 col-md-12 box-shadow-2 p-0">
                     <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
                         <div class="card-header border-0 pb-0">
                             <div class="card-title text-center">
                                 <img src="{{asset('assets/images/logo/logo.png')}}" alt="branding logo"
-                                    style="width:40%">
+                                    style="width:200px">
                             </div>
-                            <h6 class="card-subtitle line-on-side text-muted text-center pt-2">
+                            <h4 class="card-subtitle line-on-side text-muted text-center pt-2">
                                 <span>Create Account</span>
-                            </h6>
+                            </h4>
                         </div>
                         <div class="card-content">
                             <div class="card-body pt-0">
                                 <form class="form-horizontal row" action="{{route('register')}}" method="POST">
                                     @csrf
-                                    <fieldset class="form-group floating-label-form-group col-md-12 p-0">
+                                    <fieldset class="form-group floating-label-form-group col-md-6">
                                         <label for="firstname">First name</label>
                                         <input type="text" class="form-control" id="firstname" name="firstname"
                                             placeholder="First name" value="{{old('firstname')}}">
                                     </fieldset>
-                                    <fieldset class="form-group floating-label-form-group col-md-12 p-0">
+                                    <fieldset class="form-group floating-label-form-group col-md-6">
                                         <label for="lastname">Last name</label>
                                         <input type="text" class="form-control" id="lastname" name="lastname"
                                             placeholder="Last name" value="{{old('lastname')}}">
                                     </fieldset>
-                                    <fieldset class="form-group floating-label-form-group col-md-12 p-0">
-                                        <label for="email">Your Email Address</label>
+                                    <fieldset class="form-group floating-label-form-group col-md-6">
+                                        <label for="email">Your email address</label>
                                         <input type="email" name="email" class="form-control" id="email"
                                             placeholder="Your Email Address" value="{{old('email')}}">
                                     </fieldset>
-                                    <fieldset class="form-group floating-label-form-group mb-1 col-md-12 p-0">
+                                    <fieldset class="form-group floating-label-form-group col-md-6">
+                                        <label for="phone">Phone</label>
+                                        <input type="text" name="phone" class="form-control" id="phone"
+                                            placeholder="eg. +1xxxxxxxx" value="{{old('phone')}}">
+                                    </fieldset>
+                                    <fieldset class="form-group floating-label-form-group col-md-12">
+                                        <label for="currency_id">Account currency</label>
+                                        <select name="currency_id" id="currency_id" class="form-control">
+                                            <option value="1">US Dollar($)</option>
+                                            <option value="2">Euro (€)</option>
+                                            <option value="3">Pound Sterling (£)</option>
+                                            <option value="4">Ruble (₽)</option>
+                                            <option value="5">Bitcoin (BTC)</option>
+                                            <option value="6">Litecoin (Ł)</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset class="form-group floating-label-form-group col-md-12">
+                                        <label for="plan_id">Subscription plan</label>
+                                        <select name="plan_id" id="plan_id" class="form-control">
+                                            <option value="1">US Dollar($)</option>
+                                            <option value="2">Euro (€)</option>
+                                            <option value="3">Pound Sterling (£)</option>
+                                            <option value="4">Ruble (₽)</option>
+                                            <option value="5">Bitcoin (BTC)</option>
+                                            <option value="6">Litecoin (Ł)</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset class="form-group floating-label-form-group mb-1 col-md-12">
                                         <label for="password">Enter Password</label>
                                         <input type="password" class="form-control" id="password" name="password"
                                             placeholder="Enter Password">
                                     </fieldset>
-                                    <fieldset class="form-group floating-label-form-group mb-1 col-md-12 p-0">
+                                    <fieldset class="form-group floating-label-form-group mb-1 col-md-12">
                                         <label for="password_confirmationss">Confirm password</label>
                                         <input type="password" class="form-control" name="password_confirmation"
                                             id="password_confirmation" placeholder="Confirm Password">
                                     </fieldset>
-                                    <div class="col-md-12 p-0">
+                                    <div class="col-md-12">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="agree"
                                                 id="defaultCheck1">
@@ -61,7 +88,7 @@
                             </div>
 
                             <div class="text-center pb-3">
-                                <button type="submit" class="btn btn-outline-info btn-block"><i class="ft-user"></i>
+                                <button type="submit" class="btn btn-outline-info"><i class="ft-user"></i>
                                     Register</button>
                                 </form>
                             </div>

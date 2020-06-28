@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Currency;
+use App\Plan;
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +26,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer('*', function ($view) {
+            $currencies = Currency::all();
+            $plans = Plan::all();
+            return $view->with(compact('currencies', 'plans'));
+        });
     }
 }

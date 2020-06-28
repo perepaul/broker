@@ -53,10 +53,15 @@ class RegisterController extends Controller
             'firstname' => ['required', 'string', 'max:255'],
             'lastname' => ['required', 'string', 'max:255'],
             'agree' => ['required'],
+            'plan_id' => ['required'],
+            'currency_id' => ['required'],
+            'phone' => ['required', 'numeric'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ], [
-            'agree.required' => 'you have to agree to our terms'
+            'agree.required' => 'you have to agree to our terms',
+            'plan_id.required' => 'You have to select a plan to continue',
+            'currency_id' => 'Please select account currency'
         ]);
     }
 
@@ -69,12 +74,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         // dd($data);
-        return User::create([
-            'firstname' => $data['firstname'],
-            'lastname' => $data['firstname'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        return User::create($data);
     }
 
     public function redirectTo()

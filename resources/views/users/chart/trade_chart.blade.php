@@ -13,7 +13,7 @@
 
     </div>
 </div>
-    
+
 @endsection
 
 @section('content')
@@ -32,9 +32,11 @@
             <!-- TradingView Widget BEGIN -->
             <div class="tradingview-widget-container">
                 <div class="tradingview-widget-container__widget"></div>
-                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-                {
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener"
+                        target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
                 "symbols": [
                 {
                     "proName": "FOREXCOM:SPXUSD",
@@ -105,17 +107,23 @@
                                 );
                                 </script>
                             </div> --}}
-                        <!-- TradingView Widget END -->
+                            <!-- TradingView Widget END -->
 
                             <div class="tradingview-widget-container card">
                                 <div id="tradingview_e8053">
-                                    <div id="tradingview_7ecf6-wrapper" style="position: relative;box-sizing: content-box;width: 100%;height: 460px;margin: 0 auto !important;padding: 0 !important;font-family:Arial,sans-serif;">
-                                        <div style="width: 100%;height: 460px;background: transparent;padding: 0 !important;">
-                                            <iframe id="tradingview_7ecf6" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_7ecf6&amp;symbol=BITSTAMP%3ABTCUSD&amp;interval=D&amp;hidesidetoolbar=0&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;studies=%5B%5D&amp;theme=Light&amp;style=1&amp;timezone=Etc%2FUTC&amp;withdateranges=1&amp;showpopupbutton=1&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;showpopupbutton=1&amp;locale=en&amp;utm_source=&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=BITSTAMP%3ABTCUSD" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen=""></iframe>
+                                    <div id="tradingview_7ecf6-wrapper"
+                                        style="position: relative;box-sizing: content-box;width: 100%;height: 460px;margin: 0 auto !important;padding: 0 !important;font-family:Arial,sans-serif;">
+                                        <div
+                                            style="width: 100%;height: 460px;background: transparent;padding: 0 !important;">
+                                            <iframe id="tradingview_7ecf6"
+                                                src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_7ecf6&amp;symbol=BITSTAMP%3ABTCUSD&amp;interval=D&amp;hidesidetoolbar=0&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;studies=%5B%5D&amp;theme=Light&amp;style=1&amp;timezone=Etc%2FUTC&amp;withdateranges=1&amp;showpopupbutton=1&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;showpopupbutton=1&amp;locale=en&amp;utm_source=&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=BITSTAMP%3ABTCUSD"
+                                                style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;"
+                                                frameborder="0" allowtransparency="true" scrolling="no"
+                                                allowfullscreen=""></iframe>
                                         </div>
                                     </div>
                                 </div>
-    
+
                             </div>
                             <!-- TradingView Widget END -->
                         </div>
@@ -132,7 +140,7 @@
                 </div>
             </div>
 
-        
+
 
             <!-- End .row -->
         </div>
@@ -143,11 +151,13 @@
 
 <div class="content-body">
     <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-    {
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener"
+                target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
+        <script type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+            {
     "colorTheme": "light",
     "dateRange": "12m",
     "showChart": true,
@@ -280,49 +290,53 @@
       }
     ]
   }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
 </div>
 
 <div class="content-body">
     <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/forex-heat-map/" rel="noopener" target="_blank"><span class="blue-text">Forex Heat Map</span></a> by TradingView</div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
-    {
-    "width": "100%",
-    "height": "600",
-    "currencies": [
-      "EUR",
-      "USD",
-      "JPY",
-      "GBP",
-      "CHF",
-      "AUD",
-      "CAD",
-      "NZD",
-      "CNY"
-    ],
-    "isTransparent": false,
-    "colorTheme": "light",
-    "locale": "en"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a
+                href="https://www.tradingview.com/markets/currencies/forex-heat-map/" rel="noopener"
+                target="_blank"><span class="blue-text">Forex Heat Map</span></a> by TradingView</div>
+        <script type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+            {
+                "width": "100%",
+                "height": "600",
+                "currencies": [
+                "EUR",
+                "USD",
+                "JPY",
+                "GBP",
+                "CHF",
+                "AUD",
+                "CAD",
+                "NZD",
+                "CNY"
+                ],
+                "isTransparent": false,
+                "colorTheme": "light",
+                "locale": "en"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
 </div>
 
 
 <div class="content-body">
     <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div id="tradingview_362d3"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
-    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-    <script type="text/javascript">
-    new TradingView.widget(
+    <div class="tradingview-widget-container">
+        <div id="tradingview_362d3"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/"
+                rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget(
     {
     "width": "100%",
     "height": "600",
@@ -338,18 +352,21 @@
     "container_id": "tradingview_362d3"
   }
     );
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
 </div>
 
 <div class="content-body">
     <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
-    {
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a
+                href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener"
+                target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js"
+            async>
+            {
     "width": "100%",
     "height": "600",
     "defaultColumn": "overview",
@@ -358,12 +375,12 @@
     "colorTheme": "light",
     "locale": "en"
   }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
 </div>
 
 
 
-    
+
 @endsection

@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::middleware('web')->group(function () {
+    Route::get('getmodal/{type}', 'SupportController@getmodal');
+    Route::get('add-element/{type}', 'SupportController@addElement');
+});
+
 Route::get('/', function () {
     return view('main');
 });
@@ -57,42 +62,47 @@ Route::get('register-form', function () {
 //     return view('dashboard');
 // });
 //basic admin route for now
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
     Route::get('/', function () {
         return view('dashboard');
-    })->name('admin');
+    })->name('index');
 
     Route::get('users', function () {
-        return view('admin.users');
+        return view('back.admin.users');
     })->name('users');
 
-    // Route::get('/profile/cards', function () {
-    //     return view('admin.profile.profile_cards');
-    // });
+    Route::group(['prefix' => 'settings', 'as' => 'settings.'], function () {
+        Route::get('/', 'SettingsController@index')->name('index');
+        Route::post('add-currency', 'SettingsController@addCurrency')->name('add.currency');
+        Route::post('update-currency/{id}', 'SettingsController@updateCurrency')->name('update.currency');
+        Route::get('remove-currency/{id}', 'SettingsController@removeCurrency')->name('remove.currency');
+
+        Route::post('add-plan', 'SettingsController@addPlan')->name('add.plan');
+        Route::post('update-plan/{id}', 'SettingsController@updatePlan')->name('update.plan');
+        Route::get('remove-plan-feature', 'SettingsController@removePlan')->name('remove.plan');
+        Route::get('remove-plan-feature/{id}', 'SettingsController@removePlanFeature')->name('remove.plan.feature');
+    });
+
 
 
     Route::get('/deposit', function () {
         return view('admin.deposit.deposit');
-        
     });
 
     Route::get('withdrawals', function () {
-        return view('admin.withdrawals');
+        return view('back.admin.withdrawals');
     })->name('withdrawals');
 
     Route::get('deposits', function () {
-        return view('admin.deposits');
+        return view('back.admin.deposits');
     })->name('deposits');
     Route::get('trades', function () {
-        return view('admin.trades');
+        return view('back.admin.trades');
     })->name('trades');
 
-    Route::get('tickets', function () {
-        return view('admin.tickets');
-    })->name('tickets');
-     Route::get('profile', function () {
-        return view('admin.profile');
+    Route::get('profile', function () {
+        return view('back.admin.profile');
     })->name('tickets');
 });
 
@@ -109,39 +119,27 @@ Route::get('users/profile', function () {
 
 Route::get('users/trade', function () {
     return view('users.chart.trade_chart');
-    
 });
 
 Route::get('users/deposit', function () {
     return view('users.deposit.users_deposit');
-    
 });
 
 Route::get('users/withdraw', function () {
     return view('users.withdraw.users_withdraw');
-    
 });
 
-Route::get('users/add-account', function(){
+Route::get('users/add-account', function () {
 
     return view('users.accounts.bank_account');
-
 });
 
-Route::get('users/request-loan', function(){
+Route::get('users/request-loan', function () {
 
     return view('users.loans.request_loan');
-
 });
 
-Route::get('users/support', function(){
+Route::get('users/support', function () {
 
     return view('users.support.request_support');
-
-});
-
-Route::get('users/buy-or-sell-crypto', function(){
-
-    return view('users.buy_or_sell_btc');
-
 });

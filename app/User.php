@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'email', 'password',
+        'firstname', 'lastname', 'email', 'password', 'plan_id', 'currency_id', 'phone', 'balance', 'demo_balance', 'is_admin',
     ];
 
     /**
@@ -36,4 +36,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function setPasswordAttribute($value)
+    {
+        return $this->attributes['password'] = bcrypt($value);
+    }
+    public function currency()
+    {
+        return $this->hasOne(Currency::class);
+    }
+
+    public function plan()
+    {
+        return $this->hasOne(Plan::class);
+    }
 }
