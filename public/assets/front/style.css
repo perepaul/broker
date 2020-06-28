@@ -10,6 +10,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   overflow-x:hidden;
+  background:#10122d;
 }
 /*-- Preloader css start --*/
 #preloader {
@@ -37,6 +38,43 @@ body {
     -o-transform: translate(-50%,-50%);
 }
 #status img {
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #151846;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	z-index:1000;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 8px;
+    font-size: 30px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
 }
 /*Responsive Media*/
 /* ....................................
@@ -441,10 +479,11 @@ background: -webkit-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201
 background: -o-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
 background: -ms-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
 background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
-  padding: 0 20px;
+  padding: 0 35px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
   text-transform: uppercase;
+  animation-delay: 2.4s
 }
 @media only screen and (max-width: 480px) {
   .btn3 {
@@ -576,7 +615,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 	padding-top: 9px;
     padding-left: 3px;
 	border-radius:100%;
-	background:#2c2e53;
+	background:#10122d;
 	    -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -591,7 +630,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 	padding-top: 9px;
     padding-left: 12px;
 	border-radius:100%;
-	background:#2c2e53;
+	background:#10122d;
 	    -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -1539,7 +1578,7 @@ header {
   left: 0;
   right: 0;
   z-index: 9999;
-  background:#2c2e53;
+  background:transparent;
       padding-top: 30px;
     padding-bottom: 14px;
 }
@@ -1564,7 +1603,7 @@ header .menu-area nav ul li:first-child {
 }
 header .menu-area nav ul li a {
   display: inline-block;
-  color: rgba(255, 255, 255, 0.52);
+  color: #fff;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -1690,8 +1729,8 @@ header .mobilemenu .mean-container a.meanmenu-reveal {
 	left:0 !important;
 	right:0 !important;
 	top:0 !important;
-	z-index: 1000 !important;
-	background:#262848;
+	z-index: 100000 !important;
+	background:#0a0c23;
 }
 .rp_mobail_menu_main_wrapper{
 	float:none;
@@ -1845,7 +1884,7 @@ header .mobilemenu .mean-container a.meanmenu-reveal {
 .slider-area {
   display: block;
   position: relative;
-  background: #1a1c35;
+  background: #0b0c22;
 }
 .slider-area .carousel {
   position: relative;
@@ -2045,7 +2084,105 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
   bottom: 0;
   z-index: 1;
 }
+.search_btm{
+	float:left;
+	width:100%;
+	text-align:center;
+	padding-top:50px;
+}
+.search_main{
+	float:left;
+	width:100%;
+	display:inline-block;
+}
+.search_main input{
+	width:calc(70% - 170px);
+	height:60px;
+	font-size:16px;
+	outline:none;
+	color:#8486a6;
+	padding-left:20px;
+	background:#08091b;
+	border-radius:50px;
+	text-transform:capitalize;
+	border:transparent;
+}
+.search_form{
+	margin-top:20px;
+}
 
+.search_main button{
+	width:170px;
+	height:50px;
+	display: block;
+	margin-left: -179px;
+	padding-top: 1px;
+	 display: inline-block;
+	  line-height: 50px;
+	  height: 50px;
+	  border-radius: 50px;
+	  background: rgba(57,100,208,1);
+	background: -moz-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(57,100,208,1)), color-stop(100%, rgba(45,193,201,1)));
+	background: -webkit-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+	background: -o-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+	background: -ms-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+	background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+	  padding: 0 35px;
+	  font-weight: 700;
+	  color: #fff;
+	  text-transform: uppercase;
+	  animation-delay: 2.4s
+}
+.search_main button:hover {
+background: rgba(45,193,201,1);
+background: -moz-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(45,193,201,1)), color-stop(100%, rgba(57,100,208,1)));
+background: -webkit-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+background: -o-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+background: -ms-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+  color: #fff;
+  
+}
+.btn4 button{
+	background:transparent;
+	color:#FFF;
+}
+@media only screen and (max-width : 991px) {
+	.search_main input{
+	width:80%;
+}
+}
+@media (max-width: 1199px) and (min-width: 991px){
+	.search_main input{
+	width:65%;
+}
+}
+
+@media (max-width: 767px){
+	.search_main input{
+	width:80%;
+}
+}
+@media only screen and (max-width : 480px) {
+		.search_main input{
+	width:100%;
+}
+.search_main button{
+	margin-top:20px;
+	display:block;
+	margin-left:0;
+}
+}
+@media only screen and (max-width : 320px) {
+		.search_main input{
+		width:100%;
+}
+.search_main button{
+	margin-top:20px;
+}
+}
 /*....................................
 4. About area start here
 ....................................*/
@@ -2093,7 +2230,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
   margin-right: -150px;
 }
 .about-area{
-	background:#1a1c35;
+	background:#08091b;
 }
 @media only screen and (max-width: 1600px) {
   .about-area .about-img {
@@ -2114,7 +2251,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 7. Blog area start here
 ....................................*/
 .blog-area {
-  background: #2c2e53;
+  background: #10122d;
   position: relative;
   display: block;
 }
@@ -2146,7 +2283,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 .blog-area .blog .content {
   display: block;
   position: relative;
-  background: #1a1c35;
+  background: #08091b;
   padding: 30px 35px;
 }
 .blog-area .blog .content span {
@@ -2241,7 +2378,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
   height: 80px;
   line-height: 80px;
   border-radius: 100%;
-  background: #1a1c35;
+  background: #08091b;
   font-size: 40px;
   color: #fff;
   position: absolute;
@@ -2251,7 +2388,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
   text-align: center;
 }
 .blog-area .owl-controls .owl-buttons div:hover {
-  background: #45487d;
+  background: #141633;
 }
 .blog-area .owl-controls .owl-buttons div.owl-prev {
   left: 0;
@@ -2269,10 +2406,12 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 footer {
   position: relative;
 }
-
+.video-js .vjs-tech{
+	border-radius:20px;
+}
 footer .footer-bottom {
   display: block;
-  background: #26284e;
+  background: #08091b;
   height: 100px;
   line-height: 100px;
   position: relative;
@@ -2324,7 +2463,7 @@ footer .footer-bottom .foo-link ul li a:hover {
 }
 
 footer .footer-top {
-  background: #2c2e53;
+  background: #10122d;
   display: block;
   position: relative;
 }
@@ -2492,7 +2631,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   z-index: 99;
 }
 .video-des .deslidt ul li .left-con .box-con .dbox {
-  background: #2c2e53;
+  background: #10122d;
   border-radius: 22px;
   width: 400px;
   height: 195px;
@@ -2630,7 +2769,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   z-index: 99;
 }
 .video-des .deslidt ul li .right-con .box-con .dbox {
-  background: #2c2e53;
+  background: #10122d;
   border-radius: 22px;
   width: 400px;
   height: 195px;
@@ -2765,7 +2904,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   z-index: 99;
 }
 .video-des .deslidt ul li .center-con .box-con .dbox {
-  background: #2c2e53;
+  background: #10122d;
   border-radius: 22px;
   width: 400px;
   height: 195px;
@@ -2877,6 +3016,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   vertical-align: middle;
   display: block;
   margin: 0 0 80px;
+  z-index:10000;
 }
 .video-des .deslidt ul li .serials:last-child {
   padding: 0;
@@ -2902,7 +3042,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   height: 22px;
   border-radius: 100%;
   margin: 0 auto;
-  z-index:10;
+  z-index:-10;
 }
 .video-des .deslidt ul li .serials span.cre:after {
   content: '';
@@ -2930,8 +3070,9 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   position: relative;
   overflow: hidden;
   vertical-align: middle;
-  z-index: 100;
-  background:#1a1c35;
+  z-index: 1000;
+  margin-top:-90px;
+  background:#08091b;
 }
 .currency-area .rete-list {
   display: inline-block;
@@ -3000,7 +3141,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   }
 }
 .currency-area .rete-list .content {
-  background: #2c2e53;
+  background: #10122d;
   padding: 0 50px;
   display: block;
   border-radius: 10px;
@@ -3093,7 +3234,6 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 .projects .project-list {
   position: relative;
   display: block;
-  background: #1a1c35;
   margin: 0 0 38px;
   padding-top: 14px;
 }
@@ -3116,7 +3256,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 }
 .projects .project-list .content {
   display: block;
-  background: #2c2e53;
+  background: #10122d;
   text-align: center;
   padding: 60px 0 70px;
   border-radius: 15px;
@@ -3138,14 +3278,14 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   line-height: 28px;
 }
 .projects{
-	background:#1a1c35;
+	background:#08091b;
 }
 .media-area .mediabrand ul {
   display: block;
   margin: -30px;
 }
 .media-area{
-	background:#1a1c35;
+	background:#08091b;
 }
 .media-area .mediabrand ul li {
   display: inline-block;
@@ -3153,7 +3293,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 }
 
 .tokens-area {
-  background: #2c2e53;
+  background:#10122d;
   position: relative;
 }
 .tokens-area .tokens {
@@ -3182,7 +3322,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   z-index: 999;
 }
 .tokens-area .tokens .token-body {
-  background: #1a1c35;
+  background: #08091b;
   height: 464px;
   padding: 50px 55px;
   display: inline-block;
@@ -3268,8 +3408,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 
 .token-details .cart-list {
   display: block;
-  background: #2c2e53;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #10122d;
   overflow: hidden;
   vertical-align: middle;
   border-radius: 15px;
@@ -3349,7 +3488,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
   width: 70px;
   top: 0;
   bottom: 0;
-  background: #3e406e;
+  background: #0c0e29;
   color: #fff;
   opacity: 1;
   font-size: 50px;
@@ -3376,7 +3515,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   border-radius: 0 15px 15px 0;
 }
 .token-details{
-	background:#1a1c35;
+	background:#08091b;
 }
 .token-details .contents h2 {
   font-weight: 400;
@@ -3427,7 +3566,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 
 .features-area {
   position: relative;
-  background: #2c2e53;
+  background: #10122d;
   z-index:1;
 }
 @media only screen and (max-width: 768px) {
@@ -3637,7 +3776,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 .steps-area {
   position: relative;
   display: block;
-  background: #2c2e53;
+  background: #10122d;
 }
 .steps-area .steps-heading {
   display: block;
@@ -4027,7 +4166,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   height: 70px;
   line-height: 66px;
   border: 2px solid #5e619c;
-  background: #1a1c35;
+  background: #0b0c22;
   color: #ffffff;
   font-size: 30px;
   border-radius: 100%;
@@ -4062,7 +4201,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 .steps-details .steps-cont ul li:nth-child(5) span {
   line-height: 66px;
   border: 2px solid #8486a6;
-  background: #1a1c35;
+  background: #0b0c22;
   color: #ffffff;
 }
 @media only screen and (max-width: 480px) {
@@ -4071,7 +4210,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   }
 }
 .steps-details, .video-des{
-	background:#1a1c35;
+	background:#08091b;
 }
 .steps-details .steps-cont ul li:nth-child(6):before {
   border-top: 2px solid #5e619c;
@@ -4092,7 +4231,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 .steps-details .steps-cont ul li:nth-child(6) span {
   line-height: 66px;
   border: 2px solid #8486a6;
-  background: #1a1c35;
+  background: #0b0c22;
   color: #ffffff;
 }
 @media only screen and (max-width: 480px) {
@@ -4107,7 +4246,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   overflow: hidden;
   vertical-align: middle;
   margin: 0 0 -9px;
-  background:#1a1c35;
+  background:#08091b;
 }
 @media only screen and (max-width: 992px) {
   .sud {
@@ -4128,7 +4267,7 @@ body.date-20180212.exp-invert-logo {
 .video-area {
   position: relative;
   display: block;
-  background: #2c2e53;
+  background: #10122d;
   padding-bottom: 120px;
   text-align: center;
   margin: 0;
@@ -4210,7 +4349,7 @@ body.date-20180212.exp-invert-logo {
 5. Team area start here
 ....................................*/
 .team-area {
-  background: #2c2e53;
+  background: #10122d;
   position: relative;
 }
 .team-area .team-list {
@@ -4219,7 +4358,7 @@ body.date-20180212.exp-invert-logo {
   height: 350px;
   margin-top: 18px;
   border-radius: 15px;
-  background: #1a1c35;
+  background: #08091b;
   margin-bottom: 50px;
 }
 .team-area .team-list:after {
@@ -4244,7 +4383,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   z-index: 9999;
   padding: 0 45px;
   padding-top: 45px;
-  background: #1a1c35;
+  background: #08091b;
   z-index: 999;
   border-radius: 15px;
 }
@@ -4354,7 +4493,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 }
 
 .team2-area {
-  background: #2c2e53;
+  background: #10122d;
   position: relative;
 }
 .team2-area .team-list {
@@ -4363,7 +4502,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
   height: 350px;
   margin-top: 18px;
   border-radius: 15px;
-  background: #2c2e53;
+  background: #10122d;
   margin-bottom: 50px;
   transition: all 0.5s;
 }
@@ -4392,7 +4531,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   z-index: 9999;
   padding: 0 45px;
   padding-top: 45px;
-  background: #2c2e53;
+  background: #10122d;
   z-index: 999;
   border-radius: 15px;
 }
@@ -4493,7 +4632,7 @@ background: -ms-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
 }
 .team2-area{
-	background:#1a1c35;
+	background:#08091b;
 }
 .team2-area .team-list .con p {
   padding: 0 20px;
@@ -4507,6 +4646,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 ....................................*/
 .slider-area{
 	position:relative;
+	background:#08091b;
 } 
 canvas{
 	position:absolute;

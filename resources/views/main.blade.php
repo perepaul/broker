@@ -18,7 +18,7 @@
        </div>
        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="about-img">
-             <img src="/assets/front/images/about/1.png" alt=""/>
+             <img src="/assets/front/images/about/bit-about.png" alt=""/>
           </div>
        </div>
     </div>
@@ -197,78 +197,65 @@
 
 @section('content-loan')
 
-<section class="steps-area section">
-    <div id="steps-js">
-       <div class="container">
-          <div class="row">
-             <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
-                <div class="steps-heading">
-                   <h2>Few Steps For a Loan</h2>
-                   <div class="right-con">
-                      <span>Scroll Down</span>
-                      <a data-scroll data-options='{ "speed": 100 }' href="#steps"><i class="fa fa-angle-down"></i></a>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
- </section>
- <section id="steps" class="steps-details bg-mg">
-    <div class="container">
-       <div class="row">
-          <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
-             <div class="steps-cont">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
+            <div class="steps-cont">
                 <ul>
-                   <li class="l-con">
-                      <div class="cont">
-                         <h2>01. Registration On The Platform</h2>
-                         <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
-                      </div>
-                      <span><i class="fa fa-users"></i></span>
-                   </li>
-                   <li class="r-con">
-                      <div class="cont">
-                         <h2>02. Passing Verification</h2>
-                         <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
-                      </div>
-                      <span><i class="fa fa-check-square-o"></i></span>
-                   </li>
-                   <li class="l-con">
-                      <div class="cont">
-                         <h2>03. Creating An Application For a Loan</h2>
-                         <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
-                      </div>
-                      <span><i class="fa fa-edit "></i></span>
-                      <div class="mid-icons"></div>
-                   </li>
-                   <li class="r-con">
-                      <div class="cont">
-                         <h2>04. Financing a Loan</h2>
-                         <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
-                      </div>
-                      <span><i class="fa fa-university"></i></span>
-                   </li>
-                   <li class="l-con">
-                      <div class="cont">
-                         <h2>05. Activating a Loan</h2>
-                         <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
-                      </div>
-                      <span><i class="fa fa-bell"></i></span>
-                   </li>
-                   <li class="r-con">
-                      <div class="cont">
-                         <h2>06. Receiving Funds</h2>
-                         <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
-                      </div>
-                      <span><i class="fa fa-paw"></i></span>
-                   </li>
+                    <li class="l-con">
+                        <div class="cont wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                            <h2>01. Registration On The Platform</h2>
+                            <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+                        </div>
+                        <span><i class="fa fa-users"></i></span>
+                    </li>
+                    <li class="r-con">
+                        <div class="cont wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                            <h2>02. Passing Verification</h2>
+                            <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+                        </div>
+                        <span><i class="fa fa-check-square-o"></i></span>
+                    </li>
+                    <li class="l-con">
+                        <div class="cont wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                            <h2>03. Creating An Application For a Loan</h2>
+                            <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+                        </div>
+                        <span><i class="fa fa-edit "></i></span>
+                        <div class="mid-icons"></div>
+                    </li>
+                    <li class="r-con">
+                        <div class="cont wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                            <h2>04. Financing a Loan</h2>
+                            <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+                        </div>
+                        <span><i class="fa fa-university"></i></span>
+                    </li>
+                    <li class="l-con">
+                        <div class="cont wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                            <h2>05. Activating a Loan</h2>
+                            <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+                        </div>
+                        <span><i class="fa fa-bell"></i></span>
+                    </li>
+                    <li class="r-con">
+                        <div class="cont wow  fadeInUp animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration:2.4s; animation-name: fadeInUp;">
+                            <h2>06. Receiving Funds</h2>
+                            <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                <br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+                        </div>
+                        <span><i class="fa fa-paw"></i></span>
+                    </li>
                 </ul>
-             </div>
-          </div>
-       </div>
+            </div>
+        </div>
     </div>
- </section>
+</div>
     
 @endsection
 
@@ -276,171 +263,171 @@
 
 <div class="container">
     <div class="row">
-       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="deslidt">
-             <ul>
-                <li>
-                   <span class="years"><span class="con">2016</span></span>
-                   <div class="serials">
-                      <span class="cre"></span>
-                      <div class="col-sm-6 col-xs-12 left-con">
-                         <div class="box-con">
-                            <div class="dbox">
-                               <div class="dleft">
-                                  <div class="imgs"><img src="/assets/front/images/video/2.png" alt=""/></div>
-                               </div>
-                               <div class="dright">
-                                  <div class="content">
-                                     <h3>Idea</h3>
-                                     <p>(September - October)</p>
-                                  </div>
-                               </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="deslidt">
+                <ul>
+                    <li>
+                        <span class="years"><span class="con">2016</span></span>
+                        <div class="serials">
+                            <span class="cre"></span>
+                            <div class="col-sm-6 col-xs-12 left-con wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                                <div class="box-con">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <div class="imgs"><img src="/assets/front/images/video/2.png" alt="" /></div>
+                                        </div>
+                                        <div class="dright">
+                                            <div class="content">
+                                                <h3>Idea</h3>
+                                                <p>(September - October)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                      <div class="col-sm-6 col-xs-12 right-con">
-                         <div class="box-con">
-                            <div class="dbox">
-                               <div class="dleft">
-                                  <div class="content">
-                                     <h3>Market Research</h3>
-                                     <p>(October - December)</p>
-                                  </div>
-                               </div>
-                               <div class="dright">
-                                  <div class="imgs"><img src="/assets/front/images/video/3.png" alt=""/></div>
-                               </div>
+                            <div class="col-sm-6 col-xs-12 right-con  wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                <div class="box-con">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <div class="content">
+                                                <h3>Market Research</h3>
+                                                <p>(October - December)</p>
+                                            </div>
+                                        </div>
+                                        <div class="dright">
+                                            <div class="imgs"><img src="/assets/front/images/video/3.png" alt="" /></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                   </div>
-                </li>
-                <li>
-                   <span class="years"><span class="con">2017</span></span>
-                   <div class="serials">
-                      <span class="cre"></span>
-                      <div class="col-sm-6 col-xs-12 left-con">
-                         <div class="box-con">
-                            <div class="dbox">
-                               <div class="dleft">
-                                  <div class="imgs"><img src="/assets/front/images/video/3.png" alt=""/></div>
-                               </div>
-                               <div class="dright">
-                                  <div class="content">
-                                     <p>(1Q 2017)</p>
-                                     <h3>Formation of foundersteam Business plan</h3>
-                                  </div>
-                               </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="years"><span class="con">2017</span></span>
+                        <div class="serials">
+                            <span class="cre"></span>
+                            <div class="col-sm-6 col-xs-12 left-con wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                                <div class="box-con">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <div class="imgs"><img src="/assets/front/images/video/3.png" alt="" /></div>
+                                        </div>
+                                        <div class="dright">
+                                            <div class="content">
+                                                <p>(1Q 2017)</p>
+                                                <h3>Formation of foundersteam Business plan</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                      <div class="col-sm-6 col-xs-12 right-con">
-                         <div class="box-con">
-                            <div class="dbox">
-                               <div class="dleft">
-                                  <div class="content">
-                                     <p>(2Q 2017)</p>
-                                     <h3>Start of Platform<br> Development</h3>
-                                  </div>
-                               </div>
-                               <div class="dright">
-                                  <div class="imgs"><img src="/assets/front/images/video/4.png" alt=""/></div>
-                               </div>
+                            <div class="col-sm-6 col-xs-12 right-con wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                                <div class="box-con">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <div class="content">
+                                                <p>(2Q 2017)</p>
+                                                <h3>Start of Platform<br> Development</h3>
+                                            </div>
+                                        </div>
+                                        <div class="dright">
+                                            <div class="imgs"><img src="/assets/front/images/video/4.png" alt="" /></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="serials">
-                      <span class="cre"></span>
-                      <div class="col-sm-6 col-xs-12 left-con">
-                         <div class="box-con">
-                            <div class="dbox">
-                               <div class="dleft">
-                                  <div class="imgs"><img src="/assets/front/images/video/5.png" alt=""/></div>
-                               </div>
-                               <div class="dright">
-                                  <div class="content">
-                                     <p>(3Q 2017)</p>
-                                     <h3>WhitePaper<br> Landing page</h3>
-                                  </div>
-                               </div>
+                        </div>
+                        <div class="serials">
+                            <span class="cre"></span>
+                            <div class="col-sm-6 col-xs-12 left-con wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                                <div class="box-con">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <div class="imgs"><img src="/assets/front/images/video/5.png" alt="" /></div>
+                                        </div>
+                                        <div class="dright">
+                                            <div class="content">
+                                                <p>(3Q 2017)</p>
+                                                <h3>WhitePaper<br> Landing page</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                      <div class="col-sm-6 col-xs-12 right-con">
-                         <div class="box-con">
-                            <div class="dbox">
-                               <div class="dleft">
-                                  <div class="content">
-                                     <p>(4Q 2017)</p>
-                                     <h3>Pre-Sale<br>Launch Platform<br>in beta test mode</h3>
-                                  </div>
-                               </div>
-                               <div class="dright">
-                                  <div class="imgs"><img src="/assets/front/images/video/6.png" alt=""/></div>
-                               </div>
+                            <div class="col-sm-6 col-xs-12 right-con wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                                <div class="box-con">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <div class="content">
+                                                <p>(4Q 2017)</p>
+                                                <h3>Pre-Sale<br>Launch Platform<br>in beta test mode</h3>
+                                            </div>
+                                        </div>
+                                        <div class="dright">
+                                            <div class="imgs"><img src="/assets/front/images/video/6.png" alt="" /></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                   </div>
-                </li>
-                <li>
-                   <span class="years"><span class="con">2018</span></span>
-                   <div class="serials">
-                      <span class="cre"></span>
-                      <div class="col-sm-6 col-xs-12 left-con">
-                         <div class="box-con">
-                            <div class="dbox">
-                               <div class="dleft">
-                                  <div class="imgs"><img src="/assets/front/images/video/7.png" alt=""/></div>
-                               </div>
-                               <div class="dright">
-                                  <div class="content">
-                                     <p>(1Q 2018)</p>
-                                     <h3>ICO Launch<br>Identification<br>Systemsand work<br>with API Partners</h3>
-                                  </div>
-                               </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="years"><span class="con">2018</span></span>
+                        <div class="serials">
+                            <span class="cre"></span>
+                            <div class="col-sm-6 col-xs-12 left-con  wow  fadeInUp animated" data-wow-duration="2.3s" style="visibility: visible; animation-duration: 2.3s; animation-name: fadeInUp;">
+                                <div class="box-con">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <div class="imgs"><img src="/assets/front/images/video/7.png" alt="" /></div>
+                                        </div>
+                                        <div class="dright">
+                                            <div class="content">
+                                                <p>(1Q 2018)</p>
+                                                <h3>ICO Launch<br>Identification<br>Systemsand work<br>with API Partners</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                      <div class="col-sm-6 col-xs-12 right-con">
-                         <div class="box-con">
-                            <div class="dbox">
-                               <div class="dleft">
-                                  <div class="content">
-                                     <p>(2Q 2018)</p>
-                                     <h3>Launch the<br>Platform in<br>Full mode</h3>
-                                  </div>
-                               </div>
-                               <div class="dright">
-                                  <div class="imgs"><img src="/assets/front/images/video/8.png" alt=""/></div>
-                               </div>
+                            <div class="col-sm-6 col-xs-12 right-con wow  fadeInUp animated" data-wow-duration="2.3s" style="visibility: visible; animation-duration: 2.3s; animation-name: fadeInUp;">
+                                <div class="box-con">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <div class="content">
+                                                <p>(2Q 2018)</p>
+                                                <h3>Launch the<br>Platform in<br>Full mode</h3>
+                                            </div>
+                                        </div>
+                                        <div class="dright">
+                                            <div class="imgs"><img src="/assets/front/images/video/8.png" alt="" /></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="serials">
-                      <div class="col-sm-12 col-xs-12 center-con">
-                         <div class="box-con">
-                            <div class="dbox">
-                               <div class="dleft">
-                                  <div class="imgs"><img src="/assets/front/images/video/9.png" alt=""/></div>
-                               </div>
-                               <div class="dright">
-                                  <div class="content">
-                                     <p>(4Q 2018)</p>
-                                     <h3>Establishing<br>Representative<br>Office</h3>
-                                  </div>
-                               </div>
+                        </div>
+                        <div class="serials">
+                            <div class="col-sm-12 col-xs-12 center-con wow  fadeInUp animated" data-wow-duration="2.5s" style="visibility: visible; animation-duration: 2.5s; animation-name: fadeInUp;">
+                                <div class="box-con">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <div class="imgs"><img src="/assets/front/images/video/9.png" alt="" /></div>
+                                        </div>
+                                        <div class="dright">
+                                            <div class="content">
+                                                <p>(4Q 2018)</p>
+                                                <h3>Establishing<br>Representative<br>Office</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                   </div>
-          </div>
-          </ul>
-       </div>
+                        </div>
+            </div>
+        </div>
+        </ul>
     </div>
- </div>
+</div>
     
 @endsection
 
