@@ -1,19 +1,31 @@
-<noscript id="deferred-styles">
-  <link href="{{asset('assets/front/static.cdnpub.info/lp/mobile/assets/styles/commonb663.css?v=7dbb85d')}}" rel="stylesheet"
-      type="text/css"></noscript>
-<script>
-  var loadDeferredStyles = function () {
-          var e = document.getElementById("deferred-styles"),
-              t = document.createElement("div");
-          t.innerHTML = e.textContent, document.body.appendChild(t), e.parentElement.removeChild(e)
-      },
-      raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame ||
-      msRequestAnimationFrame;
-  raf ? raf(function () {
-      window.setTimeout(loadDeferredStyles, 0)
-  }) : window.addEventListener("load", loadDeferredStyles);
-</script>
-<script src="{{asset('assets/front/static.cdnpub.info/lp/mobile/assets/scripts/change_imgsca7c.js?v=70ad7cc')}}" defer="defer"
-  async></script>
-<script src="{{asset('assets/front/static.cdnpub.info/lp/mobile/assets/scripts/vendore607.js?v=4da8f54')}}" defer="defer" async>
-</script>
+<script src="/assets/front/js/vendor/jquery-3.2.1.min.js"></script>
+<!-- tether js -->
+<script src="/assets/front/js/tether.min.js"></script>
+<!-- bootstrap js -->
+<script src="/assets/front/js/bootstrap.min.js"></script>
+<!-- owl.carousel js -->
+<script src="/assets/front/js/owl.carousel.min.js"></script>
+<!-- meanmenu js -->
+<script src="/assets/front/js/jquery.meanmenu.js"></script>
+<!-- jquery-ui js -->
+<script src="/assets/front/js/jquery-ui.min.js"></script>
+<!-- easypiechart js -->
+<script src="/assets/front/js/jquery.easypiechart.min.js"></script>
+<!-- particles js -->
+<!-- wow js -->
+<script src="/assets/front/js/wow.min.js"></script>
+<!-- smooth-scroll js -->
+<script src="/assets/front/js/smooth-scroll.min.js"></script>
+<script src="/assets/front/js/app.js"></script>
+<script src="/assets/front/js/particles.min.js"></script>
+<!-- plugins js -->
+<script src="/assets/front/js/plugins.js"></script>
+<!-- EChartJS JavaScript -->
+<script src="/assets/front/js/echarts-en.min.js"></script>
+<script src="/assets/front/js/echarts-liquidfill.min.js"></script>
+<script src="/assets/front/js/vc_round_chart.min.js"></script>
+<script src="/assets/front/js/videojs-ie8.min.js"></script>
+<script src="/assets/front/js/video.js"></script>
+<script src="/assets/front/js/Youtube.min.js"></script>
+<!-- main js -->
+<script src="/assets/front/js/main.js"></script>

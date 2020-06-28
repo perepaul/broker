@@ -1,30 +1,46 @@
-<div class="numbers">
-    <div class="wrap">
-        <div class="numbers__list">
-            <div class="numbers__item numbers__item--1 rtl-direction">
-                <div class="icon"><svg width="32px"  height="32px">
-                        <use xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_icon_users')}}" /></svg></div>
-                <div class="number"><span class="number--long" id="js-platform-population"></span></div>
-                <div class="desc">Registered users</div>
+<div class="container-fliud">
+               <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <div class="rete-list bt_title">
+                        <div class="content">
+                           <div class="con">
+                              <h2><img src="/assets/front/images/icons/1.png" alt=""><span>Bitcoin</span></h2>
+                              <button class="btn3">4.160651 BTC</button> 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="rete-list bt_title">
+                        <div class="content">
+                           <div class="con">
+                              <h2><img src="/assets/front/images/icons/2.png" alt=""><span>Ethereum</span></h2>
+                              <button class="btn3">3.245000 ETH</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="rete-list bt_title">
+                        <div class="content">
+                           <div class="con">
+                              <h2><img src="/assets/front/images/icons/3.png" alt=""><span>Dollar (USD)</span></h2>
+                              <button class="btn3">58634.000 USD</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="rete-list bt_title">
+                        <div class="content">
+                           <div class="con">
+                              <h2><img src="/assets/front/images/icons/4.png" alt=""><span>Total USD</span></h2>
+                              <button class="btn3">111969.062 USD</button> 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="rete-list hidden-md">
+                        <div class="content">
+                           <div class="con">
+                              <h2><img src="/assets/front/images/icons/5.png" alt=""><span>Token Sale</span></h2>
+                              <button class="btn3">346636.775</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="numbers__item numbers__item--2 rtl-direction">
-                <div class="icon"><svg width="32px" height="32px">
-                        <use xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_icon_investors')}}" /></svg></div>
-                <div class="number"><span class="number--long">1 800 000+</span></div>
-                <div class="desc">Active investors daily</div>
-            </div>
-            <div class="numbers__item numbers__item--3 rtl-direction">
-                <div class="icon"><svg width="32px" height="32px">
-                        <use xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_icon_volume')}}" /></svg></div>
-                <div class="number"><span class="number--long">$380 000 000</span></div>
-                <div class="desc">Monthly investing volume</div>
-            </div>
-            <div class="numbers__item numbers__item--4 rtl-direction">
-                <div class="icon"><svg width="32px" height="32px">
-                        <use xlink:href="{{asset('assets/front/iq-options.com/lp/mobile/assets/images/icon.svg#icon_icon_withdraw')}}" /></svg></div>
-                <div class="number"><span class="number--long">$10 000 000</span></div>
-                <div class="desc">Withdrawn each month</div>
-            </div>
-        </div>
-    </div>
-</div>
