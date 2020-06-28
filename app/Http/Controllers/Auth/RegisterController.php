@@ -79,6 +79,6 @@ class RegisterController extends Controller
 
     public function redirectTo()
     {
-        return redirect()->route('dashboard');
+        return $this->redirectTo = '/users';
     }
 }

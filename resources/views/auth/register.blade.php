@@ -43,32 +43,30 @@
                                     <fieldset class="form-group floating-label-form-group col-md-12">
                                         <label for="currency_id">Account currency</label>
                                         <select name="currency_id" id="currency_id" class="form-control">
-                                            <option value="1">US Dollar($)</option>
-                                            <option value="2">Euro (€)</option>
-                                            <option value="3">Pound Sterling (£)</option>
-                                            <option value="4">Ruble (₽)</option>
-                                            <option value="5">Bitcoin (BTC)</option>
-                                            <option value="6">Litecoin (Ł)</option>
+                                            @foreach($currencies as $currency)
+                                            <option value="{{$currency->id}}">{{$currency->name}} ({{$currency->symbol}})</option>
+                                            @endforeach
                                         </select>
                                     </fieldset>
                                     <fieldset class="form-group floating-label-form-group col-md-12">
-                                        <label for="plan_id">Subscription plan</label>
+                                        <label for="plan_id">Subscription plan </label>
+                                        <span class="pull-right"><a href="">view details</a></span>
                                         <select name="plan_id" id="plan_id" class="form-control">
-                                            <option value="1">US Dollar($)</option>
-                                            <option value="2">Euro (€)</option>
-                                            <option value="3">Pound Sterling (£)</option>
-                                            <option value="4">Ruble (₽)</option>
-                                            <option value="5">Bitcoin (BTC)</option>
-                                            <option value="6">Litecoin (Ł)</option>
+                                            @foreach($plans as $plan)
+                                                <option value="{{$plan->id}}">{{$plan->name}} ({{$plan->price}})</option>
+                                            @endforeach
                                         </select>
                                     </fieldset>
                                     <fieldset class="form-group floating-label-form-group mb-1 col-md-12">
                                         <label for="password">Enter Password</label>
+                                        <span class="pull-right line-height-1 icon-align password-toggle"><i class="la la-eye d-block" style="font-size:22px"></i></span>
                                         <input type="password" class="form-control" id="password" name="password"
                                             placeholder="Enter Password">
                                     </fieldset>
                                     <fieldset class="form-group floating-label-form-group mb-1 col-md-12">
                                         <label for="password_confirmationss">Confirm password</label>
+                                        <span class="pull-right line-height-1 icon-align password-toggle"><i class="la la-eye d-block" style="font-size:22px"></i></span>
+
                                         <input type="password" class="form-control" name="password_confirmation"
                                             id="password_confirmation" placeholder="Confirm Password">
                                     </fieldset>

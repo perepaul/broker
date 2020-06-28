@@ -11,6 +11,7 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    require('bootstrap-toggle')
 } catch (e) { }
 
 /**
@@ -59,6 +60,20 @@ window.notify = (msg, type) => {
             break;
     }
 }
+
+$('.password-toggle').click(function(){
+    alert('eye clicked');
+    $('.password-toggle').each(function(index){
+        var element = $(this).find('i');
+        if($(element).hasClass('la-eye')){
+            $(this).siblings('input').attr('type','text')
+            $(element).removeClass('la-eye').addClass('la-eye-slash')
+        }else{
+            $(this).siblings('input').attr('type','password')
+            $(element).removeClass('la-eye-slash').addClass('la-eye')
+        }
+    })
+})
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
