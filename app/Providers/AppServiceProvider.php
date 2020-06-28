@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Currency;
 use App\Plan;
+use App\Trade;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\ServiceProvider;
 

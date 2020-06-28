@@ -16,7 +16,7 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>ref_no</th>
+                                    <th>ID</th>
                                     <th>User</th>
                                     <th>Amount</th>
                                     <th>Date</th>
@@ -24,11 +24,12 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @forelse ($trades as $trade)
                                 <tr class="bg-success bg-lighten-5">
-                                    <td>idfiodfidi</td>
-                                    <td>Perekpo</td>
-                                    <td>500</td>
-                                    <td>12-34-2222</td>
+                                    <td>{{$trade->id}}</td>
+                                    <td>{{$trade->user->firstname}}</td>
+                                    <td>{{$trade->amount}}</td>
+                                    <td>{{$trade->created_at->format('d-m-Y')}}</td>
                                     <td><span class="dropdown">
                                             <button id="btnSearchDrop2" type="button" data-toggle="dropdown"
                                                 aria-haspopup="true" aria-expanded="true"
@@ -45,6 +46,9 @@
                                             </span>
                                         </span></td>
                                 </tr>
+                                @empty
+
+                                @endforelse
                             </tbody>
                         </table>
                     </div>

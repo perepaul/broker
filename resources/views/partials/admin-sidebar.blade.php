@@ -10,7 +10,7 @@
             <li class=" nav-item"><a href="{{route('admin.withdrawals')}}"><i class="la la-briefcase"></i><span
                         class="menu-title" data-i18n="nav.page_layouts.main">withdrawals</span></a>
             </li>
-            <li class=" nav-item"><a href="{{route('admin.trades')}}"><i class="ft-bar-chart"></i><span
+            <li class=" nav-item"><a href="{{route('admin.trades')}}"><i class="la la-line-chart"></i><span
                         class="menu-title" data-i18n="nav.navbars.main">Trades</span></a>
             </li>
             <li class=" nav-item"><a href="{{route('admin.tickets')}}"><i class="la la-book"></i><span

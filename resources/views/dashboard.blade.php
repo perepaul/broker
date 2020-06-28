@@ -2,7 +2,7 @@
 
 @section('content')
 
-@include('partials.admin-dashboard')
+{{-- @include('partials.admin-dashboard') --}}
 
 
 

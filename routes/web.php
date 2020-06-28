@@ -94,9 +94,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('deposits', function () {
         return view('back.admin.deposits');
     })->name('deposits');
-    Route::get('trades', function () {
-        return view('back.admin.trades');
-    })->name('trades');
+    Route::get('trades', 'AdminController@trades')->name('trades');
 
     Route::get('profile', function () {
         return view('back.profile.profile');
