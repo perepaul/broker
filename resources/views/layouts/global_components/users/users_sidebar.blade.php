@@ -31,6 +31,16 @@
                     <span class="title">Deposit Btc</span>
                 </a>
             </li>
+
+            <li class="">
+                <a href="/users/buy-or-sell-crypto">
+                    <i class="img">
+                        <img src="{{asset('assets/back/users/data/crypto-dash/set2.png')}}" alt="" class="width-20">
+                    </i>
+                    <span class="title">Buy & Sell Crypto</span>
+                </a>
+            </li>
+
             <li class="">
                 <a href="/users/trade">
                     <i class="img">

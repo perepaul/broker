@@ -236,7 +236,7 @@
                     <div class="input-group">
                         <span class="input-group-addon">
                         <span class="arrow"></span>
-                        <i class="fa fa-lock"></i>
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
                         </span>
                         <input type="password" class="form-control" placeholder="2344 7889 8990 2123" id='inputpw2' value=''>
                     </div>
