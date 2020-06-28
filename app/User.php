@@ -43,11 +43,21 @@ class User extends Authenticatable
     }
     public function currency()
     {
-        return $this->hasOne(Currency::class);
+        return $this->belongsTo(Currency::class);
     }
 
     public function plan()
     {
         return $this->hasOne(Plan::class);
+    }
+
+    public function trades()
+    {
+        return $this->hasMany(Trade::class);
+    }
+
+    public function lastFiveTrades()
+    {
+        return $this->trades()->orderBy('created_at','desc')->limit(5)->get();
     }
 }

@@ -12,4 +12,10 @@
         notify('{{session()->pull("message")}}','success');
     })
 </script>
+@elseif(session()->has('error'))
+<script>
+    $(function () {
+        notify('{{session()->pull("error")}}','error');
+    })
+</script>
 @endif

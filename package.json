@@ -23,6 +23,7 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
+        "bootstrap-toggle": "^2.2.2",
         "izitoast": "^1.4.0"
     }
 }

@@ -83,9 +83,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::get('remove-plan-feature', 'SettingsController@removePlan')->name('remove.plan');
         Route::get('remove-plan-feature/{id}', 'SettingsController@removePlanFeature')->name('remove.plan.feature');
     });
-
-
-
     Route::get('/deposit', function () {
         return view('admin.deposit.deposit');
     });
@@ -97,49 +94,56 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('deposits', function () {
         return view('back.admin.deposits');
     })->name('deposits');
-    Route::get('trades', function () {
-        return view('back.admin.trades');
-    })->name('trades');
+    Route::get('trades', 'AdminController@trades')->name('trades');
 
     Route::get('profile', function () {
-        return view('back.admin.profile');
+        return view('back.profile.profile');
     })->name('tickets');
 });
 
 //users Route
-Route::get('users', function () {
-
-    return view('users.users_home');
+Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
+    Route::get('/', 'UserController@index')->name('index');
+    Route::get('deposit', 'UserController@deposit')->name('deposit');
+    Route::get('withdrawal','UserController@withdrawal')->name('withdrawal');
+    Route::get('transactions','UserController@transactions')->name('transactions');
+    Route::get('trades','UserController@trade')->name('trades');
+    Route::post('trades/place','TradeController@placeTrade')->name('trades.place');
+    Route::get('profile','UserController@profile')->name('profile');
 });
+// Route::get('users', function () {
 
-Route::get('users/profile', function () {
+//     return view('users.users_home');
+// });
 
-    return view('users.users_profile');
-});
+// Route::get('users/profile', function () {
 
-Route::get('users/trade', function () {
-    return view('users.chart.trade_chart');
-});
+//     return view('users.users_profile');
+// });
 
-Route::get('users/deposit', function () {
-    return view('users.deposit.users_deposit');
-});
+// Route::get('users/trade', function () {
+//     return view('users.chart.trade_chart');
+// });
 
-Route::get('users/withdraw', function () {
-    return view('users.withdraw.users_withdraw');
-});
+// // Route::get('users/deposit', function () {
+// //     return view('users.deposit.users_deposit');
+// // });
 
-Route::get('users/add-account', function () {
+// Route::get('users/withdraw', function () {
+//     return view('users.withdraw.users_withdraw');
+// });
 
-    return view('users.accounts.bank_account');
-});
+// Route::get('users/add-account', function () {
 
-Route::get('users/request-loan', function () {
+//     return view('users.accounts.bank_account');
+// });
 
-    return view('users.loans.request_loan');
-});
+// Route::get('users/request-loan', function () {
 
-Route::get('users/support', function () {
+//     return view('users.loans.request_loan');
+// });
 
-    return view('users.support.request_support');
-});
+// Route::get('users/support', function () {
+
+//     return view('users.support.request_support');
+// });
