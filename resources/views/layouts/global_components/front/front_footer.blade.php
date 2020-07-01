@@ -45,8 +45,8 @@
                     <div class="foo-link wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
                         <ul>
                             {{-- <li><a href="#">WhitePaper</a></li> --}}
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="terms-and-condition">Terms of Service</a></li>
+                            <li><a href="privacy-and-policy">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
