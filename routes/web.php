@@ -101,7 +101,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     })->name('tickets');
 });
 
-//users Route
+//users Route   
 Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
     Route::get('/', 'UserController@index')->name('index');
     Route::get('deposit', 'UserController@deposit')->name('deposit');
