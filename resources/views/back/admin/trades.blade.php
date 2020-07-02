@@ -37,7 +37,7 @@
                                                     class="ft-settings"></i></button>
                                             <span aria-labelledby="btnSearchDrop2"
                                                 class="dropdown-menu mt-1 dropdown-menu-right">
-                                                <a href="#" class="dropdown-item"><i class="la la-edit"></i>
+                                        <a href="javascript:void(0)" onclick="getModal({type:'edit-trade',trade_id:{{$trade->id}}})"  class="dropdown-item"><i class="la la-edit"></i>
                                                     Edit</a>
                                                 <a href="#" class="dropdown-item"><i class="la la-trash"></i>
                                                     Delete</a>

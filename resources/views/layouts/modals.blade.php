@@ -196,6 +196,53 @@
                     <input type="submit" class="btn btn-outline-primary btn-md" value="Update">
                 </div>
             </form>
+            @elseif($type == 'edit-trade')
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel41">Add Plan</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" action="{{route('admin.settings.update.plan',$trade->id)}}">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Name </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="name" value="{{$trade->currency->name}}" placeholder="eg Silver"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-book line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount Paid </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="name" value="{{$trade->amount}}" placeholder="eg Silver"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-book line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Profit </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="price" value="{{$trade->profit}}" placeholder="eg 1000"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-dollar  line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-outline-primary btn-md" value="Update">
+                </div>
+            </form>
             @endif
         </div>
     </div>

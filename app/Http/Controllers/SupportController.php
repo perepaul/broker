@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Plan;
 use App\Currency;
+use App\Trade;
 use Illuminate\Http\Request;
 
 class SupportController extends Controller
@@ -27,6 +28,10 @@ class SupportController extends Controller
 
         if ($request->has('plan_id')) {
             $data['plan'] = Plan::findOrFail($request->plan_id);
+        }
+        if($request->has('trade_id'))
+        {
+            $data['trade'] = Trade::findOrfail($request->trade_id);
         }
         return response()->json([
             'success' => true,
