@@ -26,36 +26,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::get('about', function () {
-
-    return view('front.about');
-});
-
-Route::get('get-started', function () {
-
-    return view('front.get_started');
-});
-
-Route::get('tour', function () {
-
-    return view('front.tour');
-});
-
-Route::get('contact', function () {
-
-    return view('front.contact_us');
-});
-
 Route::get('login-form', function () {
 
     return view('login_form');
 });
 
-Route::get('register-form', function () {
-
-    return view('register_form');
-});
 
 // Route::get('admin', function () {
 
@@ -101,7 +76,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     })->name('tickets');
 });
 
-//users Route
+//users Route   
 Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
     Route::get('/', 'UserController@index')->name('index');
     Route::get('deposit', 'UserController@deposit')->name('deposit');
@@ -147,3 +122,12 @@ Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
 
 //     return view('users.support.request_support');
 // });
+
+Route::get('terms-and-condition', function () {
+    return view('terms_and_condition');
+    
+});
+Route::get('privacy-and-policy', function () {
+    return view('privacy_and_policy');
+    
+});

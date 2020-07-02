@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-6">
                 <div class="logo-area">
-                    <a href="index.html"><img src="/assets/front/images/logo/logo.png" alt="logo" /></a>
+                    {{-- <a href="/"><img src="#" alt="logo" /></a> --}}
                 </div>
             </div>
             <!-- Mobile Menu  Start -->
@@ -14,22 +14,22 @@
                             <li><a href="0">Home</a></li>
                             <li><a href="1">About</a></li>
                             <li><a href="2">Features</a></li>
-                            <li><a href="3">Project</a></li>
+                            <li><a href="3">Benefit</a></li>
                             <li><a href="4">Steps</a></li>
-                            <li><a href="5">Road Map</a></li>
-                            <li><a href="6">Tokens</a></li>
-                            <li><a href="7">News</a></li>
+                            {{-- <li><a href="5">Road Map</a></li> --}}
+                            <li><a href="6">Plan</a></li>
+                            <li><a href="7">Testimonials</a></li>
                         </ul>
                     </nav>
-                    <div class="language">
+                    {{-- <div class="language">
                         <span class="lng-in"><img src="/assets/front/images/icons/12.png" alt=""/></span>
                         <ul class="lng-out">
                             <li><img src="/assets/front/images/icons/12.png" alt="" /></li>
                             <li><img src="/assets/front/images/icons/12.png" alt="" /></li>
                         </ul>
-                    </div>
+                    </div> --}}
                     <div class="login-btn">
-                        <a href="#" class="btn1"><i class="fa fa-user"></i><span>Login</span></a>
+                        <a href="login" class="btn1"><i class="fa fa-user"></i><span>Login</span></a>
                     </div>
                 </div>
                 <!-- mobile menu area start -->
@@ -67,11 +67,11 @@
                                 <li><a href="0">Home</a></li>
                                 <li><a href="1">About</a></li>
                                 <li><a href="2">Features</a></li>
-                                <li><a href="3">Project</a></li>
+                                <li><a href="3">Benefits</a></li>
                                 <li><a href="4">Steps</a></li>
-                                <li><a href="5">Road Map</a></li>
-                                <li><a href="6">Tokens</a></li>
-                                <li><a href="7">News</a></li>
+                                {{-- <li><a href="5">Road Map</a></li> --}}
+                                <li><a href="6">Plans</a></li>
+                                <li><a href="7">Testimonials</a></li>
                             </ul>
                         </div>
                     </div>

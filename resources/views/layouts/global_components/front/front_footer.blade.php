@@ -1,4 +1,4 @@
-<footer class="top-foo">
+{{-- <footer class="top-foo">
   <div id="footer-js">
       <div class="footer-top section">
           <div class="container">
@@ -29,28 +29,28 @@
           </div>
       </div>
   </div>
-</footer>
+</footer> --}}
 <footer class="foo-bot">
-  <div class="footer-bottom">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <div class="copyright wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                      <p>© 2017-2018 <a href="#"><span>Bit Money</span></a> | All rights reserved. Design by
-                          <a href="http://webstrot.com/" target="_blank"> <span>webstrot</span></a>
-                      </p>
-                  </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <div class="foo-link wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                      <ul>
-                          <li><a href="#">WhitePaper</a></li>
-                          <li><a href="#">Terms of Service</a></li>
-                          <li><a href="#">Privacy Policy</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="copyright wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                        <p>© 2017-2020 <a href="/"><span>Lottrades</span></a> | All rights reserved.
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="foo-link wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                        <ul>
+                            {{-- <li><a href="#">WhitePaper</a></li> --}}
+                            <li><a href="terms-and-condition">Terms of Service</a></li>
+                            <li><a href="privacy-and-policy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
