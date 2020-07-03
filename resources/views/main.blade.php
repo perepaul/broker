@@ -44,8 +44,8 @@
                 <li>
                    <div class="col-sm-6 pd-0 hidden-xs">
                       <div class="contents-l mr-b30">
-                         <h2>Lending</h2>
-                         <p>Unique platform for lending and investment with a safety fund <br>and cooperation with world-wide arbitration.</p>
+                         <h2>Finacing</h2>
+                         <p>Unique platform for finacing and investment with a safety fund <br>and cooperation with world-wide arbitration.</p>
                          {{-- <a href="#" class="btn1">read more</a> --}}
                       </div>
                    </div>
@@ -139,7 +139,7 @@
     <div class="row">
        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
           <div class="section-heading">
-             <h2>Benefits Of Our Platform</h2>
+             <h2>What We Offer In Our Platform</h2>
           </div>
        </div>
     </div>
@@ -206,7 +206,7 @@
                 <ul>
                     <li class="l-con">
                         <div class="cont wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                            <h2>01. Registration On The Platform</h2>
+                            <h2>01. Register On The Platform</h2>
                             {{-- <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
                                 <br>nulla. Cras sodales eu nibh vel scelerisque. </p> --}}
                         </div>
@@ -214,7 +214,7 @@
                     </li>
                     <li class="r-con">
                         <div class="cont wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
-                            <h2>02. Passing Verification</h2>
+                            <h2>02. Pass The Verification</h2>
                             {{-- <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
                                 <br>nulla. Cras sodales eu nibh vel scelerisque. </p> --}}
                         </div>
@@ -222,7 +222,7 @@
                     </li>
                     <li class="l-con">
                         <div class="cont wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
-                            <h2>03. Creating An Application For a Loan</h2>
+                            <h2>03. View A Trade</h2>
                             {{-- <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
                                 <br>nulla. Cras sodales eu nibh vel scelerisque. </p> --}}
                         </div>
@@ -231,7 +231,7 @@
                     </li>
                     <li class="r-con">
                         <div class="cont wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
-                            <h2>04. Financing a Loan</h2>
+                            <h2>04. Finance Your Account</h2>
                             {{-- <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
                                 <br>nulla. Cras sodales eu nibh vel scelerisque. </p> --}}
                         </div>
@@ -239,7 +239,7 @@
                     </li>
                     <li class="l-con">
                         <div class="cont wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
-                            <h2>05. Activating a Loan</h2>
+                            <h2>05. Invest</h2>
                             {{-- <p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
                                 <br>nulla. Cras sodales eu nibh vel scelerisque. </p> --}}
                         </div>
