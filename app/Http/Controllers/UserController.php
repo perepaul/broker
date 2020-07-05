@@ -66,8 +66,7 @@ class UserController extends Controller
             $status = 0;
             $message = 'User Deactivated sucessfully';
         }
-        dd($status);
-        $user->update(['status',$status]);
+       $user->update(['status',0]);
         session()->flash('message',$message);
         return redirect()->back();
     }

@@ -68,7 +68,7 @@
                                     <td><a href="">{{$user->firstname.' '.$user->lastname}}</a></td>
                                     <td>{{$user->email}}</td>
                                     <td>{{$user->balance}}</td>
-                                    <td><span class="badge {{!$user->status ? 'badge-danger': 'badge-success'}}">{{!$user->status ? 'In-active' : 'Active'}}</span></td>
+                                    <td><span class="badge {{$user->status ? 'badge-success': 'badge-danger'}}">{{$user->status ? 'Active' : 'In-active'}}</span></td>
                                     <td>
                                         <span class="dropdown">
                                             <button type="button" data-toggle="dropdown"

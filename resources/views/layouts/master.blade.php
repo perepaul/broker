@@ -115,7 +115,7 @@
                     <div class="row">
                         <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
                             <div class="steps-heading">
-                                <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Few Steps To Request Loan</h2>
+                                <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Few Steps To Use Our Platform</h2>
                                 <div class="right-con">
                                     <span>Scroll Down</span>
                                     <a data-scroll data-options='{ "speed": 100 }' href="#steps"><i class="fa fa-angle-down"></i></a>
