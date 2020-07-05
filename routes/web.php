@@ -47,6 +47,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         return view('back.admin.users');
     })->name('users');
 
+    Route::get('users/{id}/status','UserController@togleStatus')->name('user.toggle.status');
+
     Route::group(['prefix' => 'settings', 'as' => 'settings.'], function () {
         Route::get('/', 'SettingsController@index')->name('index');
         Route::post('add-currency', 'SettingsController@addCurrency')->name('add.currency');
@@ -57,6 +59,13 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::post('update-plan/{id}', 'SettingsController@updatePlan')->name('update.plan');
         Route::get('remove-plan-feature', 'SettingsController@removePlan')->name('remove.plan');
         Route::get('remove-plan-feature/{id}', 'SettingsController@removePlanFeature')->name('remove.plan.feature');
+
+    });
+
+    Route::group(['prefix' => 'trades','as'=>'trades.'], function () {
+        Route::post('update-trade/{id}','TradeController@updateTrade')->name('update.trade');
+        Route::get('user/{id}','UserController@viewUserTrades')->name('user.trades');
+
     });
     Route::get('/deposit', function () {
         return view('admin.deposit.deposit');
@@ -76,7 +85,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     })->name('tickets');
 });
 
-//users Route   
+//users Route
 Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
     Route::get('/', 'UserController@index')->name('index');
     Route::get('deposit', 'UserController@deposit')->name('deposit');
@@ -84,6 +93,7 @@ Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
     Route::get('transactions','UserController@transactions')->name('transactions');
     Route::get('trades','UserController@trade')->name('trades');
     Route::post('trades/place','TradeController@placeTrade')->name('trades.place');
+    Route::get('trades/{id}/cancel','TradeController@cancelTrade')->name('trades.cancel');
     Route::get('profile','UserController@profile')->name('profile');
 });
 // Route::get('users', function () {
@@ -125,9 +135,9 @@ Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
 
 Route::get('terms-and-condition', function () {
     return view('terms_and_condition');
-    
+
 });
 Route::get('privacy-and-policy', function () {
     return view('privacy_and_policy');
-    
+
 });

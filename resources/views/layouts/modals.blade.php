@@ -203,13 +203,13 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <form method="POST" action="{{route('admin.settings.update.plan',$trade->id)}}">
+            <form method="POST" action="{{route('admin.trades.update.trade',$trade->id)}}">
                 @csrf
                 <div class="modal-body">
                     <div class="form-group">
                         <label>Name </label>
                         <div class="position-relative has-icon-left">
-                            <input type="text" name="name" value="{{$trade->currency->name}}" placeholder="eg Silver"
+                            <input type="text" name="currency" disabled value="{{$trade->currency->name}}" placeholder="eg Silver"
                                 class="form-control">
                             <div class="form-control-position">
                                 <i class="la la-book line-height-1 text-muted icon-align"></i>
@@ -219,7 +219,7 @@
                     <div class="form-group">
                         <label>Amount Paid </label>
                         <div class="position-relative has-icon-left">
-                            <input type="text" name="name" value="{{$trade->amount}}" placeholder="eg Silver"
+                            <input type="text" name="amount" disabled value="{{$trade->amount}}" placeholder="eg Silver"
                                 class="form-control">
                             <div class="form-control-position">
                                 <i class="la la-book line-height-1 text-muted icon-align"></i>
@@ -230,7 +230,7 @@
                     <div class="form-group">
                         <label>Profit </label>
                         <div class="position-relative has-icon-left">
-                            <input type="text" name="price" value="{{$trade->profit}}" placeholder="eg 1000"
+                            <input type="text" name="profit" value="{{$trade->profit}}" placeholder="eg 1000"
                                 class="form-control">
                             <div class="form-control-position">
                                 <i class="la la-dollar  line-height-1 text-muted icon-align"></i>

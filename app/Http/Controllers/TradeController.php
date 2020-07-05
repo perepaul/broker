@@ -42,4 +42,25 @@ class TradeController extends Controller
         session()->flash('message', 'Trade placed successfully');
         return redirect()->back();
     }
+
+    public function updateTrade(Request $request,$id)
+    {
+
+        $trade = Trade::findOrFail($id);
+        $trade->update($request->except('_token'));
+        session()->flash('message','Trade updated successfully');
+        return redirect()->back();
+
+    }
+
+    public function cancelTrade($id)
+    {
+        $trade = Trade::findOrFail($id);
+        $trade->update(['status'=>0]);
+        $bal = $trade->amount + $trade->profit;
+        $user = $trade->user;
+        $user->update(['balance'=>$user->balance + $bal]);
+        session()->flash('message','Trade cancel successfully');
+        return redirect()->back();
+    }
 }

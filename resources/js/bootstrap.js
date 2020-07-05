@@ -25,6 +25,10 @@ window.axios = require('axios');
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 window.iziToast = require('izitoast')
+require('datatables')
+require('datatables.net-bs4')
+require('datatables.net-responsive')
+require('datatables.net-responsive-bs4')
 
 iziToast.settings({
     timeout: 10000,
@@ -62,7 +66,6 @@ window.notify = (msg, type) => {
 }
 
 $('.password-toggle').click(function(){
-    alert('eye clicked');
     $('.password-toggle').each(function(index){
         var element = $(this).find('i');
         if($(element).hasClass('la-eye')){
@@ -75,6 +78,9 @@ $('.password-toggle').click(function(){
     })
 })
 
+$('.dt').dataTable({
+    responsive:true
+});
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting

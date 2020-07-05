@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('phone')->nullable();
             $table->string('image')->default('default.png');
+            $table->integer('status')->default(1);
             $table->integer('is_admin')->unsigned()->default(0);
             $table->decimal('balance', 20, 2)->default(10000);
             $table->decimal('demo_balance', 20, 2)->default(0);

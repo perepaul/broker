@@ -18,7 +18,15 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #E1E7F2 !important;
+}
+
 @import '~izitoast/dist/css/iziToast.css';
 // @import '~/bootstrap-toggle/css/bootstrap-toggle.css';
-@import '~bootstrap-toggle/css/bootstrap2-toggle'
+@import '~bootstrap-toggle/css/bootstrap2-toggle';
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.css';
+@import '~datatables.net-responsive-bs4/css/responsive.bootstrap4';
 

@@ -4,7 +4,7 @@
 
 <div class="content-body">
     <div class="d-flex justify-content-center row">
-        <div id="user-profile" class="col-11">
+        <div id="user-profile" class="col-12">
             <div class="row">
                 <div class="card w-100">
                     <div class="card-header">
@@ -13,12 +13,14 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <table class="table table-hover">
+                        <table class="table table-hover dt">
                             <thead>
                                 <tr>
                                     <th>ID</th>
                                     <th>User</th>
                                     <th>Amount</th>
+                                    <th>Profit</th>
+                                    <th>Status</th>
                                     <th>Date</th>
                                     <th>Action</th>
                                 </tr>
@@ -29,6 +31,8 @@
                                     <td>{{$trade->id}}</td>
                                     <td>{{$trade->user->firstname}}</td>
                                     <td>{{$trade->amount}}</td>
+                                    <td>{{$trade->profit}}</td>
+                                    <td>{!!$trade->status == 1?'<span class="success">Active</span>':'<span class="danger">Cancelled</span>'!!}</td>
                                     <td>{{$trade->created_at->format('d-m-Y')}}</td>
                                     <td><span class="dropdown">
                                             <button id="btnSearchDrop2" type="button" data-toggle="dropdown"
@@ -39,10 +43,7 @@
                                                 class="dropdown-menu mt-1 dropdown-menu-right">
                                         <a href="javascript:void(0)" onclick="getModal({type:'edit-trade',trade_id:{{$trade->id}}})"  class="dropdown-item"><i class="la la-edit"></i>
                                                     Edit</a>
-                                                <a href="#" class="dropdown-item"><i class="la la-trash"></i>
-                                                    Delete</a>
-                                                <a href="#" class="dropdown-item"><i class="la la-times"></i>
-                                                    Disable</a>
+                                                <a href="{{$trade->status == 1?route('users.trades.cancel',$trade->id):'#'}}" class="dropdown-item"><i class="la la-times"></i>@if($trade->status == 1) Cancel @else Cancelled @endif</a>
                                             </span>
                                         </span></td>
                                 </tr>
