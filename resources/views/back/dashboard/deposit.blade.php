@@ -1,14 +1,10 @@
-s@extends('layouts.admin')
+@extends('layouts.admin')
 
 @section('content')
 
 
-<div class="content-header row">
-</div>
-
 <div class="content-body">
   <section id="chkbox-radio">
-    <div class="row">
       <div class="col-12">
         <div class="card">
           <div class="card-header">
@@ -80,19 +76,10 @@ s@extends('layouts.admin')
             </div>
           </div>
         </div>
-      </div>
     </div>
 </section>
 
 
 </div>
 
-
-
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> e4d4118fd0d36484b025ad632aabfaf423e987e3
 @endsection

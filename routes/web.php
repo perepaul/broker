@@ -48,7 +48,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     })->name('users');
 
     Route::get('users/{id}/status','UserController@togleStatus')->name('user.toggle.status');
-
     Route::group(['prefix' => 'settings', 'as' => 'settings.'], function () {
         Route::get('/', 'SettingsController@index')->name('index');
         Route::post('add-currency', 'SettingsController@addCurrency')->name('add.currency');
@@ -95,6 +94,9 @@ Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
     Route::post('trades/place','TradeController@placeTrade')->name('trades.place');
     Route::get('trades/{id}/cancel','TradeController@cancelTrade')->name('trades.cancel');
     Route::get('profile','UserController@profile')->name('profile');
+
+    Route::get('delete/{id}','UserController@deleteUser')->name('delete');
+    Route::post('users/{id}/update','UserController@updateUser')->name('update');
 });
 // Route::get('users', function () {
 

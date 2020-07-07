@@ -3,7 +3,7 @@
 @section('content')
 
 <section class="users-list-wrapper">
-    <div class="users-list-filter px-1">
+    {{-- <div class="users-list-filter px-1">
         <form>
             <div class="row border border-light rounded py-2 mb-2">
                 <div class="col-12 col-sm-6 col-lg-3">
@@ -42,10 +42,15 @@
                 </div>
             </div>
         </form>
-    </div>
+    </div> --}}
     <div class="users-list-table">
         <div class="card">
             <div class="card-content">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h4>Users</h4>
+                    </div>
+                </div>
                 <div class="card-body">
                     <!-- datatable start -->
                     <div class="table-responsive">
@@ -56,6 +61,7 @@
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Balance</th>
+                                    <th>Demo balance</th>
                                     <th>Status</th>
                                     <th>Actions</th>
                                 </tr>
@@ -68,6 +74,7 @@
                                     <td><a href="">{{$user->firstname.' '.$user->lastname}}</a></td>
                                     <td>{{$user->email}}</td>
                                     <td>{{$user->balance}}</td>
+                                    <td>{{$user->demo_balance}}</td>
                                     <td><span class="badge {{$user->status ? 'badge-success': 'badge-danger'}}">{{$user->status ? 'Active' : 'In-active'}}</span></td>
                                     <td>
                                         <span class="dropdown">
@@ -76,9 +83,9 @@
                                                 class="btn btn-primary dropdown-toggle dropdown-menu-right"><i
                                                     class="ft-settings"></i></button>
                                             <span class="dropdown-menu mt-1 dropdown-menu-right">
-                                                <a href="javascript:void(0)"  class="dropdown-item"><i class="la la-edit"></i>Edit</a>
-                                                <a href="" class="dropdown-item"><i class="la la-trash"></i>Delete</a>
-                                                <a href="{{route('admin.trades.user.trades',1)}}" class="dropdown-item"><i class="la la-eye"></i>Trades</a>
+                                                <a href="javascript:void(0)" onclick="getModal({type:'edit-user',user_id:{{$user->id}}})"  class="dropdown-item"><i class="la la-edit"></i>Edit</a>
+                                                <span onclick="deleteUser({{$user->id}})" class="dropdown-item d-block"><i class="la la-trash"></i>Delete</span>
+                                                <a href="{{route('admin.trades.user.trades',$user->id)}}" class="dropdown-item"><i class="la la-eye"></i>Trades</a>
                                                 <a href="{{route('admin.user.toggle.status',$user->id)}}" class="dropdown-item"><i class="la {{$user->status ? 'la-times' : 'la-check'}}"></i>{{$user->status? 'Deactivate':'Activate'}}</a>
                                             </span>
                                         </span>

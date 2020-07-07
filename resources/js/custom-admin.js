@@ -49,3 +49,13 @@ removePlanFeature = (options) => {
         }
     )
 }
+
+deleteUser = (id) => {
+    var con = confirm('Are you sure?');
+    if(con)
+    {
+        setTimeout(()=>{
+            window.location.href = '/users/delete/'+id;
+        },500)
+    }
+}

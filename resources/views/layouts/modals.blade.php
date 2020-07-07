@@ -243,6 +243,92 @@
                     <input type="submit" class="btn btn-outline-primary btn-md" value="Update">
                 </div>
             </form>
+            @elseif($type == 'edit-user')
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel41">Edit User</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" action="{{route('users.update',$user->id)}}">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Firstname </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="firstname" value="{{$user->firstname}}" placeholder="Firstname"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-book line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Lastname</label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="lastname" value="{{$user->lastname}}" placeholder="eg Silver"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-book line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="email" name="email" value="{{$user->email}}" placeholder="Lastname"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-envelope  line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="textr" name="phone" value="{{$user->phone}}" placeholder="Lastname"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-phone  line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Balance </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="balance" value="{{$user->balance}}" placeholder="Lastname"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-money  line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Demo balance </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="demo_balance" value="{{$user->demo_balance}}" placeholder="Demo Balance"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-money  line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="password" name="password"  placeholder="Password"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-key  line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-outline-primary btn-md" value="Update">
+                </div>
+            </form>
             @endif
         </div>
     </div>

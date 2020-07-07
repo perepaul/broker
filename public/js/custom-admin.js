@@ -66790,6 +66790,16 @@ removePlanFeature = function removePlanFeature(options) {
   });
 };
 
+deleteUser = function deleteUser(id) {
+  var con = confirm('Are you sure?');
+
+  if (con) {
+    setTimeout(function () {
+      window.location.href = '/users/delete/' + id;
+    }, 500);
+  }
+};
+
 /***/ }),
 
 /***/ 1:

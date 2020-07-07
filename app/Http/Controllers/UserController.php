@@ -39,7 +39,17 @@ class UserController extends Controller
 
     public function updateUser(Request $request, $id)
     {
+        // dd($request->all());
         $user = User::findOrFail($id);
+        $data = $request->except('_token','password');
+        if($request->has('password') && !is_null($request->password))
+        {
+            $data['password'] = $request->password;
+        }
+
+        if($request->hasFile('image')){
+            $data['image'] = uploadImage(config(),$request->file('image'),$user->image);
+        }
         $user->update($request->except('_token'));
         if(auth()->user()->is_admin)
         {
@@ -66,7 +76,8 @@ class UserController extends Controller
             $status = 0;
             $message = 'User Deactivated sucessfully';
         }
-       $user->update(['status',0]);
+        $user->status = $status;
+        $user->save();
         session()->flash('message',$message);
         return redirect()->back();
     }
@@ -76,6 +87,7 @@ class UserController extends Controller
         $user = user::findOrFail($id);
         $user->trades()->delete();
         // $user->transactions()->delete();
+        $user->delete();
         session()->flash('message','User deleted successfully');
         return redirect()->back();
     }
