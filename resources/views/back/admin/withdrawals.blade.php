@@ -4,7 +4,7 @@
 
 <div class="content-body">
     <div class="d-flex justify-content-center row">
-        <div id="user-profile" class="col-11">
+        <div id="user-profile" class="col-12">
             <div class="row">
                 <div class="card w-100">
                     <div class="card-header">
@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <table class="table">
+                        <table class="table dt">
                             <thead>
                                 <tr>
                                     <th>ref_no</th>

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-6">
                 <div class="logo-area">
-                    {{-- <a href="/"><img src="#" alt="logo" /></a> --}}
+                <a href="/"><img src="{{config('constants.logo')}}" alt="logo" style="max-width: 150px" /></a>
                 </div>
             </div>
             <!-- Mobile Menu  Start -->
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div id="sidebar">
-                        <h1><a href="#">Bit Money</a></h1>
+                        <h1><a href="#">Lottrades</a></h1>
                         <div id="toggle_close">&times;</div>
                         <div id='cssmenu' class="wd_single_index_menu">
                             <ul>

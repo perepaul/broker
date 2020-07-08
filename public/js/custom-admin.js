@@ -66800,6 +66800,21 @@ deleteUser = function deleteUser(id) {
   }
 };
 
+$(document).on('click', '.payment-method', function (e) {
+  if ($(this).hasClass('disabled')) {
+    notify('This method is disabled for now, try another...', 'error');
+  } else {
+    $('.pay').slideToggle(2000);
+  }
+});
+$(document).on('click', '.copy', function (e) {
+  var txt = document.getElementById('copy-txt');
+  txt.select();
+  txt.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  notify("Copied to clipboard", 'success');
+});
+
 /***/ }),
 
 /***/ 1:

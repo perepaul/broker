@@ -13,9 +13,9 @@
             <li class=" nav-item"><a href="{{route('admin.trades')}}"><i class="la la-line-chart"></i><span
                         class="menu-title" data-i18n="nav.navbars.main">Trades</span></a>
             </li>
-            <li class=" nav-item"><a href="{{route('admin.tickets')}}"><i class="la la-book"></i><span
+            {{-- <li class=" nav-item"><a href="{{route('admin.tickets')}}"><i class="la la-book"></i><span
                         class="menu-title" data-i18n="nav.vertical_nav.main">Tickets</span></a>
-            </li>
+            </li> --}}
             <li class=" nav-item"><a href="{{route('admin.users')}}"><i class="la la-users"></i><span class="menu-title"
                         data-i18n="nav.users.main">Users</span></a>
             </li>
