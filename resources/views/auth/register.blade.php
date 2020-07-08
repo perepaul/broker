@@ -9,8 +9,10 @@
                     <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
                         <div class="card-header border-0 pb-0">
                             <div class="card-title text-center">
-                                <img src="{{asset('assets/img/logo/logo.png')}}" alt="branding logo"
-                                    style="width:200px">
+                                <a href="/">
+                                    <img src="{{asset('assets/img/logo/logo.png')}}" alt="branding logo"
+                                        style="width:200px">
+                                </a>
                             </div>
                             <h4 class="card-subtitle line-on-side text-muted text-center pt-2">
                                 <span>Create Account</span>

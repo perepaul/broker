@@ -13,8 +13,10 @@
                         <div class="card-header border-0">
                             <div class="card-title text-center">
                                 <div class="p-1">
-                                    <img src="{{asset('assets/img/logo/logo.png')}}" style="width:40%;"
-                                        alt="branding logo">
+                                    <a href="/">
+                                        <img src="{{asset('assets/img/logo/logo.png')}}" style="width:40%;"
+                                            alt="branding logo">
+                                    </a>
                                 </div>
                             </div>
                         </div>
