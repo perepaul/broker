@@ -38,7 +38,7 @@
                                 <h4>Demo Balance</h4>
                             </div>
                             <div class="col-5 text-right">
-                                <h4>{{auth()->user()->currency->symbol.auth()->user()->balance}}</h4>
+                                <h4>{{auth()->user()->currency->symbol.auth()->user()->demo_balance}}</h4>
                             </div>
                         </div>
                     </div>
