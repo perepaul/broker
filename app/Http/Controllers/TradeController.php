@@ -17,10 +17,7 @@ class TradeController extends Controller
             'currency_id' =>'required'
         ],['currency_id'=>'Please select a currency']);
         $user = User::findOrFail(auth()->user()->id);
-        if($request->amount > $user->balance){
-            session()->flash('error','Insufficient Balance, fund your account!');
-            return redirect()->back();
-        }
+
 
         $data = $request->except('_token');
         if($request->demo == 'on')
@@ -35,6 +32,11 @@ class TradeController extends Controller
             $user->update(['demo_balance'=> $user->demo_balance - $request->amount]);
             $data['is_demo'] = 1;
         }else{
+            if($request->amount > $user->balance){
+                session()->flash('error','Insufficient Balance, fund your account!');
+                return redirect()->back();
+            }
+
             $user->update(['balance'=>$user->balance - $request->amount]);
         }
         $trade = new Trade($data);
