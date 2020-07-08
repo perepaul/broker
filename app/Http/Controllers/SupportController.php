@@ -6,6 +6,7 @@ use App\Plan;
 use App\User;
 use App\Trade;
 use App\Currency;
+use App\Deposits;
 use Illuminate\Http\Request;
 
 class SupportController extends Controller
@@ -37,6 +38,11 @@ class SupportController extends Controller
 
         if($request->has('user_id')){
             $data['user'] = User::findOrFail($request->user_id);
+        }
+
+        if($request->has('deposit_id'))
+        {
+            $data['deposit'] = Deposits::findOrFail($request->deposit_id);
         }
         return response()->json([
             'success' => true,

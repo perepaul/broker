@@ -12,4 +12,9 @@ class Plan extends Model
     {
         return $this->hasMany(PlanFeatures::class);
     }
+
+    // public function user()
+    // {
+    //     $this->belongsTo(User::class);
+    // }
 }

@@ -48,7 +48,7 @@ class User extends Authenticatable
 
     public function plan()
     {
-        return $this->hasOne(Plan::class);
+        return $this->belongsTo(Plan::class);
     }
 
     public function trades()
@@ -59,5 +59,15 @@ class User extends Authenticatable
     public function lastFiveTrades()
     {
         return $this->trades()->orderBy('created_at','desc')->limit(5)->get();
+    }
+
+    public function deposits()
+    {
+        return $this->hasMany(Deposits::class);
+    }
+
+    public function withdrawals()
+    {
+        return $this->hasMany(Withdrawal::class);
     }
 }

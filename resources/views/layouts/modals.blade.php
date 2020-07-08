@@ -329,6 +329,87 @@
                     <input type="submit" class="btn btn-outline-primary btn-md" value="Update">
                 </div>
             </form>
+            @elseif($type == 'deposit-confirmation')
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel41">Confirm Deposit</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" action="{{route('users.deposit.confirm',$deposit->id)}}" enctype="multipart/form-data">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Method </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" value="BTC" class="form-control" readonly>
+                            <div class="form-control-position">
+                                <i class="la la-bitcoin line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount</label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="amount" value="{{$deposit->amount}}" placeholder="eg Silver"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-money line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirmatin screenshoot </label>
+                        <div class="position-relative">
+                            <input type="file" name="image" id="image" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-outline-primary btn-md" value="Confirm">
+                </div>
+            </form>
+            @elseif($type == 'deposit-preview')
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel41">Confirm Preview</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" action="{{route('users.deposit.confirm',$deposit->id)}}" enctype="multipart/form-data">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Method </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" value="BTC" class="form-control" readonly>
+                            <div class="form-control-position">
+                                <i class="la la-bitcoin line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount</label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="amount" value="{{$deposit->amount}}" placeholder="eg Silver"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-money line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="{{asset(config('constants.deposit_image_dir').$deposit->image)}}" target="_blank" rel="noopener noreferrer">
+                            <img src="{{asset(config('constants.deposit_image_dir').$deposit->image)}}" alt="" style="width: 250px; height:auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Close">
+                    {{-- <input type="submit" class="btn btn-outline-primary btn-md" value="Confirm"> --}}
+                </div>
+            </form>
             @endif
         </div>
     </div>

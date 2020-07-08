@@ -13,91 +13,103 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('web')->group(function () {
+Route::group(['middleware' => 'web'],function () {
     Route::get('getmodal/{type}', 'SupportController@getmodal');
     Route::get('add-element/{type}', 'SupportController@addElement');
-});
-
-Route::get('/', function () {
-    return view('main');
-});
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('login-form', function () {
-
-    return view('login_form');
-});
-
-
-// Route::get('admin', function () {
-
-//     return view('dashboard');
-// });
-//basic admin route for now
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
     Route::get('/', function () {
-        return view('dashboard');
-    })->name('index');
-
-    Route::get('users', function () {
-        return view('back.admin.users');
-    })->name('users');
-
-    Route::get('users/{id}/status','UserController@togleStatus')->name('user.toggle.status');
-    Route::group(['prefix' => 'settings', 'as' => 'settings.'], function () {
-        Route::get('/', 'SettingsController@index')->name('index');
-        Route::post('add-currency', 'SettingsController@addCurrency')->name('add.currency');
-        Route::post('update-currency/{id}', 'SettingsController@updateCurrency')->name('update.currency');
-        Route::get('remove-currency/{id}', 'SettingsController@removeCurrency')->name('remove.currency');
-
-        Route::post('add-plan', 'SettingsController@addPlan')->name('add.plan');
-        Route::post('update-plan/{id}', 'SettingsController@updatePlan')->name('update.plan');
-        Route::get('remove-plan-feature', 'SettingsController@removePlan')->name('remove.plan');
-        Route::get('remove-plan-feature/{id}', 'SettingsController@removePlanFeature')->name('remove.plan.feature');
-
+        return view('main');
     });
 
-    Route::group(['prefix' => 'trades','as'=>'trades.'], function () {
-        Route::post('update-trade/{id}','TradeController@updateTrade')->name('update.trade');
-        Route::get('user/{id}','UserController@viewUserTrades')->name('user.trades');
+    Auth::routes();
 
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::get('login-form', function () {
+
+        return view('login_form');
     });
-    Route::get('/deposit', function () {
-        return view('admin.deposit.deposit');
-    });
 
-    Route::get('withdrawals', function () {
-        return view('back.admin.withdrawals');
-    })->name('withdrawals');
+    // Route::get('admin', function () {
 
-    Route::get('deposits', function () {
-        return view('back.admin.deposits');
-    })->name('deposits');
-    Route::get('trades', 'AdminController@trades')->name('trades');
+    //     return view('dashboard');
+    // });
+    //basic admin route for now
 
-    Route::get('profile', function () {
-        return view('back.profile.profile');
-    })->name('tickets');
 });
+        Route::group(['middleware' => ['auth','web']], function () {
 
-//users Route
-Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
-    Route::get('/', 'UserController@index')->name('index');
-    Route::get('deposit', 'UserController@deposit')->name('deposit');
-    Route::get('withdrawal','UserController@withdrawal')->name('withdrawal');
-    Route::get('transactions','UserController@transactions')->name('transactions');
-    Route::get('trades','UserController@trade')->name('trades');
-    Route::post('trades/place','TradeController@placeTrade')->name('trades.place');
-    Route::get('trades/{id}/cancel','TradeController@cancelTrade')->name('trades.cancel');
-    Route::get('profile','UserController@profile')->name('profile');
+            Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
-    Route::get('delete/{id}','UserController@deleteUser')->name('delete');
-    Route::post('users/{id}/update','UserController@updateUser')->name('update');
-});
+                Route::get('/', function () {
+                    return view('dashboard');
+                })->name('index');
+
+                Route::get('users', function () {
+                    return view('back.admin.users');
+                })->name('users');
+
+                Route::get('users/{id}/status','UserController@togleStatus')->name('user.toggle.status');
+                Route::group(['prefix' => 'settings', 'as' => 'settings.'], function () {
+                    Route::get('/', 'SettingsController@index')->name('index');
+                    Route::post('add-currency', 'SettingsController@addCurrency')->name('add.currency');
+                    Route::post('update-currency/{id}', 'SettingsController@updateCurrency')->name('update.currency');
+                    Route::get('remove-currency/{id}', 'SettingsController@removeCurrency')->name('remove.currency');
+
+                    Route::post('add-plan', 'SettingsController@addPlan')->name('add.plan');
+                    Route::post('update-plan/{id}', 'SettingsController@updatePlan')->name('update.plan');
+                    Route::get('remove-plan-feature', 'SettingsController@removePlan')->name('remove.plan');
+                    Route::get('remove-plan-feature/{id}', 'SettingsController@removePlanFeature')->name('remove.plan.feature');
+
+                });
+
+                Route::group(['prefix' => 'trades','as'=>'trades.'], function () {
+                    Route::post('update-trade/{id}','TradeController@updateTrade')->name('update.trade');
+                    Route::get('user/{id}','UserController@viewUserTrades')->name('user.trades');
+
+                });
+                // Route::get('/deposit', function () {
+                //     return view('admin.deposit.deposit');
+                // });
+                Route::get('deposit','DepositController@depositPage')->name('deposit.page');
+                Route::get('deposit/{id}/approve','DepositController@approve')->name('deposit.approve');
+
+                Route::get('withdrawals', function () {
+                    return view('back.admin.withdrawals');
+                })->name('withdrawals');
+
+                Route::get('deposits', function () {
+                    return view('back.admin.deposits');
+                })->name('deposits');
+                Route::get('trades', 'AdminController@trades')->name('trades');
+
+                Route::get('profile', function () {
+                    return view('back.profile.profile');
+                })->name('tickets');
+            });
+
+            //users Route
+            Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
+                Route::get('/', 'UserController@index')->name('index');
+                Route::get('deposit', 'UserController@deposit')->name('deposit');
+                Route::post('deposit','DepositController@deposit')->name('deposit.make');
+                Route::post('deposit/{id}/confirm','DepositController@confirm')->name('deposit.confirm');
+
+                Route::get('withdrawal','UserController@withdrawal')->name('withdrawal');
+                Route::post('withdraw','WithdrawalController@withdraw')->name('withdraw');
+                Route::get('transactions','UserController@transactions')->name('transactions');
+                Route::get('trades','UserController@trade')->name('trades');
+                Route::post('trades/place','TradeController@placeTrade')->name('trades.place');
+                Route::get('trades/{id}/cancel','TradeController@cancelTrade')->name('trades.cancel');
+                Route::get('profile','UserController@profile')->name('profile');
+
+                Route::get('delete/{id}','UserController@deleteUser')->name('delete');
+                Route::post('users/{id}/update','UserController@updateUser')->name('update');
+            });
+        });
+
+
+
 // Route::get('users', function () {
 
 //     return view('users.users_home');

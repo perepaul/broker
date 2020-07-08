@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Plan;
 use App\Trade;
 use App\Currency;
+use App\Deposits;
 use App\User;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Schema;
@@ -33,7 +34,8 @@ class AppServiceProvider extends ServiceProvider
             $currencies = Currency::all();
             $users = User::all();
             $plans = Plan::all();
-            return $view->with(compact('currencies', 'plans','users'));
+            $deposits = Deposits::orderBy('approved','desc')->get();
+            return $view->with(compact('currencies', 'plans','users','deposits'));
         });
     }
 }

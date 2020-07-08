@@ -111,14 +111,15 @@
                             <div class="card-body p-0">
                             <img src="/assets/back/qr.svg" class="height-100" alt="Card image">
                             </div>
-                            <form class="form">
+                            <form class="form" action="{{route('users.deposit.make')}}" method="POST">
+                                @csrf
                                 <div class="form-group text-left">
                                     <label for="">BTC ADDRESS</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                         <button class="btn btn-primary copy" type="button">Copy</button>
                                         </div>
-                                        <input type="text" class="form-control" id="copy-txt" value="0xceb1b174085b0058201be4f2cd0da6a21bff85d4">
+                                        <input type="text" readonly class="form-control" id="copy-txt" value="0xceb1b174085b0058201be4f2cd0da6a21bff85d4">
                                     </div>
                                 </div>
                                 <div class="form-group text-left">
@@ -150,21 +151,29 @@
                        <table class="table dt">
                            <thead>
                                <tr>
-                                   <th>Ref No#</th>
-                                   <th>Method</th>
-                                   <th>Amount</th>
+                                   <th class="no-sort">Ref No#</th>
+                                   <th class="no-sort">Method</th>
+                                   <th class="no-sort">Amount</th>
                                    <th>Status</th>
-                                   <th>Date</th>
+                                   <th class="no-sort">Date</th>
                                </tr>
                            </thead>
                            <tbody>
-                               <tr>
-                                   <td>oidffi0d0mmdk</td>
-                                   <td>BTC</td>
-                                   <td>500</td>
-                                   <td>Pay</td>
-                                   <td>12-34-344</td>
-                               </tr>
+                               @foreach (auth()->user()->deposits as $deposit)
+                                <tr>
+                                    <td>{{$deposit->reference}}</td>
+                                    <td>BTC</td>
+                                    <td>{{auth()->user()->currency->symbol.$deposit->amount}}</td>
+                                    <td>
+                                        @if (!$deposit->status)
+                                        <span class="btn btn-danger btn-sm" onclick="getModal({type:'deposit-confirmation',deposit_id:{{$deposit->id}}})">Pay</span>
+                                        @else
+                                        <span class="badge badge-success">Paid</span>
+                                        @endif
+                                    </td>
+                                    <td>{{$deposit->created_at->format('d-m-Y')}}</td>
+                                </tr>
+                               @endforeach
                            </tbody>
                        </table>
                    </div>
