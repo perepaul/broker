@@ -44,13 +44,20 @@ class UserController extends Controller
         $data = $request->except('_token','password');
         if($request->has('password') && !is_null($request->password))
         {
-            $data['password'] = $request->password;
+            if(auth()->user()->is_admin){
+                $data['password'] = $request->password;
+            }else{
+                $request->validate([
+                    'password' => 'nullable|confirmed'
+                ]);
+                $data['image'] = $request->password;
+            }
         }
 
         if($request->hasFile('image')){
-            $data['image'] = uploadImage(config(),$request->file('image'),$user->image);
+            $data['image'] = uploadImage(config('constants.profile_image_dir'),$request->file('image'),$user->image);
         }
-        $user->update($request->except('_token'));
+        $user->update($data);
         if(auth()->user()->is_admin)
         {
             session()->flash('message','User details updated successfully');
@@ -90,5 +97,12 @@ class UserController extends Controller
         $user->delete();
         session()->flash('message','User deleted successfully');
         return redirect()->back();
+    }
+
+    public function logout()
+    {
+        auth()->logout();
+        session()->flash('Logged out successfully');
+        return redirect()->route('login');
     }
 }

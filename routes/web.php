@@ -21,6 +21,7 @@ Route::group(['middleware' => 'web'],function () {
         return view('main');
     });
 
+    Route::get('logout','UserController@logout')->name('logout');
     Auth::routes();
 
     Route::get('/home', 'HomeController@index')->name('home');
@@ -38,6 +39,7 @@ Route::group(['middleware' => 'web'],function () {
 
 });
         Route::group(['middleware' => ['auth','web']], function () {
+            Route::get('profile','UserController@profile')->name('profile');
 
             Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
@@ -83,9 +85,9 @@ Route::group(['middleware' => 'web'],function () {
                 })->name('deposits');
                 Route::get('trades', 'AdminController@trades')->name('trades');
 
-                Route::get('profile', function () {
-                    return view('back.profile.profile');
-                })->name('tickets');
+                // Route::get('profile', function () {
+                //     return view('back.profile.profile');
+                // })->name('tickets');
             });
 
             //users Route
@@ -101,7 +103,6 @@ Route::group(['middleware' => 'web'],function () {
                 Route::get('trades','UserController@trade')->name('trades');
                 Route::post('trades/place','TradeController@placeTrade')->name('trades.place');
                 Route::get('trades/{id}/cancel','TradeController@cancelTrade')->name('trades.cancel');
-                Route::get('profile','UserController@profile')->name('profile');
 
                 Route::get('delete/{id}','UserController@deleteUser')->name('delete');
                 Route::post('users/{id}/update','UserController@updateUser')->name('update');

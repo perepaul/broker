@@ -18,7 +18,7 @@
             </li>
 
             {{-- For Admin --}}
-            <li class=" nav-item"><a href="{{route('users.profile')}}"><i class="la la-user"></i><span class="menu-title"
+            <li class=" nav-item"><a href="{{route('profile')}}"><i class="la la-user"></i><span class="menu-title"
                         data-i18n="nav.users.main">Profile</span></a>
             </li>
         </ul>

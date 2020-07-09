@@ -12,6 +12,7 @@ function uploadImage($path,$image,$file_to_delete = null)
         $filename = randomString();
     }
     $image->move(public_path($path),$filename);
+    // dd($filename);
     return $filename;
 }
 

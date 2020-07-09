@@ -32,15 +32,15 @@
                     <li class="dropdown dropdown-user nav-item">
                         <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                             <span class="mr-1">Hello,
-                                <span class="user-name text-bold-700">John Doe</span>
+                                <span class="user-name text-bold-700">{{auth()->user()->firstname}}</span>
                             </span>
                             <span class="avatar avatar-online">
-                                <img src="{{asset('assets/images/profile/default.png')}}" alt="avatar"><i></i></span>
+                                <img src="{{asset(config('constants.profile_image_dir').auth()->user()->image)}}" alt="avatar"><i></i></span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i
+                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="{{route('profile')}}"><i
                                     class="ft-user"></i>
                                 Edit Profile</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="{{route('logout')}}"><i
                                     class="ft-power"></i> Logout</a>
                         </div>
                     </li>
