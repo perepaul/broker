@@ -13,9 +13,9 @@
             <li class=" nav-item"><a href="{{route('users.trades')}}"><i class=" la la-bar-chart"></i><span class="menu-title"
                         data-i18n="nav.navbars.main">Trades</span></a>
             </li>
-            <li class=" nav-item"><a href="{{route('users.transactions')}}"><i class="la la-book"></i><span class="menu-title"
+            {{-- <li class=" nav-item"><a href="{{route('users.transactions')}}"><i class="la la-book"></i><span class="menu-title"
                         data-i18n="nav.vertical_nav.main">Transactions</span></a>
-            </li>
+            </li> --}}
 
             {{-- For Admin --}}
             <li class=" nav-item"><a href="{{route('profile')}}"><i class="la la-user"></i><span class="menu-title"

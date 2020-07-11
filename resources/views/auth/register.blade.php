@@ -52,7 +52,7 @@
                                     </fieldset>
                                     <fieldset class="form-group floating-label-form-group col-md-12">
                                         <label for="plan_id">Subscription plan </label>
-                                        <span class="pull-right"><a href="">view details</a></span>
+                                        <span class="pull-right"><a href="/6">view details</a></span>
                                         <select name="plan_id" id="plan_id" class="form-control">
                                             @foreach($plans as $plan)
                                                 <option value="{{$plan->id}}">{{$plan->name}} ({{$plan->price}})</option>

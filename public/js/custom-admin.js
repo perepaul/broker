@@ -66759,6 +66759,10 @@ getModal = function getModal(options) {
     $('.modal').remove();
     $('body').append(response.data);
     $('.modal').modal();
+
+    if ($('#reason').length) {
+      CKEDITOR.replace('reason');
+    }
   }, function () {
     notify('Oops! error occured!', 'error');
   });
@@ -66796,6 +66800,24 @@ deleteUser = function deleteUser(id) {
   if (con) {
     setTimeout(function () {
       window.location.href = '/users/delete/' + id;
+    }, 500);
+  }
+};
+
+cancelTrade = function cancelTrade(options) {
+  var con = confirm('Are you sure?');
+
+  if (options.id) {
+    url = '/users/trades/' + options.id + '/cancel';
+  }
+
+  if (options.all == true) {
+    url = '/users/trades/cancel';
+  }
+
+  if (con) {
+    setTimeout(function () {
+      window.location.href = url;
     }, 500);
   }
 };

@@ -20,7 +20,7 @@
                         data-i18n="nav.users.main">Users</span></a>
             </li>
             <li class=" nav-item"><a href="{{route('admin.settings.index')}}"><i class="la la-cog"></i><span
-                        class="menu-title" data-i18n="nav.users.main">Users</span></a>
+                        class="menu-title" data-i18n="nav.users.main">Settings</span></a>
             </li>
         </ul>
 

@@ -372,7 +372,7 @@
             </form>
             @elseif($type == 'deposit-preview')
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel41">Confirm Preview</h4>
+                <h4 class="modal-title" id="myModalLabel41">Deposit Preview</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -408,6 +408,80 @@
                 <div class="modal-footer">
                     <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Close">
                     {{-- <input type="submit" class="btn btn-outline-primary btn-md" value="Confirm"> --}}
+                </div>
+            </form>
+            @elseif($type == 'withdrawal-preview')
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel41">Withdrawal Preview</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Wallet Address </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" value="{{$withdrawal->address}}" class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-bitcoin line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount</label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="amount" value="{{$withdrawal->user->currency_symbol.$withdrawal->amount}}" placeholder="eg Silver"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-money line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Close">
+                    {{-- <input type="submit" class="btn btn-outline-primary btn-md" value="Confirm"> --}}
+                </div>
+            </form>
+            @elseif($type == 'decline-withdrawal')
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel41">Withdrawal Decline</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" enctype="multipart/form-data" action="{{route('admin.withdrawal.decline',$withdrawal->id)}}">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Wallet Address </label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" value="{{$withdrawal->address}}" class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-bitcoin line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount</label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="amount" value="{{$withdrawal->user->currency_symbol.$withdrawal->amount}}" placeholder="eg Silver"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-money line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Reason</label>
+                        <textarea name="reason" id="reason" class="form-control" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-outline-primary btn-md" value="Submit">
+                    <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Close">
                 </div>
             </form>
             @endif

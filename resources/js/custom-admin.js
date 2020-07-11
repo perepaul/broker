@@ -10,6 +10,10 @@ getModal = (options) => {
                 $('.modal').remove();
                 $('body').append(response.data);
                 $('.modal').modal();
+                if($('#reason').length)
+                {
+                    CKEDITOR.replace('reason');
+                }
             },
             () => {
                 notify('Oops! error occured!', 'error');
@@ -56,6 +60,22 @@ deleteUser = (id) => {
     {
         setTimeout(()=>{
             window.location.href = '/users/delete/'+id;
+        },500)
+    }
+}
+
+cancelTrade = (options) => {
+    var con = confirm('Are you sure?');
+    if(options.id){
+        url = '/users/trades/'+options.id+'/cancel';
+    }
+    if(options.all == true){
+        url = '/users/trades/cancel';
+    }
+    if(con)
+    {
+        setTimeout(()=>{
+            window.location.href = url;
         },500)
     }
 }

@@ -11,13 +11,13 @@
             <div class="card-content">
                 <div class="card-body">
                     <ul class="nav nav-tabs">
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link active" id="homeIcon-tab" data-toggle="tab" href="#link1"
                                 aria-controls="homeIcon" aria-expanded="true"><i class="la la-cog"></i>
                                 General Settings</a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
-                            <a class="nav-link" id="profileIcon-tab" data-toggle="tab" href="#link2"
+                            <a class="nav-link active" id="profileIcon-tab" data-toggle="tab" href="#link2"
                                 aria-controls="profileIcon" aria-expanded="false"><i class="la la-bitcoin"></i>
                                 Currencies</a>
                         </li>
@@ -28,15 +28,16 @@
                         </li>
                     </ul>
                     <div class="tab-content px-1 pt-1">
-                        <div role="tabpanel" class="tab-pane active" id="link1" aria-labelledby="homeIcon-tab"
+                        {{-- <div role="tabpanel" class="tab-pane active" id="link1" aria-labelledby="homeIcon-tab"
                             aria-expanded="true">
                             <p>Candy canes donut chupa chups candy canes lemon drops oat cake wafer. Cotton candy candy
                                 canes
                                 marzipan carrot cake. Sesame snaps lemon drops candy marzipan donut brownie tootsie
                                 roll. Icing
                                 croissant bonbon biscuit gummi bears.</p>
-                        </div>
-                        <div class="tab-pane" id="link2" role="tabpanel" aria-labelledby="profileIcon-tab"
+                        </div> --}}
+
+                        <div class="tab-pane active" id="link2" role="tabpanel" aria-labelledby="profileIcon-tab"
                             aria-expanded="false">
                             <div class="p-2">
                                 <div class="mb-2">

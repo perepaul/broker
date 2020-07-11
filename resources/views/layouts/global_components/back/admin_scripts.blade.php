@@ -1,3 +1,4 @@
+<script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
 <script src="{{asset('js/custom-admin.js')}}"></script>
 <script src="{{asset('assets/back/app-assets/vendors/js/vendors.min.js')}}" type="text/javascript"></script>
 <!-- BEGIN VENDOR JS-->

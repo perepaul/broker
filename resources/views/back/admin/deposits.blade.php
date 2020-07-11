@@ -61,7 +61,7 @@
                                             <span class="dropdown">
                                             <button type="button" data-toggle="dropdown"
                                                 aria-haspopup="true" aria-expanded="true"
-                                                class="btn btn-primary dropdown-toggle dropdown-menu-right"><i
+                                                class="btn btn-primary btn-sm dropdown-toggle dropdown-menu-right"><i
                                                     class="ft-settings"></i></button>
                                             <span class="dropdown-menu mt-1 dropdown-menu-right">
                                                 @if($deposit->status)

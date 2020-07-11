@@ -14,7 +14,7 @@ class AdminController extends Controller
 
     public function trades()
     {
-        $trades = Trade::paginate(25);
+        $trades = Trade::orderBy('status','asc')->get();
         return view('back.admin.trades',compact('trades'));
     }
 }

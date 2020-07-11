@@ -13,14 +13,14 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <table class="table table-hover dt">
+                        <table class="table table-hover dt" data-order='[[ 4, "asc" ]]' data-page-length='25'>
                             <thead>
                                 <tr>
                                     <th>ID</th>
                                     <th>User</th>
                                     <th>Amount</th>
                                     <th>Profit</th>
-                                    <th>Status</th>
+                                    <th data-class-name="priority">Status</th>
                                     <th>Date</th>
                                     <th>Action</th>
                                 </tr>
@@ -37,7 +37,7 @@
                                     <td><span class="dropdown">
                                             <button id="btnSearchDrop2" type="button" data-toggle="dropdown"
                                                 aria-haspopup="true" aria-expanded="true"
-                                                class="btn btn-primary dropdown-toggle dropdown-menu-right"><i
+                                                class="btn btn-primary btn-sm dropdown-toggle dropdown-menu-right"><i
                                                     class="ft-settings"></i></button>
                                             <span aria-labelledby="btnSearchDrop2"
                                                 class="dropdown-menu mt-1 dropdown-menu-right">

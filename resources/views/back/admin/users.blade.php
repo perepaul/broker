@@ -80,7 +80,7 @@
                                         <span class="dropdown">
                                             <button type="button" data-toggle="dropdown"
                                                 aria-haspopup="true" aria-expanded="true"
-                                                class="btn btn-primary dropdown-toggle dropdown-menu-right"><i
+                                                class="btn btn-primary btn-sm dropdown-toggle dropdown-menu-right"><i
                                                     class="ft-settings"></i></button>
                                             <span class="dropdown-menu mt-1 dropdown-menu-right">
                                                 <a href="javascript:void(0)" onclick="getModal({type:'edit-user',user_id:{{$user->id}}})"  class="dropdown-item"><i class="la la-edit"></i>Edit</a>

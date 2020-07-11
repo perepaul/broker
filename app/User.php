@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname','status', 'email', 'password', 'plan_id', 'currency_id', 'phone', 'balance', 'demo_balance', 'is_admin','image'
+        'firstname', 'lastname','status', 'email', 'password', 'plan_id', 'currency_id', 'phone', 'balance', 'demo_balance', 'is_admin','image','wallet'
     ];
 
     /**
@@ -40,6 +40,14 @@ class User extends Authenticatable
     public function setPasswordAttribute($value)
     {
         return $this->attributes['password'] = bcrypt($value);
+    }
+    public function getFullNameAttribute(){
+        return "$this->firstname $this->lastname";
+    }
+
+    public function getCurrencySymbolAttribute()
+    {
+        return $this->currency->symbol;
     }
     public function currency()
     {
@@ -70,4 +78,5 @@ class User extends Authenticatable
     {
         return $this->hasMany(Withdrawal::class);
     }
+
 }

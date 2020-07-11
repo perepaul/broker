@@ -80,6 +80,8 @@ Route::group(['middleware' => 'web'],function () {
                     return view('back.admin.withdrawals');
                 })->name('withdrawals');
 
+                Route::get('withdrawal/{id}/approve','WithdrawalController@approve')->name('withdrawal.approve');
+                Route::post('withdrawal/{id}/decline','WithdrawalController@decline')->name('withdrawal.decline');
                 Route::get('deposits', function () {
                     return view('back.admin.deposits');
                 })->name('deposits');
@@ -103,6 +105,7 @@ Route::group(['middleware' => 'web'],function () {
                 Route::get('trades','UserController@trade')->name('trades');
                 Route::post('trades/place','TradeController@placeTrade')->name('trades.place');
                 Route::get('trades/{id}/cancel','TradeController@cancelTrade')->name('trades.cancel');
+                Route::get('trades/cancel','TradeController@cancelAllTrade')->name('trades.cancel.all');
 
                 Route::get('delete/{id}','UserController@deleteUser')->name('delete');
                 Route::post('users/{id}/update','UserController@updateUser')->name('update');

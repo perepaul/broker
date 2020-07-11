@@ -7,6 +7,7 @@ use App\User;
 use App\Trade;
 use App\Currency;
 use App\Deposits;
+use App\Withdrawal;
 use Illuminate\Http\Request;
 
 class SupportController extends Controller
@@ -43,6 +44,11 @@ class SupportController extends Controller
         if($request->has('deposit_id'))
         {
             $data['deposit'] = Deposits::findOrFail($request->deposit_id);
+        }
+
+        if($request->has('withdrawal_id'))
+        {
+            $data['withdrawal'] = Withdrawal::findOrfail($request->withdrawal_id);
         }
         return response()->json([
             'success' => true,

@@ -7,6 +7,7 @@ use App\Trade;
 use App\Currency;
 use App\Deposits;
 use App\User;
+use App\Withdrawal;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
@@ -34,8 +35,9 @@ class AppServiceProvider extends ServiceProvider
             $currencies = Currency::all();
             $users = User::all();
             $plans = Plan::all();
+            $withdrawals = Withdrawal::all();
             $deposits = Deposits::orderBy('approved','desc')->get();
-            return $view->with(compact('currencies', 'plans','users','deposits'));
+            return $view->with(compact('currencies', 'plans','users','deposits','withdrawals'));
         });
     }
 }

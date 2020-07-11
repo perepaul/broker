@@ -102,7 +102,7 @@ class UserController extends Controller
     public function logout()
     {
         auth()->logout();
-        session()->flash('Logged out successfully');
+        session()->flash('message','Logged out successfully');
         return redirect()->route('login');
     }
 }

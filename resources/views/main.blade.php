@@ -130,7 +130,7 @@
        </div>
     </div>
  </div>
-    
+
 @endsection
 
 @section('content-project')
@@ -194,7 +194,7 @@
        </div>
     </div>
  </div>
-    
+
 @endsection
 
 @section('content-loan')
@@ -258,7 +258,7 @@
         </div>
     </div>
 </div>
-    
+
 @endsection
 
 {{-- @section('content-video')
@@ -430,7 +430,7 @@
         </ul>
     </div>
 </div>
-    
+
 @endsection --}}
 
 @section('content-plan')
@@ -456,15 +456,23 @@
                 </div>
              </div>
           </div> --}}
+          @isset($plans)
+          @foreach ($plans as $plan)
+
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
             <div class="tokens mr-r50">
-               <div class="token-name">Bronze</div>
+               <div class="token-name">{{$plan->name}}</div>
                <div class="token-body">
-                  <p>Target – to Raise USD 10,000,000</p>
-                  <button class="right-btn">Price- $100</button>
-                  <div class="prices">
-                     <h3 class="f-20">Package Bonus :</h3>
-                     <table>
+                  <button class="right-btn">Price - {{$plan->price}}</button>
+                  <div class="prices text-justify">
+                     <h3 class="f-20">Package Features :</h3>
+                     <ul>
+
+                         @foreach ($plan->features as $feature)
+                            <li class="text-md"><i class="fa fa-check white"></i> {{$feature->value}}</li>
+                         @endforeach
+                     </ul>
+                     {{-- <table>
                         <thead>
                            <tr>
                               <th>Time</th>
@@ -489,56 +497,20 @@
                               <td>0%</td>
                            </tr>
                         </tbody>
-                     </table>
+                     </table> --}}
                   </div>
                </div>
             </div>
          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
-             <div class="tokens mr-r50">
-                <div class="token-name">Silver</div>
-                <div class="token-body">
-                   <p>Target – to Raise USD 20,000,000</p>
-                   <button class="right-btn">Price- $300</button>
-                   <div class="prices">
-                      <h3 class="f-20">Package Bonus :</h3>
-                      <table>
-                         <thead>
-                            <tr>
-                               <th>Time</th>
-                               <th>bonus</th>
-                            </tr>
-                         </thead>
-                         <tbody>
-                            <tr>
-                               <td>1day</td>
-                               <td>35%</td>
-                            </tr>
-                            <tr>
-                               <td>2 - 4 Days </td>
-                               <td>20%</td>
-                            </tr>
-                            <tr>
-                               <td>5 - 13 Days</td>
-                               <td>10%</td>
-                            </tr>
-                            <tr>
-                               <td>14 - 31 Day</td>
-                               <td>0%</td>
-                            </tr>
-                         </tbody>
-                      </table>
-                   </div>
-                </div>
-             </div>
-          </div>
+          @endforeach
+         @endisset
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
              <p class="token-con">Subscribe to a package plan<span> Enjoy The benefits of the plan along with the bonuses.</span> So what are you waiting for? Register Now. </p>
           </div>
        </div>
     </div>
  </div>
-    
+
 @endsection
 
 @section('content-testimonials')
@@ -611,5 +583,5 @@
        </div>
    </div>
 </section>
-    
+
 @endsection

@@ -55,14 +55,35 @@ class TradeController extends Controller
 
     }
 
-    public function cancelTrade($id)
+    public function cancelTrade($id, $multiple = false)
     {
         $trade = Trade::findOrFail($id);
         $trade->update(['status'=>0]);
         $bal = $trade->amount + $trade->profit;
         $user = $trade->user;
-        $user->update(['balance'=>$user->balance + $bal]);
-        session()->flash('message','Trade cancel successfully');
+        if($trade->is_demo){
+            $user->update(['demo_balance'=>$user->demo_balance + $bal]);
+        }else{
+            $user->update(['balance'=>$user->balance + $bal]);
+        }
+        if(!$multiple){
+            session()->flash('message','Trade cancel successfully');
+            return redirect()->back();
+        }
+    }
+
+    public function cancelAllTrade()
+    {
+        $user = User::findOrFail(auth()->user()->id);
+        if($user->trades()->where('status',1)->count() > 0){
+            foreach($user->trades as $trade)
+            {
+                $this->cancelTrade($trade->id,true);
+            }
+            session()->flash('message', 'Cancelled all trades successfully');
+            return redirect()->back();
+        }
+        session()->flash('error','Oops! there are no active trades');
         return redirect()->back();
     }
 }

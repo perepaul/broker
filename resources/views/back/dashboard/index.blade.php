@@ -155,7 +155,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse (auth()->user()->lastFiveTrades() as $trade);
+                                @forelse (auth()->user()->lastFiveTrades() as $trade)
 
                                 <tr>
                                     <td class="">{{$trade->profit}}</td>
@@ -181,105 +181,104 @@
                 <div class="card-header pb-0">
                     <h4 class="card-title">Place trade</h4>
                 </div>
-                <div class="card-content">
-                    <div class="card-body">
-                        <div class="row p-2 pt-0">
-                            <div class="col-12 col-xl-6 border-right-blue-grey border-right-lighten-4 pr-2 p-0">
-                                <div class="row my-2">
-                                    <div class="col-4">
-                                        <h5 class="text-bold-600 mb-0">Buy</h5>
+                <div class="card-content pl-2 pr-2">
+                    <div class="row p-2 pt-0">
+                        <div class="col-12 col-xl-6 border-right-blue-grey border-right-lighten-4 pr-2 p-0">
+                            <div class="row my-2">
+                                <div class="col-4">
+                                    <h5 class="text-bold-600 mb-0">Buy</h5>
+                                </div>
+                            </div>
+                            <form class="form form-horizontal" action="{{route('users.trades.place')}}" method="POST">
+                                @csrf
+                                <input type="hidden" name="type" value="1">
+                                <div class="form-body">
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label pr-0" for="currency">Currency</label>
+                                        <div class="col-md-9">
+                                            <select name="currency_id" class="form-control" id="currency">
+                                                @foreach ($currencies as $currency)
+                                                    @if ($currency->id != auth()->user()->currency_id)
+                                                        <option value="{{$currency->id}}">{{strtoupper($currency->iso.auth()->user()->currency->iso)}}</option>
+                                                    @endif
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label" for="amount">Amount</label>
+                                        <div class="col-md-9">
+                                            <input type="number" id="amount" class="form-control"
+                                                placeholder="$ 11916.9" name="amount">
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-4">
+                                            <span>Use Demo Balance</span>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <span><input
+                                                type="checkbox" name="demo" data-offstyle="danger"
+                                                checked data-toggle="toggle" data-size="mini" data-height="30">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions pb-0">
+                                        <button type="submit" class="btn round btn-success btn-block btn-glow"> Buy
+                                        </button>
                                     </div>
                                 </div>
-                                <form class="form form-horizontal" action="{{route('users.trades.place')}}" method="POST">
-                                    @csrf
-                                    <input type="hidden" name="type" value="1">
-                                    <div class="form-body">
-                                        <div class="form-group row">
-                                            <label class="col-md-3 col-form-label pr-0" for="currency">Currency</label>
-                                            <div class="col-md-9">
-                                                <select name="currency_id" class="form-control" id="currency">
+                            </form>
+                        </div>
+                        <div class="col-12 col-xl-6 pl-2 p-0">
+                            <div class="row my-2">
+                                <div class="col-4">
+                                    <h5 class="text-bold-600 mb-0">Sell</h5>
+                                </div>
+                            </div>
+                            <form class="form form-horizontal" action="{{route('users.trades.place')}}" method="POST">
+                                @csrf
+                                <input type="hidden" name="type" value="2">
+                                <div class="form-body">
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label pr-0" for="currency">Currency</label>
+                                        <div class="col-md-9">
+                                            <select name="currency_id" class="form-control" id="currency" >
                                                     @foreach ($currencies as $currency)
                                                         @if ($currency->id != auth()->user()->currency_id)
                                                             <option value="{{$currency->id}}">{{strtoupper($currency->iso.auth()->user()->currency->iso)}}</option>
                                                         @endif
                                                     @endforeach
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-md-3 col-form-label" for="amount">Amount</label>
-                                            <div class="col-md-9">
-                                                <input type="number" id="amount" class="form-control"
-                                                    placeholder="$ 11916.9" name="amount">
-                                            </div>
-                                        </div>
-                                        <div class="row d-flex justify-content-between">
-                                            <div class="col-4">
-                                                <span>Use Demo Balance</span>
-                                            </div>
-                                            <div class="col-4 text-right">
-                                                <span><input
-                                                    type="checkbox" name="demo" data-offstyle="danger"
-                                                    checked data-toggle="toggle" data-size="mini" data-height="30">
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="form-actions pb-0">
-                                            <button type="submit" class="btn round btn-success btn-block btn-glow"> Buy
-                                            </button>
+                                            </select>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="col-12 col-xl-6 pl-2 p-0">
-                                <div class="row my-2">
-                                    <div class="col-4">
-                                        <h5 class="text-bold-600 mb-0">Sell</h5>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label" for="amount">Amount</label>
+                                        <div class="col-md-9">
+                                            <input type="number" id="amount" class="form-control"
+                                                placeholder="$ 11916.9" name="amount">
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-5">
+                                            <span>Use Demo Balance</span>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <span><input
+                                                type="checkbox" name="demo" data-offstyle="danger"
+                                                checked data-toggle="toggle" data-size="mini" data-height="30">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions pb-0">
+                                        <button type="submit" class="btn round btn-danger btn-block btn-glow"> Sell
+                                        </button>
                                     </div>
                                 </div>
-                                <form class="form form-horizontal" action="{{route('users.trades.place')}}" method="POST">
-                                    @csrf
-                                    <input type="hidden" name="type" value="2">
-                                    <div class="form-body">
-                                        <div class="form-group row">
-                                            <label class="col-md-3 col-form-label pr-0" for="currency">Currency</label>
-                                            <div class="col-md-9">
-                                                <select name="currency_id" class="form-control" id="currency" >
-                                                        @foreach ($currencies as $currency)
-                                                            @if ($currency->id != auth()->user()->currency_id)
-                                                                <option value="{{$currency->id}}">{{strtoupper($currency->iso.auth()->user()->currency->iso)}}</option>
-                                                            @endif
-                                                        @endforeach
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-md-3 col-form-label" for="amount">Amount</label>
-                                            <div class="col-md-9">
-                                                <input type="number" id="amount" class="form-control"
-                                                    placeholder="$ 11916.9" name="amount">
-                                            </div>
-                                        </div>
-                                        <div class="row d-flex justify-content-between">
-                                            <div class="col-5">
-                                                <span>Use Demo Balance</span>
-                                            </div>
-                                            <div class="col-4 text-right">
-                                                <span><input
-                                                    type="checkbox" name="demo" data-offstyle="danger"
-                                                    checked data-toggle="toggle" data-size="mini" data-height="30">
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="form-actions pb-0">
-                                            <button type="submit" class="btn round btn-danger btn-block btn-glow"> Sell
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                            </form>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

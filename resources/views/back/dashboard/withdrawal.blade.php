@@ -115,16 +115,19 @@
                                 <div class="form-group text-left">
                                     <label for="">BTC ADDRESS</label>
                                     <div class="input-group">
-                                        {{-- <div class="input-group-prepend">
-                                        <button class="btn btn-primary copy" type="button">Copy</button>
-                                        </div> --}}
-                                        <input type="text" class="form-control" id="address" name="address" placeholder="Enter Bitcoin address here">
+                                        <input type="text" value="{{auth()->user()->wallet}}" class="form-control" id="address" name="address" placeholder="Enter Bitcoin address here">
                                     </div>
                                 </div>
                                 <div class="form-group text-left">
                                     <label for="">AMOUNT</label>
                                     <input type="text" class="form-control" name="amount" placeholder="Enter amount">
                                 </div>
+                                @if(!auth()->user()->wallet)
+                                <div class="d-flex justify-content-between p-1">
+                                    <h4>Save address?</h4>
+                                        <input type="checkbox" class="text-centers" name="save" id="save">
+                                </div>
+                                @endif
                                 <div class="form-group">
                                     <button class="btn btn-success btn-block">Complete</button>
                                 </div>
@@ -151,11 +154,11 @@
                        <table class="table dt">
                            <thead>
                                <tr>
-                                   <th class="no-sort">Ref No#</th>
-                                   <th class="no-sort">Method</th>
-                                   <th class="no-sort">Amount</th>
-                                   <th>Status</th>
-                                   <th class="no-sort">Date</th>
+                                   <th>Ref No#</th>
+                                   <th>Method</th>
+                                   <th>Amount</th>
+                                   <th data-class-name="priority">Status</th>
+                                   <th>Date</th>
                                </tr>
                            </thead>
                            <tbody>
@@ -165,10 +168,12 @@
                                     <td>BTC</td>
                                     <td>{{auth()->user()->currency->symbol.$withdrawal->amount}}</td>
                                     <td>
-                                        @if (!$withdrawal->approved)
-                                        <span class="btn btn-danger btn-sm">Pending</span>
-                                        @else
+                                        @if ($withdrawal->status == 0)
+                                        <span class="badge badge-info"">Pending</span>
+                                        @elseif($withdrawal->status == 1)
                                         <span class="badge badge-success">Approved</span>
+                                        @else
+                                        <span class="badge badge-danger">Declined</span>
                                         @endif
                                     </td>
                                     <td>{{$withdrawal->created_at->format('d-m-Y')}}</td>

@@ -30,6 +30,7 @@
                 </ul>
                 <ul class="nav navbar-nav float-right">
                     <li class="dropdown dropdown-user nav-item">
+                        @if (auth()->check())
                         <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                             <span class="mr-1">Hello,
                                 <span class="user-name text-bold-700">{{auth()->user()->firstname}}</span>
@@ -40,9 +41,13 @@
                         <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="{{route('profile')}}"><i
                                     class="ft-user"></i>
                                 Edit Profile</a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item" href="{{route('logout')}}"><i
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="javascript:void(0)" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
                                     class="ft-power"></i> Logout</a>
+                                    <form action="{{route('logout')}}" id="logout-form" style="display: none;" method="post">
+                                        @csrf
+                                    </form>
                         </div>
+                        @endif
                     </li>
                 </ul>
             </div>
