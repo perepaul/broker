@@ -5,5 +5,5 @@ Hello {{$user->firstname}},<br>
 <p>Your request to withdraw {{$user->currency_symbol.$withdrawal->amount}}, was declined</p><br>
 <strong>Because : </strong><br>
 
-{{$reason}}
+{{  htmlspecialchars_decode($reason) }}
 @endsection
