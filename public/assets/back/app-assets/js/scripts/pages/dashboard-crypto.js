@@ -81,6 +81,76 @@
     // Create the chart
     var BTCAreaChart = new Chart(btcChartjs, BTCCardconfig);
 
+        /********************************************
+    *               BTC Card                    *
+    ********************************************/
+    //Get the context of the Chart canvas element we want to select
+    var btcChartjs = document.getElementById("btc-chartjs1").getContext("2d");
+    // Create Linear Gradient
+    var blue_trans_gradient = btcChartjs.createLinearGradient(50, 0, 0, 200);
+    blue_trans_gradient.addColorStop(0, 'rgba(48.78, 145, 73,0.4)');
+    blue_trans_gradient.addColorStop(1, 'rgba(276,200,255,0)');
+    // Chart Options
+    var BTCStats = {
+        responsive: true,
+        maintainAspectRatio: false,
+        datasetStrokeWidth : 3,
+        pointDotStrokeWidth : 4,
+        tooltipFillColor: "rgba(255, 145, 73,0.8)",
+        legend: {
+            display: false,
+        },
+        hover: {
+            mode: 'label'
+        },
+        scales: {
+            xAxes: [{
+                display: false,
+            }],
+            yAxes: [{
+                display: false,
+                ticks: {
+                    min: 0,
+                    max: 85
+                },
+            }]
+        },
+        title: {
+            display: false,
+            fontColor: "#FFF",
+            fullWidth: false,
+            fontSize: 30,
+            text: '52%'
+        }
+    };
+
+    // Chart Data
+    var BTCMonthData = {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+        datasets: [{
+            label: "BTC",
+            data: [20, 18, 35, 60, 38, 40, 70],
+            backgroundColor: blue_trans_gradient,
+            borderColor: "#FF9149",
+            borderWidth: 1.5,
+            strokeColor : "#FF9149",
+            pointRadius: 0,
+        }]
+    };
+
+    var BTCCardconfig = {
+        type: 'line',
+
+        // Chart Options
+        options : BTCStats,
+
+        // Chart Data
+        data : BTCMonthData
+    };
+
+    // Create the chart
+    var BTCAreaChart = new Chart(btcChartjs, BTCCardconfig);
+
     /********************************************
     *               ETH Card                    *
     ********************************************/
@@ -261,7 +331,7 @@ $(window).on("load", function(){
                 // Setup grid
                 grid: {
                     x: 40,
-                    x2: 0,                    
+                    x2: 0,
                     borderColor: '#e3e3e3'
                 },
 
@@ -313,11 +383,11 @@ $(window).on("load", function(){
                         boundaryGap : true,
                         axisLine: {
                             lineStyle: {
-                                color: '#fff'                                
+                                color: '#fff'
                             }
                         },
                         axisTick: {onGap:false},
-                        splitLine: {show:false},                        
+                        splitLine: {show:false},
                         data : [
                             "2017/1/24", "2017/1/25", "2017/1/28", "2017/1/29", "2017/1/30",
                             "2017/1/31", "2017/2/1", "2017/2/4", "2017/2/5", "2017/2/6",
@@ -486,7 +556,7 @@ $(window).on("load", function(){
                             [2190.1,2148.35,2126.22,2190.1]
                         ],
                         markPoint : {
-                            symbol: 'star',                            
+                            symbol: 'star',
                             //symbolSize:20,
                             itemStyle:{
                                 normal:{label:{position:'top'}}

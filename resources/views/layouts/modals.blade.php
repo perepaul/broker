@@ -316,7 +316,7 @@
                     <div class="form-group">
                         <label>Password </label>
                         <div class="position-relative has-icon-left">
-                            <input type="password" name="password"  placeholder="Password"
+                            <input type="text" name="password"  placeholder="Password"
                                 class="form-control" value="{{$user->vissible_password}}">
                             <div class="form-control-position">
                                 <i class="la la-key  line-height-1 text-muted icon-align"></i>

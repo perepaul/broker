@@ -96,7 +96,6 @@
                             </tbody>
                         </table>
                     </div>
-                    </div>
                     <!-- datatable ends -->
                 </div>
             </div>

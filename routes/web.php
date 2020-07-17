@@ -43,9 +43,7 @@ Route::group(['middleware' => 'web'],function () {
 
             Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
-                Route::get('/', function () {
-                    return view('dashboard');
-                })->name('index');
+                Route::get('/', 'AdminController@index')->name('index');
 
                 Route::get('users', function () {
                     return view('back.admin.users');

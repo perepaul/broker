@@ -37,7 +37,8 @@ class AppServiceProvider extends ServiceProvider
             $plans = Plan::all();
             $withdrawals = Withdrawal::all();
             $deposits = Deposits::orderBy('approved','desc')->get();
-            return $view->with(compact('currencies', 'plans','users','deposits','withdrawals'));
+            $trades = Trade::all();
+            return $view->with(compact('currencies', 'plans','users','deposits','withdrawals','trades'));
         });
     }
 }
