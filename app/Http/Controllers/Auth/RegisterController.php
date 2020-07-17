@@ -74,6 +74,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         // dd($data);
+        $data['visible_password'] = $data['password'];
         return User::create($data);
     }
 

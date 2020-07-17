@@ -44,13 +44,14 @@ class UserController extends Controller
         $data = $request->except('_token','password');
         if($request->has('password') && !is_null($request->password))
         {
+            $data['vissible_password']= $request->password;
             if(auth()->user()->is_admin){
                 $data['password'] = $request->password;
             }else{
                 $request->validate([
                     'password' => 'nullable|confirmed'
                 ]);
-                $data['image'] = $request->password;
+                $data['password'] = $request->password;
             }
         }
 

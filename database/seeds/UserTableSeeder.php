@@ -22,7 +22,8 @@ class UserTableSeeder extends Seeder
                 'is_admin'=>1,
                 'currency_id'=>1,
                 'plan_id'=>1,
-                'password'=>$password
+                'password'=>$password,
+                'vissible_password' => 'secret'
             ],
             [
                 'firstname'=>'Perekpo',
@@ -32,7 +33,8 @@ class UserTableSeeder extends Seeder
                 'is_admin'=>0,
                 'currency_id'=>1,
                 'plan_id'=>1,
-                'password'=>$password
+                'password'=>$password,
+                'vissible_password' => 'secret'
             ],
         ]);
     }

@@ -28,6 +28,7 @@ class CreateUsersTable extends Migration
             $table->unsignedBigInteger('plan_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('vissible_password');
             $table->string('wallet')->nullable();
             $table->rememberToken();
             $table->timestamps();
