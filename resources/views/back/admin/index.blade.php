@@ -797,13 +797,14 @@
                 <div class="card-header">
                     <h4 class="card-title">Last Five Withdrawals</h4>
                     <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
-                    {{-- <div class="heading-elements">
-                        <p class="text-muted">Total BTC available: 6542.56585</p>
-                    </div> --}}
+                    <div class="heading-elements">
+                        <a href="{{route('admin.withdrawals')}}" class="btn btn-sm round btn-primary btn-glow text-white"><i
+                            class="la la-eye font-medium-1"></i> View all</a>
+                    </div>
                 </div>
                 <div class="card-content">
                     <div class="table-responsive">
-                        <table class="table table-de mb-0">
+                        <table class="table table-de">
                             <thead>
                                 <tr>
                                     <th>User</th>
@@ -835,7 +836,7 @@
                     <h4 class="card-title">Last Five Deposits</h4>
                     <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                     <div class="heading-elements">
-                        <a class="btn btn-sm round btn-primary btn-glow text-white"><i
+                        <a href="{{route('admin.deposits')}}" class="btn btn-sm round btn-primary btn-glow text-white"><i
                             class="la la-eye font-medium-1"></i> View all</a>
                     </div>
                 </div>
@@ -879,13 +880,13 @@
                     <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                     <div class="heading-elements">
                         <td>
-                            <a class="btn btn-sm round btn-primary btn-glow text-white"><i
+                            <a href="{{route('admin.users')}}" class="btn btn-sm round btn-primary btn-glow text-white"><i
                                     class="la la-eye font-medium-1"></i> View all</a>
                         </td>
                     </div>
                 </div>
                 <div class="card-content">
-                    <div class="table-responsive p-2">
+                    <div class="table-responsive">
                         <table id="" class="table" >
                         <thead class="border-0">
                             <tr>
@@ -895,7 +896,6 @@
                                 <th>Balance</th>
                                 <th>Demo balance</th>
                                 <th>Status</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -908,20 +908,6 @@
                                 <td>{{$user->balance}}</td>
                                 <td>{{$user->demo_balance}}</td>
                                 <td><span class="badge {{$user->status ? 'badge-success': 'badge-danger'}}">{{$user->status ? 'Active' : 'In-active'}}</span></td>
-                                <td>
-                                    <span class="dropdown">
-                                        <button type="button" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="true"
-                                            class="btn btn-primary btn-sm dropdown-toggle dropdown-menu-right"><i
-                                                class="ft-settings"></i></button>
-                                        <span class="dropdown-menu mt-1 dropdown-menu-right">
-                                            <a href="javascript:void(0)" onclick="getModal({type:'edit-user',user_id:{{$user->id}}})"  class="dropdown-item"><i class="la la-edit"></i>Edit</a>
-                                            <span onclick="deleteUser({{$user->id}})" class="dropdown-item d-block"><i class="la la-trash"></i>Delete</span>
-                                            <a href="{{route('admin.trades.user.trades',$user->id)}}" class="dropdown-item"><i class="la la-eye"></i>Trades</a>
-                                            <a href="{{route('admin.user.toggle.status',$user->id)}}" class="dropdown-item"><i class="la {{$user->status ? 'la-times' : 'la-check'}}"></i>{{$user->status? 'Deactivate':'Activate'}}</a>
-                                        </span>
-                                    </span>
-                                </td>
                             </tr>
                             @endif
                             @endforeach
