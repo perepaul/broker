@@ -119,7 +119,7 @@
                                         <div class="input-group-prepend">
                                         <button class="btn btn-primary copy" type="button">Copy</button>
                                         </div>
-                                        <input type="text" readonly class="form-control" id="copy-txt" value="0xceb1b174085b0058201be4f2cd0da6a21bff85d4">
+                                        <input type="text" readonly class="form-control" id="copy-txt" value="{{config('constants.bicoin_address')}}">
                                     </div>
                                 </div>
                                 <div class="form-group text-left">
