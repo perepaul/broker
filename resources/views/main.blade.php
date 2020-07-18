@@ -529,11 +529,10 @@
                 <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
                     <figure>
                         <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/1.mp4" controls ></video>
-                        {{-- <a class="owl-video" href="/assets/front/images/testimonials/videos/1.mp4" ></a> --}}
                     </figure>
                     <div class="content">
-                        <h4><a href="#">Daniel Matthew</a></h4>
-                        <p>Contacting support was simple and easy to get, i was surprised by how quickly they get back to you.</p>
+                        <h4><a href="#">Susan Chow </a></h4>
+                        <p>I invest with this platform, and i got my profits.</p>
                     </div>
                 </div>
            </div>
@@ -571,8 +570,8 @@
                             {{-- <a class="owl-video" href="/assets/front/images/testimonials/videos/1.mp4" ></a> --}}
                         </figure>
                         <div class="content">
-                            <h4><a href="#">Daniel Matthew</a></h4>
-                            <p>Contacting support was simple and easy to get, i was surprised by how quickly they get back to you.</p>
+                            <h4><a href="#">Rebecca Jenkins</a></h4>
+                            <p>I invest with lottrades, and i sure got my profit..</p>
                         </div>
                     </div>
                </div>
