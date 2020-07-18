@@ -56,6 +56,9 @@ Route::group(['middleware' => 'web'],function () {
                     Route::post('update-currency/{id}', 'SettingsController@updateCurrency')->name('update.currency');
                     Route::get('remove-currency/{id}', 'SettingsController@removeCurrency')->name('remove.currency');
 
+                    Route::post('add-trade-currency','TradeCurrencyController@create')->name('add.trade.currency');
+                    Route::post('update-trade-currency/{id}','TradeCurrencyController@update')->name('update.trade.currency');
+
                     Route::post('add-plan', 'SettingsController@addPlan')->name('add.plan');
                     Route::post('update-plan/{id}', 'SettingsController@updatePlan')->name('update.plan');
                     Route::get('remove-plan-feature', 'SettingsController@removePlan')->name('remove.plan');

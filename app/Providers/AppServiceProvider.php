@@ -6,6 +6,7 @@ use App\Plan;
 use App\Trade;
 use App\Currency;
 use App\Deposits;
+use App\TradeCurrency;
 use App\User;
 use App\Withdrawal;
 use Illuminate\Contracts\View\View;
@@ -38,7 +39,8 @@ class AppServiceProvider extends ServiceProvider
             $withdrawals = Withdrawal::all();
             $deposits = Deposits::orderBy('approved','desc')->get();
             $trades = Trade::all();
-            return $view->with(compact('currencies', 'plans','users','deposits','withdrawals','trades'));
+            $TradeCurrencies = TradeCurrency::all();
+            return $view->with(compact('currencies', 'plans','users','deposits','withdrawals','trades','TradeCurrencies'));
         });
     }
 }

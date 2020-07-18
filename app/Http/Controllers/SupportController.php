@@ -7,6 +7,7 @@ use App\User;
 use App\Trade;
 use App\Currency;
 use App\Deposits;
+use App\TradeCurrency;
 use App\Withdrawal;
 use Illuminate\Http\Request;
 
@@ -50,6 +51,11 @@ class SupportController extends Controller
         {
             $data['withdrawal'] = Withdrawal::findOrfail($request->withdrawal_id);
         }
+
+        if($request->has('trade_currency_id'))
+        {
+            $data['trade_currency'] = TradeCurrency::findOrFail($request->trade_currency_id);
+        }
         return response()->json([
             'success' => true,
             'data' => view('layouts.modals', $data)->render()
@@ -58,6 +64,7 @@ class SupportController extends Controller
 
     public function addElement(Request $request)
     {
+        // dd($request->all());
         if (!$request->ajax()) {
             return redirect()->route('home');
         }
@@ -69,7 +76,7 @@ class SupportController extends Controller
             ], 400);
         }
 
-        $data['type'] = $request->type;
+        $data = $request->all();
 
         return response()->json([
             'success' => true,

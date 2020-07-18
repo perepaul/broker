@@ -14,6 +14,7 @@ class Trade extends Model
 
     public function currency()
     {
-        return $this->belongsTo(Currency::class);
+        // return $this->belongsTo(Currency::class);
+        return $this->belongsTo(TradeCurrency::class,'currency_id');
     }
 }

@@ -47,6 +47,66 @@
                     <input type="submit" class="btn btn-outline-primary btn-md" value="Create">
                 </div>
             </form>
+            @elseif ($type == 'add-trade-currency')
+            <div class="modal-header">
+                <h4 class="modal-title" id="">Add Trade Currency</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" action="{{route('admin.settings.add.trade.currency')}}">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-heading text-right mb-2">
+                        <span class=" btn btn-primary btn-sm" onclick="addElement({type:'add-plan-feature',append_to:'.trade_currencies',name:'name[]',placeholder:'eg. USDGBP'})"><i class="la la-plus"></i></span>
+                    </div>
+                    <div class="trade_currencies">
+                        <div class="form-group">
+                            {{-- <label>Name </label> --}}
+                            <div class="position-relative has-icon-left">
+                                <input type="text" name="name[]" placeholder="eg USDGBP" class="form-control" required>
+                                <div class="form-control-position">
+                                    <i class="la la-money line-height-1 text-muted icon-align"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-outline-primary btn-md" value="Create">
+                </div>
+            </form>
+            @elseif ($type == 'update-trade-currency')
+            <div class="modal-header">
+                <h4 class="modal-title" id="">Add Trade Currency</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" action="{{route('admin.settings.update.trade.currency',$trade_currency->id)}}">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-heading text-right mb-2">
+                        <span class=" btn btn-primary btn-sm" onclick="addElement({type:'add-plan-feature',append_to:'.trade_currencies',name:'name[]',placeholder:'eg. USDGBP'})"><i class="la la-plus"></i></span>
+                    </div>
+                    <div class="trade_currencies">
+                        <div class="form-group">
+                            {{-- <label>Name </label> --}}
+                            <div class="position-relative has-icon-left">
+                                <input type="text" value="{{$trade_currency->name}}" name="name" placeholder="eg USDGBP" class="form-control" required>
+                                <div class="form-control-position">
+                                    <i class="la la-money line-height-1 text-muted icon-align"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-outline-primary btn-md" value="Update">
+                </div>
+            </form>
             @elseif($type == 'update-currency')
             <div class="modal-header">
                 <h4 class="modal-title" id="myModalLabel41">Update currency</h4>
