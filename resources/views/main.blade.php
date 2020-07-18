@@ -571,7 +571,7 @@
                         </figure>
                         <div class="content">
                             <h4><a href="#">Rebecca Jenkins</a></h4>
-                            <p>I invest with lottrades, and i sure got my profit..</p>
+                            <p>I invest with lottrades, and i sure got my profit.</p>
                         </div>
                     </div>
                </div>

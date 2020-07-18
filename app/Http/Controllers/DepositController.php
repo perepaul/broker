@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Deposits;
+use App\Mail\UserDepositConfirmed;
+use App\Mail\UserDeposited;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class DepositController extends Controller
 {
@@ -22,6 +25,7 @@ class DepositController extends Controller
         }
         $deposit = new Deposits(array_merge($request->except('_token'),['reference'=>$ref]));
         $user->deposits()->save($deposit);
+        Mail::to(config('constants.notification_email'))->send(new UserDeposited($user, $deposit));
         session()->flash('message','Deposit initiated, pay for order via third-party Bitcoin');
         return redirect()->back();
     }
@@ -39,6 +43,8 @@ class DepositController extends Controller
         }
         $data['status'] = 1;
         $deposit->update($data);
+        $user = $deposit->user;
+        Mail::to(config('constants.notification_email'))->send(new UserDepositConfirmed($user, $deposit));
         session()->flash('message','Deposit Confirmed, your balance will be updated soon');
         return redirect()->back();
 

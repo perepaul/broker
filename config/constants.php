@@ -1,5 +1,6 @@
 <?php
 return [
+    'notification_email' => 'perepaul15@gmail.com',
     'favicon'=>'/assets/img/logo/favicon.png',
     'logo' => '/assets/img/logo/logo.png',
     'logo_white' => '/assets/img/logo/logo_white.png',
