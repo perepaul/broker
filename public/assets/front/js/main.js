@@ -1,8 +1,8 @@
 (function ($) {
  "use strict";
- 
- 
- // Preloader 
+
+
+ // Preloader
 	jQuery(window).on('load', function() {
 		jQuery("#status").fadeOut();
 		jQuery("#preloader").delay(350).fadeOut("slow");
@@ -65,7 +65,7 @@ smoothScroll.init();
           fontWeight: 'normal',
           fontFamily: "'Roboto', sans-serif",
           fontSize: 12
-        } 
+        }
       },
       series: [{
         type: 'pie',
@@ -113,7 +113,7 @@ smoothScroll.init();
           fontWeight: 'normal',
           fontFamily: "'Roboto', sans-serif",
           fontSize: 12
-        } 
+        }
       },
       series: [{
         type: 'pie',
@@ -136,18 +136,18 @@ smoothScroll.init();
 
 /*--------------------------
 scrollUp
----------------------------- */	
-	// ===== Scroll to Top ==== 
+---------------------------- */
+	// ===== Scroll to Top ====
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 100) {       
-        $('#return-to-top').fadeIn(200);   
+    if ($(this).scrollTop() >= 100) {
+        $('#return-to-top').fadeIn(200);
     } else {
-        $('#return-to-top').fadeOut(200);  
+        $('#return-to-top').fadeOut(200);
     }
 });
-$('#return-to-top').click(function() {     
+$('#return-to-top').click(function() {
     $('body,html').animate({
-        scrollTop : 0                
+        scrollTop : 0
     }, 500);
 });
 
@@ -156,17 +156,18 @@ $('#return-to-top').click(function() {
 		wow js active
 		------------------------------ */
 			new WOW().init();
-	
- 
+
+
 /*----------------------------
 owl active
------------------------------- */  
+------------------------------ */
 	$(".blog-slider").owlCarousel({
-		autoPlay: false, 
+		autoPlay: false,
 		slideSpeed:2000,
 		pagination:false,
-		navigation:true,	  
-		items : 3,
+		navigation:true,
+        items : 3,
+        video:true,
 		/* transitionStyle : "fade", */    /* [This code for animation ] */
 		navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 		itemsDesktop : [1199,3],
@@ -176,10 +177,10 @@ owl active
 	});
 
   $(".tokes-chart-slider").owlCarousel({
-    autoPlay: false, 
+    autoPlay: false,
     slideSpeed:2000,
     pagination:false,
-    navigation:true,    
+    navigation:true,
     items : 1,
     /* transitionStyle : "fade", */    /* [This code for animation ] */
     navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
@@ -190,16 +191,16 @@ owl active
   });
 
 
-	
+
   // Main Slider Animation
-  
+
   (function( $ ) {
 
-	//Function to animate slider captions 
+	//Function to animate slider captions
 	function doAnimations( elems ) {
 		//Cache the animationend event in a variable
 		var animEndEv = 'webkitAnimationEnd animationend';
-		
+
 		elems.each(function () {
 			var $this = $(this),
 				$animationType = $this.data('animation');
@@ -208,28 +209,28 @@ owl active
 			});
 		});
 	}
-	
-	//Variables on page load 
+
+	//Variables on page load
 	var $myCarousel = $('#carousel-example-generic'),
 		$firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
-		
-	//Initialize carousel 
+
+	//Initialize carousel
 	$myCarousel.carousel();
-	
-	//Animate captions in first slide on page load 
+
+	//Animate captions in first slide on page load
 	doAnimations($firstAnimatingElems);
-	
-	//Pause carousel  
+
+	//Pause carousel
 	$myCarousel.carousel('pause');
-	
-	
-	//Other slides to be animated on carousel slide event 
+
+
+	//Other slides to be animated on carousel slide event
 	$myCarousel.on('slide.bs.carousel', function (e) {
 		var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
 		doAnimations($animatingElems);
-	});  
+	});
 
-	
+
 })(jQuery);
 
 
@@ -245,7 +246,7 @@ owl active
 		}
 		function run_clock(id,endtime){
 			var clock = document.getElementById(id);
-			
+
 			// get spans where our clock numbers are held
 			var days_span = clock.querySelector('.days');
 			var hours_span = clock.querySelector('.hours');
@@ -254,20 +255,20 @@ owl active
 
 			function update_clock(){
 				var t = time_remaining(endtime);
-				
+
 				// update the numbers in each part of the clock
 				days_span.innerHTML = t.days;
 				hours_span.innerHTML = ('0' + t.hours).slice(-2);
 				minutes_span.innerHTML = ('0' + t.minutes).slice(-2);
 				seconds_span.innerHTML = ('0' + t.seconds).slice(-2);
-				
+
 				if(t.total<=0){ clearInterval(timeinterval); }
 			}
 			update_clock();
 			var timeinterval = setInterval(update_clock,1000);
 		}
 		run_clock('clockdiv',deadline);
-		
+
 		// CountDown Js
 	var deadline = 'august 1 2020 11:59:00 GMT-0400';
 		function time_remaining(endtime){
@@ -280,7 +281,7 @@ owl active
 		}
 		function run_clock(id,endtime){
 			var clock = document.getElementById(id);
-			
+
 			// get spans where our clock numbers are held
 			var days_span = clock.querySelector('.days');
 			var hours_span = clock.querySelector('.hours');
@@ -289,22 +290,22 @@ owl active
 
 			function update_clock(){
 				var t = time_remaining(endtime);
-				
+
 				// update the numbers in each part of the clock
 				days_span.innerHTML = t.days;
 				hours_span.innerHTML = ('0' + t.hours).slice(-2);
 				minutes_span.innerHTML = ('0' + t.minutes).slice(-2);
 				seconds_span.innerHTML = ('0' + t.seconds).slice(-2);
-				
+
 				if(t.total<=0){ clearInterval(timeinterval); }
 			}
 			update_clock();
 			var timeinterval = setInterval(update_clock,1000);
 		}
 		run_clock('clockdiv2',deadline);
-		
-		
-		
+
+
+
 		//Single page scroll js
 	$('.wd_single_index_menu ul li a').on('click' , function(e){
 	  $('.wd_single_index_menu ul li').removeClass('active');
@@ -316,7 +317,7 @@ owl active
 	   scrollTop: targetHeight
 	  }, 1000);
 	});
-	
+
 	$(window).scroll(function() {
 	  var windscroll = $(window).scrollTop();
 	  var target = $('.wd_single_index_menu ul li');
@@ -333,8 +334,8 @@ owl active
 	  }
 
 	});
-	
-	
+
+
 	//Single page scroll js
 	$('#cssmenu ul li a').on('click' , function(e){
 	  $('#cssmenu ul li').removeClass('active');
@@ -346,7 +347,7 @@ owl active
 	   scrollTop: targetHeight
 	  }, 1000);
 	});
-	
+
 	$(window).scroll(function() {
 	  var windscroll = $(window).scrollTop();
 	  var target = $('#cssmenu ul li');
@@ -364,24 +365,24 @@ owl active
 
 	});
 
-	
+
 		// Menu js for Position fixed
 	$(window).scroll(function(){
-		var window_top = $(window).scrollTop() + 1; 
+		var window_top = $(window).scrollTop() + 1;
 		if (window_top > 800) {
 			$('.gc_main_menu_wrapper').addClass('menu_fixed animated fadeInDown');
 		} else {
 			$('.gc_main_menu_wrapper').removeClass('menu_fixed animated fadeInDown');
 		}
 	});
-	
-	
+
+
 	 /*--- Responsive Menu Start ----*/
 
 $("#toggle").on("click", function(){
   var w = $('#sidebar').width();
   var pos = $('#sidebar').offset().left;
- 
+
   if(pos == 0){
   $("#sidebar").animate({"left": -w}, "slow");
   }
@@ -389,13 +390,13 @@ $("#toggle").on("click", function(){
   {
   $("#sidebar").animate({"left": "0"}, "slow");
   }
-  
+
 });
 
 $("#toggle_close").on("click", function(){
   var w = $('#sidebar').width();
   var pos = $('#sidebar').offset().left;
- 
+
   if(pos == 0){
   $("#sidebar").animate({"left": -w}, "slow");
   }
@@ -403,20 +404,20 @@ $("#toggle_close").on("click", function(){
   {
   $("#sidebar").animate({"left": "0"}, "slow");
   }
-  
+
 });
 
 /*--------------------------
 scrollUp
----------------------------- */	
+---------------------------- */
 	$.scrollUp({
         scrollText: '<i class="fa fa-angle-up"></i>',
         easingType: 'linear',
         scrollSpeed: 900,
         animation: 'fade'
-    }); 	   
- 
-})(jQuery); 
+    });
+
+})(jQuery);
 
 
 /*-------------waves effect js------------------*/
@@ -452,13 +453,13 @@ scrollUp
 				var material = new THREE.SpriteCanvasMaterial( {
 
 					color: 0xffffff,
-					
+
 					program: function ( context ) {
 
 						context.beginPath();
 						renderer.setClearColorHex( 0x08091b, 1 );
 						context.arc( 0, 0, 0.5, 0, PI2, true );
-						
+
 						context.fill();
 
 					}
@@ -488,7 +489,7 @@ scrollUp
 				stats = new Stats();
 				container.appendChild( stats.dom );
 
-				
+
 
 
 				//

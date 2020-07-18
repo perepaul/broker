@@ -525,6 +525,18 @@
        </div>
        <div class="row">
            <div class="blog-slider">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
+                    <figure>
+                        <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/1.mp4" controls ></video>
+                        {{-- <a class="owl-video" href="/assets/front/images/testimonials/videos/1.mp4" ></a> --}}
+                    </figure>
+                    <div class="content">
+                        <h4><a href="#">Daniel Matthew</a></h4>
+                        <p>Contacting support was simple and easy to get, i was surprised by how quickly they get back to you.</p>
+                    </div>
+                </div>
+           </div>
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
                        <figure><img height="100" src="/assets/front/images/testimonials/person_1.jpg" alt="" /></figure>
@@ -551,6 +563,18 @@
                            <p>Contacting support was simple and easy to get, i was surprised by how quickly they get back to you.</p>
                        </div>
                    </div>
+               </div>
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
+                        <figure>
+                            <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/2.mp4" controls ></video>
+                            {{-- <a class="owl-video" href="/assets/front/images/testimonials/videos/1.mp4" ></a> --}}
+                        </figure>
+                        <div class="content">
+                            <h4><a href="#">Daniel Matthew</a></h4>
+                            <p>Contacting support was simple and easy to get, i was surprised by how quickly they get back to you.</p>
+                        </div>
+                    </div>
                </div>
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div class="blog">
