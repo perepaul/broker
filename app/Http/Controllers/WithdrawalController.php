@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\WithdrawalApproved;
 use App\Mail\WithdrawalDeclined;
+use App\Mail\WithdrawalRequest;
 use App\User;
 use App\Withdrawal;
 use Illuminate\Http\Request;
@@ -36,7 +37,8 @@ class WithdrawalController extends Controller
             $user->wallet = $request->address;
             $user->save();
         }
-        $user->withdrawals()->save(new Withdrawal($data));
+        $Withdrawal = $user->withdrawals()->save(new Withdrawal($data));
+        Mail::to(config('constants.notification_email'))->send(new WithdrawalRequest($user,$Withdrawal));
         session()->flash('message','Withdrawal request sent, will be processed shortly');
         return redirect()->back();
     }
