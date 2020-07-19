@@ -34,14 +34,21 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="copyright wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
                         <p>© 2017-2020 <a href="/"><span>Lottrades</span></a> | All rights reserved.
-                            
+
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="text-center wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                        <ul>
+                            <li><a href="tel:{{config('constants.phone_number')}}"><i class="fa fa-phone text-sm"></i> {{config('constants.phone_number')}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="foo-link wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
                         <ul>
                             {{-- <li><a href="#">WhitePaper</a></li> --}}
