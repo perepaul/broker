@@ -155,8 +155,8 @@ Route::group(['middleware' => 'web'],function () {
 Route::get('terms-and-condition', function () {
     return view('terms_and_condition');
 
-});
+})->name('terms');
 Route::get('privacy-and-policy', function () {
     return view('privacy_and_policy');
 
-});
+})->name('policy');
