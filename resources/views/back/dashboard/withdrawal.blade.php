@@ -17,9 +17,9 @@
                           </div>
                           <div class="card-body">
                             <ul class="list-unstyled mt-0 mb-2">
-                              <li>10 users included</li>
-                              <li>2 GB of storage</li>
-                              <li>Email support</li>
+                              <li>1-2 Hours</li>
+                              <li>Unlimited amount</li>
+                              <li>Online support</li>
                               <li>Help center access</li>
                             </ul>
                             <button type="button" class="btn btn-lg btn-block btn-danger btn-glow payment-method">Select</button>
@@ -39,10 +39,10 @@
                           </div>
                           <div class="card-body">
                             <ul class="list-unstyled mt-2 mb-2">
-                              <li>20 users included</li>
-                              <li>10 GB of storage</li>
-                              <li>Email support</li>
-                              <li>Help center access</li>
+                                <li>1-2 Hours</li>
+                                <li>≡ $200 withdrawal</li>
+                                <li>Online support</li>
+                                <li>Help center access</li>
                             </ul>
                             <button type="button" class="btn btn-lg btn-block btn-danger btn-glow payment-method disabled">Select</button>
                           </div>
