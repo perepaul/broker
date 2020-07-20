@@ -197,10 +197,8 @@
                                         <label class="col-md-3 col-form-label pr-0" for="currency">Currency</label>
                                         <div class="col-md-9">
                                             <select name="currency_id" class="form-control" id="currency">
-                                                @foreach ($currencies as $currency)
-                                                    @if ($currency->id != auth()->user()->currency_id)
-                                                        <option value="{{$currency->id}}">{{strtoupper($currency->iso.auth()->user()->currency->iso)}}</option>
-                                                    @endif
+                                                @foreach ($TradeCurrencies as $currency)
+                                                    <option value="{{$currency->id}}">{{strtoupper($currency->name)}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
