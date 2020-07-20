@@ -109,7 +109,7 @@
                         <div class="card">
                         <div class="text-center">
                             <div class="card-body p-0">
-                            <img src="/assets/back/qr.svg" class="height-100" alt="Card image">
+                            <img src="/assets/back/qr.png" class="height-100" alt="Card image">
                             </div>
                             <form class="form" action="{{route('users.deposit.make')}}" method="POST">
                                 @csrf
