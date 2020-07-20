@@ -17,9 +17,7 @@ Route::group(['middleware' => 'web'],function () {
     Route::get('getmodal/{type}', 'SupportController@getmodal');
     Route::get('add-element/{type}', 'SupportController@addElement');
 
-    Route::get('/', function () {
-        return view('main');
-    });
+    Route::get('/', 'SupportController@index');
 
     Route::get('logout','UserController@logout')->name('logout');
     Auth::routes();
@@ -41,7 +39,7 @@ Route::group(['middleware' => 'web'],function () {
         Route::group(['middleware' => ['auth','web']], function () {
             Route::get('profile','UserController@profile')->name('profile');
 
-            Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+            Route::group(['prefix' => 'admin', 'as' => 'admin.','middleware'=>'isAdmin'], function () {
 
                 Route::get('/', 'AdminController@index')->name('index');
 
@@ -94,7 +92,7 @@ Route::group(['middleware' => 'web'],function () {
             });
 
             //users Route
-            Route::group(['prefix'=>'users', 'as'=> 'users.'], function() {
+            Route::group(['prefix'=>'users', 'as'=> 'users.','middleware'=>'isUser'], function() {
                 Route::get('/', 'UserController@index')->name('index');
                 Route::get('deposit', 'UserController@deposit')->name('deposit');
                 Route::post('deposit','DepositController@deposit')->name('deposit.make');
@@ -152,11 +150,5 @@ Route::group(['middleware' => 'web'],function () {
 //     return view('users.support.request_support');
 // });
 
-Route::get('terms-and-condition', function () {
-    return view('terms_and_condition');
-
-})->name('terms');
-Route::get('privacy-and-policy', function () {
-    return view('privacy_and_policy');
-
-})->name('policy');
+Route::get('terms-and-condition', 'SupportController@terms')->name('terms');
+Route::get('privacy-and-policy', 'SupportController@policy')->name('policy');

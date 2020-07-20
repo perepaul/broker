@@ -13,6 +13,10 @@ use Illuminate\Http\Request;
 
 class SupportController extends Controller
 {
+    public function index()
+    {
+        return view('main');
+    }
     public function getmodal(Request $request)
     {
         if (!$request->ajax()) {
@@ -82,5 +86,14 @@ class SupportController extends Controller
             'success' => true,
             'data' => view('partials.elements', $data)->render()
         ]);
+    }
+
+    public function terms()
+    {
+        return view('terms_and_condition');
+    }
+    public function policy()
+    {
+        return view('privacy_and_policy');
     }
 }
