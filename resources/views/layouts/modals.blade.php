@@ -544,6 +544,36 @@
                     <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Close">
                 </div>
             </form>
+            @elseif($type=='upload-doc')
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel41">Upload Document</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" enctype="multipart/form-data" action="{{route('users.document.upload')}}">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="name" value="" placeholder="eg Silver"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-money line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Select Doc</label>
+                        <input type="file" name="image" id="image" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-outline-primary btn-md" value="Submit">
+                    <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Close">
+                </div>
+            </form>
             @endif
         </div>
     </div>

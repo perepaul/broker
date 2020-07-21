@@ -8,5 +8,6 @@ return [
     'logo_white' => '/assets/img/logo/logo_white.png',
     'default_image' => 'default.png',
     'deposit_image_dir' => '/assets/img/deposit/',
-    'profile_image_dir' => '/assets/img/profile/'
+    'profile_image_dir' => '/assets/img/profile/',
+    'document_dir' => '/assets/img/documents'
 ];

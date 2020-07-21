@@ -98,6 +98,9 @@ Route::group(['middleware' => 'web'],function () {
                 Route::post('deposit','DepositController@deposit')->name('deposit.make');
                 Route::post('deposit/{id}/confirm','DepositController@confirm')->name('deposit.confirm');
 
+                Route::post('docment', 'DocumentController@save')->name('document.upload');
+                Route::get('document/{id}', 'DocumentController@delete')->name('document.delete');
+
                 Route::get('withdrawal','UserController@withdrawal')->name('withdrawal');
                 Route::post('withdraw','WithdrawalController@withdraw')->name('withdraw');
                 Route::get('transactions','UserController@transactions')->name('transactions');
