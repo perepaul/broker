@@ -36,6 +36,7 @@ iziToast.settings({
     icon: 'material-icons',
     transitionIn: 'flipInX',
     transitionOut: 'flipOutX',
+    position:'bottomCenter',
     onOpening: function () {
         console.log('callback abriu!');
     },

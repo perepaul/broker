@@ -28,7 +28,9 @@ class DocumentController extends Controller
     public function delete($id)
     {
         $document = Document::findOrFail($id);
+        deleteFile(config('constants.document_dir').$document->image);
         $document->delete();
         session()->flash('message','Document deleted successfully');
+        return redirect()->back();
     }
 }

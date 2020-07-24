@@ -7,42 +7,41 @@
     @endphp
 @endif
 <div class="content-body">
-
-        <div id="user-profile" class="col-12">
-            <div class="row">
-                <div class="card col-12 profile-with-cover">
-                    <div class="media profil-cover-details p-0 w-100">
-                        <div class="media-left pl-2 pt-2">
-                            <label for="image" class="profile-image">
-                                <img src="{{asset(config('constants.profile_image_dir').$user->image)}}" style="width:120px; height:110px;"
-                                    class="rounded-circle img-border" alt="Card image" title="Update Profile Picture">
-                            </label>
-                            <input type="file" name="image" id="image" style="display:none">
-                        </div>
-                        <div class="media-body pt-3 px-2">
-                            <div class="row">
-                                <div class="col">
-                                    <h3 class="card-title">{{$user->firstname.' '.$user->lastname}}</h3>
-                                    <h3 class="card-title">Balance &nbsp; - &nbsp;{{$user->currency->symbol.$user->balance}}</h3>
-                                </div>
-                                @if($user->is_admin)
-                                <div class="col text-right">
-                                    <button type="button" class="btn btn-success"><i class="la la-envelope"></i>
-                                        Send Mail</button>
-
-                                </div>
-                                @endif
+    <div id="user-profile" class="col-12">
+        <div class="row">
+            <div class="card col-12 profile-with-cover">
+                <div class="media profil-cover-details p-0 w-100">
+                    <div class="media-left pl-2 pt-2">
+                        <label for="image" class="profile-image">
+                            <img src="{{asset(config('constants.profile_image_dir').$user->image)}}" style="width:120px; height:110px;"
+                                class="rounded-circle img-border" alt="Card image" title="Update Profile Picture">
+                        </label>
+                        <input type="file" name="image" id="image" style="display:none">
+                    </div>
+                    <div class="media-body pt-3 px-2">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="card-title">{{$user->firstname.' '.$user->lastname}}</h3>
+                                <h3 class="card-title">Balance &nbsp; - &nbsp;{{$user->currency->symbol.$user->balance}}</h3>
                             </div>
+                            @if($user->is_admin)
+                            <div class="col text-right">
+                                <button type="button" class="btn btn-success"><i class="la la-envelope"></i>
+                                    Send Mail</button>
+
+                            </div>
+                            @endif
                         </div>
                     </div>
-                    <nav class="navbar navbar-light navbar-profile align-self-end">
-                        <button class="navbar-toggler d-sm-none" type="button" data-toggle="collapse"
-                            aria-expanded="false" aria-label="Toggle navigation"></button>
-                    </nav>
                 </div>
-
+                <nav class="navbar navbar-light navbar-profile align-self-end">
+                    <button class="navbar-toggler d-sm-none" type="button" data-toggle="collapse"
+                        aria-expanded="false" aria-label="Toggle navigation"></button>
+                </nav>
             </div>
+
         </div>
+    </div>
     <div class="card col-12">
         <div class="card-body p-3">
 
@@ -178,8 +177,21 @@
                                 <i class="la la-plus"></i>
                             </span>
                         </div>
+                        <div class="row">
+                            @forelse (auth()->user()->documents as $document)
+                                <div class="col-md-4 p-1 ">
+                                    <img src="{{asset(config('constants.document_dir').$document->image)}}" class="" style="width: 100%" alt="">
+                                <h5 class="mt-1">{{$document->name}} <span onclick='deleteDocument("{{route("users.document.delete",$document->id)}}")' class="pull-right btn btn-sm m-0 p-0 text-sm text-danger"><i class="la la-times"></i></span></h5>
+                                </div>
+                            @empty
+                            <div class="col-12">
 
-
+                                <p class="mt-3 text-center">
+                                    No documents uploaded.
+                                </p>
+                            </div>
+                            @endforelse
+                        </div>
                     </div>
                 </div>
                 @endif

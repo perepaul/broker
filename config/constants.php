@@ -9,5 +9,5 @@ return [
     'default_image' => 'default.png',
     'deposit_image_dir' => '/assets/img/deposit/',
     'profile_image_dir' => '/assets/img/profile/',
-    'document_dir' => '/assets/img/documents'
+    'document_dir' => '/assets/img/documents/'
 ];

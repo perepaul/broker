@@ -66677,6 +66677,7 @@ iziToast.settings({
   icon: 'material-icons',
   transitionIn: 'flipInX',
   transitionOut: 'flipOutX',
+  position: 'bottomCenter',
   onOpening: function onOpening() {
     console.log('callback abriu!');
   },
@@ -66836,6 +66837,16 @@ $(document).on('click', '.copy', function (e) {
   document.execCommand("copy");
   notify("Copied to clipboard", 'success');
 });
+
+deleteDocument = function deleteDocument(url) {
+  var con = confirm('are you sure you want to delete this document?');
+
+  if (con) {
+    setTimeout(function () {
+      window.location.href = url;
+    }, 500);
+  }
+};
 
 /***/ }),
 

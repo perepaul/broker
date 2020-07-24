@@ -96,3 +96,12 @@ $(document).on('click','.copy',function(e) {
     document.execCommand("copy");
     notify("Copied to clipboard",'success');
 })
+
+deleteDocument = (url) => {
+    var con = confirm('are you sure you want to delete this document?')
+    if(con){
+        setTimeout(()=>{
+            window.location.href = url;
+        },500)
+    }
+}

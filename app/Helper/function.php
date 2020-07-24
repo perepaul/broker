@@ -5,7 +5,7 @@ function uploadImage($path,$image,$file_to_delete = null)
 {
     $dummy = public_path($path.'/'.$file_to_delete);
     if(!is_null($file_to_delete) && file_exists($dummy) && $file_to_delete !== config('constants.default_image')){
-        @unlink($dummy);
+        deleteFile($dummy);
     }
     $filename = randomString().'.'.$image->extension();
     while (file_exists(public_path($path.$filename))) {
@@ -14,6 +14,11 @@ function uploadImage($path,$image,$file_to_delete = null)
     $image->move(public_path($path),$filename);
     // dd($filename);
     return $filename;
+}
+
+function deleteFile($file)
+{
+    @unlink($file);
 }
 
 function randomString()
