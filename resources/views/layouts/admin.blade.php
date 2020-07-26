@@ -11,7 +11,12 @@
 
     <!-- SideBar !-->
     @include('layouts.global_components.back.admin_sidebar')
-
+    <div class="cen">
+        <a href="tel:{{config('constants.phone_number')}}" class="phone bg-danger d-block text-white">
+            <i class="la la-phone text-sm"></i>
+               {{config('constants.phone_number')}}
+        </a>
+    </div>
     <!-- Dynamic Content !-->
     <div class="app-content content">
         <div class="content-wrapper">

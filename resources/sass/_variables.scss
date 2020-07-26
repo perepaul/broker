@@ -24,6 +24,38 @@ $cyan: #6cb2eb;
     border-top: 1px solid #E1E7F2 !important;
 }
 
+.cen {
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    right:1;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+.cen .phone {
+    // writing-mode:lr-tb;
+    padding:4px;
+    position: absolute;
+    width:139px;;
+    transform-origin: 0 0;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform:rotate(90deg);
+  transform: rotate(90deg);
+}
+.cen .phone i{
+
+    -webkit-transform:rotate(44deg);
+    -moz-transform:rotate(44deg);
+    -o-transform: rotate(44deg);
+    -ms-transform:rotate(44deg);
+    transform: rotate(44deg);
+    padding:0;
+    margin:0;
+}
+
 @import '~izitoast/dist/css/iziToast.css';
 // @import '~/bootstrap-toggle/css/bootstrap-toggle.css';
 @import '~bootstrap-toggle/css/bootstrap2-toggle';

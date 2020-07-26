@@ -1414,6 +1414,30 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   border-top: 1px solid #E1E7F2 !important;
 }
 
+.cen {
+  position: fixed;
+  top: 50%;
+  left: 100%;
+  right: 1;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.cen .phone {
+  padding: 4px;
+  position: absolute;
+  width: 139px;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+.cen .phone i {
+  transform: rotate(44deg);
+  padding: 0;
+  margin: 0;
+}
+
 /*! ========================================================================
  * Bootstrap Toggle: bootstrap2-toggle.css v2.2.0
  * http://www.bootstraptoggle.com
