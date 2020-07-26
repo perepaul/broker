@@ -1,4 +1,5 @@
-<header class="gc_main_menu_wrapper">
+<header class="gc_main_menu_wrapper pt-0">
+    <div class="text-center text-sm"><a href="tel:{{config('constants.phone_number')}}" class="text-white"><i class="fa fa-phone"></i> {{config('constants.phone_number')}}</a></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-6">
