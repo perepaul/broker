@@ -29,11 +29,8 @@ Route::group(['middleware' => 'web'],function () {
         return view('login_form');
     });
 
-    // Route::get('admin', function () {
-
-    //     return view('dashboard');
-    // });
-    //basic admin route for now
+    Route::get('terms-and-condition', 'SupportController@terms')->name('terms');
+    Route::get('privacy-and-policy', 'SupportController@policy')->name('policy');
 
 });
         Route::group(['middleware' => ['auth','web']], function () {
@@ -43,9 +40,7 @@ Route::group(['middleware' => 'web'],function () {
 
                 Route::get('/', 'AdminController@index')->name('index');
 
-                Route::get('users', function () {
-                    return view('back.admin.users');
-                })->name('users');
+                Route::get('users', 'AdminController@users')->name('users');
 
                 Route::get('users/{id}/status','UserController@togleStatus')->name('user.toggle.status');
                 Route::group(['prefix' => 'settings', 'as' => 'settings.'], function () {
@@ -69,26 +64,19 @@ Route::group(['middleware' => 'web'],function () {
                     Route::get('user/{id}','UserController@viewUserTrades')->name('user.trades');
 
                 });
-                // Route::get('/deposit', function () {
-                //     return view('admin.deposit.deposit');
-                // });
+
                 Route::get('deposit','DepositController@depositPage')->name('deposit.page');
                 Route::get('deposit/{id}/approve','DepositController@approve')->name('deposit.approve');
 
-                Route::get('withdrawals', function () {
-                    return view('back.admin.withdrawals');
-                })->name('withdrawals');
+                Route::get('withdrawals', 'Admincontroller@withdrawals')->name('withdrawals');
 
                 Route::get('withdrawal/{id}/approve','WithdrawalController@approve')->name('withdrawal.approve');
                 Route::post('withdrawal/{id}/decline','WithdrawalController@decline')->name('withdrawal.decline');
-                Route::get('deposits', function () {
-                    return view('back.admin.deposits');
-                })->name('deposits');
+                Route::get('deposits', 'AdminController@deposits')->name('deposits');
                 Route::get('trades', 'AdminController@trades')->name('trades');
 
-                // Route::get('profile', function () {
-                //     return view('back.profile.profile');
-                // })->name('tickets');
+                Route::get('mail','AdminController@email')->name('email');
+                Route::post('mail','AdminController@sendMail')->name('email.send');
             });
 
             //users Route
@@ -114,44 +102,3 @@ Route::group(['middleware' => 'web'],function () {
             });
         });
 
-
-
-// Route::get('users', function () {
-
-//     return view('users.users_home');
-// });
-
-// Route::get('users/profile', function () {
-
-//     return view('users.users_profile');
-// });
-
-// Route::get('users/trade', function () {
-//     return view('users.chart.trade_chart');
-// });
-
-// // Route::get('users/deposit', function () {
-// //     return view('users.deposit.users_deposit');
-// // });
-
-// Route::get('users/withdraw', function () {
-//     return view('users.withdraw.users_withdraw');
-// });
-
-// Route::get('users/add-account', function () {
-
-//     return view('users.accounts.bank_account');
-// });
-
-// Route::get('users/request-loan', function () {
-
-//     return view('users.loans.request_loan');
-// });
-
-// Route::get('users/support', function () {
-
-//     return view('users.support.request_support');
-// });
-
-Route::get('terms-and-condition', 'SupportController@terms')->name('terms');
-Route::get('privacy-and-policy', 'SupportController@policy')->name('policy');

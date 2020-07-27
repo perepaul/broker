@@ -30,6 +30,15 @@ require('datatables.net-bs4')
 require('datatables.net-responsive')
 require('datatables.net-responsive-bs4')
 
+require('select2');
+
+
+    if($('#message').length){
+        CKEDITOR.replace('message');
+    }
+    $('.select2').select2();
+
+
 iziToast.settings({
     timeout: 10000,
     resetOnHover: true,

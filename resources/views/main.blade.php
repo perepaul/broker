@@ -525,41 +525,53 @@
        </div>
        <div class="row">
            <div class="blog-slider">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
-                    <figure>
-                        <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/1.mp4" controls ></video>
-                    </figure>
-                    <div class="content">
-                        <h4><a href="#">Susan Chow </a></h4>
-                        <p>I invest with this platform, and i got my profits.</p>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
+                        <figure>
+                            <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/1.mp4" controls ></video>
+                        </figure>
+                        <div class="content">
+                            <h4><a href="#">Susan Chow </a></h4>
+                            <p>I invest with this platform, and i got my profits.</p>
+                        </div>
                     </div>
                 </div>
-           </div>
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
                        <figure><img height="100" src="/assets/front/images/testimonials/person_1.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">Austin Cambell</a></h4>
-                           <p>Fell in Love with the platform the moment i saw it it had clean simple design easy to use and understand.</p>
+                           <p>Fell in Love with the platform the moment i saw it. It has a simple design, easy to use and understand.</p>
                        </div>
                    </div>
                </div>
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
+                    <figure>
+                        <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/3.mp4" controls ></video>
+                    </figure>
+                    <div class="content">
+                        <h4><a href="#">Elizabeth Johnson </a></h4>
+                        <p>I invest with lottrades and i got my profit.</p>
+                    </div>
+                </div>
+           </div>
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
                        <figure><img style="height: 390px" src="/assets/front/images/testimonials/person_2.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">James Hullan</a></h4>
-                           <p>It is a easy and affordable way to dive into investing.</p>
+                           <p>Lottrades has made Forex Trade simple and straight foward.</p>
                        </div>
                    </div>
                </div>
+
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
                        <figure><img src="/assets/front/images/testimonials/person_4.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">Daniel Matthew</a></h4>
-                           <p>Contacting support was simple and easy to get, i was surprised by how quickly they get back to you.</p>
+                           <p>Contacting support is very simple, I am surprised how quickly they get back to me.</p>
                        </div>
                    </div>
                </div>
@@ -589,7 +601,7 @@
                        <figure><img style="height: 390px" src="/assets/front/images/testimonials/person_3.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">Mason Liam</a></h4>
-                           <p>Love the easy of usage and customer support.</p>
+                           <p>Love the simple design and user experience. Not to forget their incredible customer support.</p>
                        </div>
                    </div>
                </div>
@@ -598,7 +610,7 @@
                        <figure><img style="height: 390px" src="/assets/front/images/testimonials/staff-7-new.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">Johnny William</a></h4>
-                           <p>You won't regret working with trust me you will love it.</p>
+                           <p>You won't regret trading with lottrades, trust me you will love it.</p>
                        </div>
                    </div>
                </div>

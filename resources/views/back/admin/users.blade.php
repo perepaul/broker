@@ -87,6 +87,7 @@
                                                 <span onclick="deleteUser({{$user->id}})" class="dropdown-item d-block"><i class="la la-trash"></i>Delete</span>
                                                 <a href="{{route('admin.trades.user.trades',$user->id)}}" class="dropdown-item"><i class="la la-eye"></i>Trades</a>
                                                 <a href="{{route('admin.user.toggle.status',$user->id)}}" class="dropdown-item"><i class="la {{$user->status ? 'la-times' : 'la-check'}}"></i>{{$user->status? 'Deactivate':'Activate'}}</a>
+                                                <a href="{{route('admin.email',['user_id'=>$user->id])}}" class="dropdown-item"><i class="la la-paper-plane"></i>Send mail</a>
                                             </span>
                                         </span>
                                     </td>

@@ -71,13 +71,16 @@ class SettingsController extends Controller
         ]);
         $plan = Plan::findOrFail($id);
         $plan->update($request->except('_token'));
-        if ($plan->features()->count() > 0 && $request->has('values')) {
+        if ($plan->features()->count() > 0) {
             $plan->features()->delete();
+        }
+        if($request->has('values')){
             foreach ($request->values as $value) {
                 $plan->features()->save(new PlanFeatures(['value' => $value]));
             }
         }
-        session()->flash('message', 'Plan deleted');
+
+        session()->flash('message', 'Plan updated');
         return redirect()->back();
     }
 
