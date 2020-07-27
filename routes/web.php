@@ -68,7 +68,7 @@ Route::group(['middleware' => 'web'],function () {
                 Route::get('deposit','DepositController@depositPage')->name('deposit.page');
                 Route::get('deposit/{id}/approve','DepositController@approve')->name('deposit.approve');
 
-                Route::get('withdrawals', 'Admincontroller@withdrawals')->name('withdrawals');
+                Route::get('withdrawals', 'AdminController@withdrawals')->name('withdrawals');
 
                 Route::get('withdrawal/{id}/approve','WithdrawalController@approve')->name('withdrawal.approve');
                 Route::post('withdrawal/{id}/decline','WithdrawalController@decline')->name('withdrawal.decline');
