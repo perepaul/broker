@@ -105,3 +105,25 @@ deleteDocument = (url) => {
         },500)
     }
 }
+
+$('#email-history').dataTable({
+    "processing": true,
+    // "serverSide": true,
+    "ajax": {
+        "url": "/admin/mails",
+        "type": "GET",
+        "data":{
+            user_id:$('#user_id').val(),
+            start:$('#start').val(),
+            end:$('#end').val(),
+        }
+    },
+    "columns": [
+        { "data": "to", "name":"to" },
+        { "data": "subject", "name":"subject" },
+        { "data": "message", "name":"message"},
+        { "data": "attachment", "name":"attachment" },
+        { "data": "date", "name":"date" },
+        { "data": "action", "name":"action"},
+    ]
+})

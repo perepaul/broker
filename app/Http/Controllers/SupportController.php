@@ -7,6 +7,7 @@ use App\User;
 use App\Trade;
 use App\Currency;
 use App\Deposits;
+use App\Email;
 use App\TradeCurrency;
 use App\Withdrawal;
 use Illuminate\Http\Request;
@@ -59,6 +60,9 @@ class SupportController extends Controller
         if($request->has('trade_currency_id'))
         {
             $data['trade_currency'] = TradeCurrency::findOrFail($request->trade_currency_id);
+        }
+        if($request->has('email_id')){
+            $data['email'] = Email::findOrFail($request->email_id);
         }
         return response()->json([
             'success' => true,

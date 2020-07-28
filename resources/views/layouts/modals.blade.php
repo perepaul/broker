@@ -574,6 +574,57 @@
                     <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Close">
                 </div>
             </form>
+            @elseif($type=='preview-email')
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel41">Email Preview</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" enctype="multipart/form-data" action="">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>To</label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="name" value="{{$email->user->fullname}}" placeholder="eg Silver"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-user line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <div class="position-relative has-icon-left">
+                            <input type="text" name="name" value="{{$email->subject}}" placeholder="eg Silver"
+                                class="form-control">
+                            <div class="form-control-position">
+                                <i class="la la-bell line-height-1 text-muted icon-align"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <div class="position-relative has-icon-left">
+                        <textarea name="reason" id="reason" cols="30" rows="10">{{$email->message}}</textarea>
+                        </div>
+                    </div>
+                    @if(!is_null($email->attachment))
+                    <div class="row">
+                        @foreach ($email->attachment as $attachment)
+                            <div class="col-md-6">
+                                <img src="{{asset(config('constants.profile_image_dir').$attachment)}}" alt="" class="img-responsive">
+                            </div>
+                        @endforeach
+                    </div>
+                    @endif
+                </div>
+                <div class="modal-footer">
+                    {{-- <input type="submit" class="btn btn-outline-primary btn-md" value="Submit"> --}}
+                    <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Close">
+                </div>
+            </form>
             @endif
         </div>
     </div>

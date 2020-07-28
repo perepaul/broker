@@ -8,7 +8,7 @@
             <div class="card-content">
                 <div class="card-header">
                     <div class="card-title">
-                        <h4>Email</h4>
+                        <h4>Send Email</h4>
                     </div>
                 </div>
                 <div class="card-body">
@@ -30,7 +30,11 @@
                         </div>
                         <div class="form-group">
                             <label for="message">message</label>
-                            <textarea name="message" id="message" cols="50" class="form-control" rows="40"></textarea>
+                            <textarea name="message" id="message" cols="30" class="form-control" rows="10"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="attachment">Attachments</label>
+                            <input type="file" name="attachment[]" id="attachment" class="form-control" multiple>
                         </div>
                         <div class="form-group pull-right">
                             <button type="submit" class="btn btn-success btn-round btn-lg">SEND <i class="la la-paper-plane"></i></button>

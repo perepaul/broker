@@ -19,8 +19,16 @@
             <li class=" nav-item"><a href="{{route('admin.users')}}"><i class="la la-users"></i><span class="menu-title"
                         data-i18n="nav.users.main">Users</span></a>
             </li>
-            <li class=" nav-item"><a href="{{route('admin.email')}}"><i class="la la-envelope"></i><span class="menu-title"
+            <li class="has-sub nav-item"><a href="javascript:void(0)"><i class="la la-envelope"></i><span class="menu-title"
                 data-i18n="nav.users.main">Mail</span></a>
+                <ul class="menu-content">
+                    <li>
+                        <a href="{{route('admin.email')}}" class="menu-item"><i class="la la-paper-plane"></i> Send mail</a>
+                    </li>
+                    <li>
+                        <a href="{{route('admin.email.history')}}" class="menu-item"><i class="la la-pie-chart"></i> Email History</a>
+                    </li>
+                </ul>
             </li>
             <li class=" nav-item"><a href="{{route('admin.settings.index')}}"><i class="la la-cog"></i><span
                         class="menu-title" data-i18n="nav.users.main">Settings</span></a>

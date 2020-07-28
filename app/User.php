@@ -84,4 +84,8 @@ class User extends Authenticatable
         return $this->hasMany(Document::class);
     }
 
+    public function emails(){
+        return $this->hasMany(Email::class);
+    }
+
 }

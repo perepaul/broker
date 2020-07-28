@@ -77,6 +77,7 @@ Route::group(['middleware' => 'web'],function () {
 
                 Route::get('mail','AdminController@email')->name('email');
                 Route::post('mail','AdminController@sendMail')->name('email.send');
+                Route::get('mails','AdminController@emails')->name('email.history');
             });
 
             //users Route

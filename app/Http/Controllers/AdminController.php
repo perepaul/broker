@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Deposits;
+use App\Email;
 use App\Mail\GeneralUserMail;
 use App\Trade;
 use App\User;
 use App\Withdrawal;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use SebastianBergmann\CodeCoverage\Report\PHP;
 
 class AdminController extends Controller
 {
@@ -56,15 +58,70 @@ class AdminController extends Controller
         ],[
             'user_id.required'=>'Please select a user'
         ]);
-
+        $attachment = array('attachment'=>null);
+        if($request->has('attachment'))
+        {
+            foreach($request->attachment as $attach)
+            {
+                $attachment['attachment'][] = uploadImage(config('constants.email_attachment_dir'),$attach);
+            }
+        }
         foreach($request->user_ids as $user_id)
         {
             $user = User::findOrFail($user_id);
-            Mail::to($user)->send(new GeneralUserMail($user,$request->subject,$request->message));
+            // $user->emails()->save(new Email(array_merge($attachment,$request->except('_token','user_ids'))));
+            $param = array_merge(['user_id'=>$user_id,'attachment'=>$attachment['attachment']],$request->except('_token','user_ids','attachment'));
+            // dd($param);
+            Email::create($param);
+            Mail::to($user)->send(new GeneralUserMail($user,$request->subject,$request->message,$attachment));
         }
 
         session()->flash('message','Email(s) sent successfully');
         return redirect()->back();
 
+    }
+
+    public function emails(Request $request)
+    {
+        if($request->ajax()){
+            $emails = Email::query();
+
+            if($request->has('user_id') && !empty($request->user_id)){
+                $emails->where('user_id', $request->user_id);
+            }
+            if($request->has('attachemnt')){
+                if($request->attachment == 'yes'){
+                    $emails->whereNotNull('attachment');
+                }elseif($request->attachment == 'no'){
+                    $emails->whereNull('attachment');
+                }
+            }
+            if($request->has('start') && !empty($request->start) && $request->has('end') && !empty($request->end))
+            {
+                $emails->whereBetween('created_at',[$request->start,$request->end]);
+            }
+            $data = array('data'=>[]);
+            // dd($emails->get());
+            foreach($emails->get() as $k => $email)
+            {
+                $d['to'] = $email->user->fullname;
+                $d['subject']=$email->subject;
+                $d['message']= $email->message;
+                $d['attachment'] = !is_null($email->attachment) ?'<span class="badge badge-success">Yes</span>':'<span class="badge badge-info">No</span>';
+                $d['date'] = $email->created_at->format('d-m-Y');
+                $d['action'] = '<span class="dropdown">'. PHP_EOL;
+                $d['action'] .= '<button id="btnSearchDrop2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"class="btn btn-primary btn-sm dropdown-toggle dropdown-menu-right">'.PHP_EOL;
+                $d['action'] .= '<i class="ft-settings"></i>' . PHP_EOL;
+                $d['action'] .= '</button>' . PHP_EOL;
+                $d['action'] .= '<span aria-labelledby="btnSearchDrop2" class="dropdown-menu mt-1 dropdown-menu-right">'. PHP_EOL;
+                $d['action'] .= '<a href="javascript:void(0)" onclick="getModal({type:\'preview-email\',email_id:'.$email->id.' })" class="dropdown-item"><i class="la la-eye"></i> View</a>'. PHP_EOL;
+                $d['action'] .= '</span>'. PHP_EOL;
+                $d['action'] .= '</span>'. PHP_EOL;
+
+                $data['data'][] = $d;
+            }
+            return json_encode($data);
+        }
+        return view('back.admin.emails');
     }
 }
