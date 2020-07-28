@@ -19,7 +19,7 @@
             <li class=" nav-item"><a href="{{route('admin.users')}}"><i class="la la-users"></i><span class="menu-title"
                         data-i18n="nav.users.main">Users</span></a>
             </li>
-            <li class=" nav-item"><a href="{{route('admin.email')}}"><i class="la la-paper-plane"></i><span class="menu-title"
+            <li class=" nav-item"><a href="{{route('admin.email')}}"><i class="la la-envelope"></i><span class="menu-title"
                 data-i18n="nav.users.main">Mail</span></a>
             </li>
             <li class=" nav-item"><a href="{{route('admin.settings.index')}}"><i class="la la-cog"></i><span
