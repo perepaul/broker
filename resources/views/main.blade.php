@@ -528,11 +528,33 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
                         <figure>
+                            <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/4.mp4" controls ></video>
+                        </figure>
+                        <div class="content">
+                            <h4><a href="#">Judy Parker </a></h4>
+                            <p>I invested with lottrades and i got my profit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
+                        <figure>
+                            <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/3.mp4" controls ></video>
+                        </figure>
+                        <div class="content">
+                            <h4><a href="#">Elizabeth Johnson </a></h4>
+                            <p>I invested with lottrades and i got my profit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
+                        <figure>
                             <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/1.mp4" controls ></video>
                         </figure>
                         <div class="content">
                             <h4><a href="#">Susan Chow </a></h4>
-                            <p>I invest with this platform, and i got my profits.</p>
+                            <p>I invested with this platform, and i got my profits.</p>
                         </div>
                     </div>
                 </div>
@@ -545,47 +567,37 @@
                        </div>
                    </div>
                </div>
-               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
-                    <figure>
-                        <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/3.mp4" controls ></video>
-                    </figure>
-                    <div class="content">
-                        <h4><a href="#">Elizabeth Johnson </a></h4>
-                        <p>I invest with lottrades and i got my profit.</p>
-                    </div>
-                </div>
-           </div>
+
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
                        <figure><img style="height: 390px" src="/assets/front/images/testimonials/person_2.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">James Hullan</a></h4>
-                           <p>Lottrades has made Forex Trade simple and straight foward.</p>
+                           <p>Lottrades has made Forex trading simple and straight foward.</p>
                        </div>
                    </div>
                </div>
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
+                    <figure>
+                        <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/2.mp4" controls ></video>
+                        {{-- <a class="owl-video" href="/assets/front/images/testimonials/videos/1.mp4" ></a> --}}
+                    </figure>
+                    <div class="content">
+                        <h4><a href="#">Rebecca Jenkins</a></h4>
+                        <p>I invested with lottrades, and i got my profit.</p>
+                    </div>
+                </div>
+                </div>
 
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
                        <figure><img src="/assets/front/images/testimonials/person_4.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">Daniel Matthew</a></h4>
-                           <p>Contacting support is very simple, I am surprised how quickly they get back to me.</p>
+                           <p>Contacting support is very simple, it surprises me how quickly they respond to me.</p>
                        </div>
                    </div>
-               </div>
-               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
-                        <figure>
-                            <video class="owl-video video-js" preload="auto" style="width:100%; height: 370px;" src="/assets/front/images/testimonials/videos/2.mp4" controls ></video>
-                            {{-- <a class="owl-video" href="/assets/front/images/testimonials/videos/1.mp4" ></a> --}}
-                        </figure>
-                        <div class="content">
-                            <h4><a href="#">Rebecca Jenkins</a></h4>
-                            <p>I invest with lottrades, and i sure got my profit.</p>
-                        </div>
-                    </div>
                </div>
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <div class="blog">
