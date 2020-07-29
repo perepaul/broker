@@ -612,9 +612,16 @@
                     </div>
                     @if(!is_null($email->attachment))
                     <div class="row">
-                        @foreach ($email->attachment as $attachment)
-                            <div class="col-md-6">
-                                <img src="{{asset(config('constants.profile_image_dir').$attachment)}}" alt="" class="img-responsive">
+                        @foreach ($email->attachment as $attach)
+                            <div class="col-md-6 p-1">
+                                @php
+                                 $file = explode('.',$attach)
+                                @endphp
+                                @if(in_array(strtolower($file[1]),['png','jpg','jpeg','gif','bmp']))
+                                <img src="{{asset(config('constants.email_attachment_dir').$attach)}}" alt="" class="img-responsive" style="width:100%; max-height:450px;">
+                                @else
+                                The attachment is not an image, click <a href="{{asset(config('constants.email_attachment_dir').$attach)}}" target="_blank">here</a> to view file
+                                @endif
                             </div>
                         @endforeach
                     </div>

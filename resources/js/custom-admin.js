@@ -106,19 +106,21 @@ deleteDocument = (url) => {
     }
 }
 
-$('#email-history').dataTable({
-    "processing": true,
+var emails = $('#email-history').DataTable({
+    processing: true,
+    responsive:true,
     // "serverSide": true,
-    "ajax": {
-        "url": "/admin/mails",
-        "type": "GET",
-        "data":{
-            user_id:$('#user_id').val(),
-            start:$('#start').val(),
-            end:$('#end').val(),
+    ajax: {
+        url: "/admin/mails",
+        type: "GET",
+        data: function(d){
+            d.user_id = $('#user_id').val()
+            d.attachment = $('#attachment').val()
+            d.start = $('#start').val()
+            d.end = $('#end').val()
         }
     },
-    "columns": [
+    columns: [
         { "data": "to", "name":"to" },
         { "data": "subject", "name":"subject" },
         { "data": "message", "name":"message"},
@@ -127,3 +129,8 @@ $('#email-history').dataTable({
         { "data": "action", "name":"action"},
     ]
 })
+
+$(document).on('change','.filter',function(){
+    emails.ajax.reload();
+
+});

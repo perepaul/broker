@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Deposits;
-use App\Email;
-use App\Mail\GeneralUserMail;
-use App\Trade;
 use App\User;
+use App\Email;
+use App\Trade;
+use App\Deposits;
 use App\Withdrawal;
 use Illuminate\Http\Request;
+use App\Mail\GeneralUserMail;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use SebastianBergmann\CodeCoverage\Report\PHP;
 
@@ -87,9 +88,10 @@ class AdminController extends Controller
             $emails = Email::query();
 
             if($request->has('user_id') && !empty($request->user_id)){
-                $emails->where('user_id', $request->user_id);
+                $emails->where('user_id','=', (int)$request->user_id);
             }
-            if($request->has('attachemnt')){
+            if($request->has('attachment')){
+                // dd($request->attachment);
                 if($request->attachment == 'yes'){
                     $emails->whereNotNull('attachment');
                 }elseif($request->attachment == 'no'){
@@ -98,7 +100,7 @@ class AdminController extends Controller
             }
             if($request->has('start') && !empty($request->start) && $request->has('end') && !empty($request->end))
             {
-                $emails->whereBetween('created_at',[$request->start,$request->end]);
+                $emails->whereBetween(DB::raw('date(created_at)'),[$request->start,$request->end]);
             }
             $data = array('data'=>[]);
             // dd($emails->get());

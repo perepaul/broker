@@ -12,12 +12,12 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <div class="container">
+                    <div class="container p-1">
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="user">User</label>
-                                    <select name="user_id" id="user" class="select2 form-control">
+                                    <select name="user_id" id="user_id" class="select2 form-control filter">
                                         <option value="">Select User</option>
                                         @foreach($users->where('is_admin',0) as $user)
                                             <option value="{{$user->id}}">{{$user->fullname}}</option>
@@ -28,7 +28,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="attachemnt">Has attachment</label>
-                                    <select name="attachemnt" id="attachemnt" class="select2 form-control">
+                                    <select name="attachemnt" id="attachment" class="select2 form-control filter">
                                         <option value="">None</option>
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
@@ -36,15 +36,15 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="form-group">
+                                <div class="form-group start-date-container">
                                     <label for="start">Start Date</label>
-                                    <input type="date" name="start" id="start" class="form-control">
+                                    <input type="text" name="start" id="start" class="form-control filter">
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="form-group">
+                                <div class="form-group end-date-container">
                                     <label for="end">End Date</label>
-                                    <input type="date" name="end" id="end" class="form-control">
+                                    <input type="text" name="end" id="end" class="form-control filter">
                                 </div>
                             </div>
 

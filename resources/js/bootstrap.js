@@ -31,13 +31,24 @@ require('datatables.net-responsive')
 require('datatables.net-responsive-bs4')
 
 require('select2');
+require('bootstrap-datepicker')
 
 
     if($('#message').length){
         CKEDITOR.replace('message');
     }
     $('.select2').select2();
+    $('#end').datepicker({
+        container:$('.end-date-container'),
+        format:'yyyy-mm-dd',
+        autoclose:true
+    });
 
+    $('#start').datepicker({
+        container:$('.start-date-container'),
+        format:'yyyy-mm-dd',
+        autoclose:true
+    });
 
 iziToast.settings({
     timeout: 10000,
