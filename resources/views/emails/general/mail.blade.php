@@ -3,5 +3,5 @@
 
 Hello {{$user->firstname}},<br>
 
-{!!  htmlspecialchars_decode($messageText) !!}
+{!!  htmlspecialchars_decode($email->message) !!}
 @endsection

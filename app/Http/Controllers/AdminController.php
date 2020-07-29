@@ -72,8 +72,8 @@ class AdminController extends Controller
             // $user->emails()->save(new Email(array_merge($attachment,$request->except('_token','user_ids'))));
             $param = array_merge(['user_id'=>$user_id,'attachment'=>$attachment['attachment']],$request->except('_token','user_ids','attachment'));
             // dd($param);
-            Email::create($param);
-            Mail::to($user)->send(new GeneralUserMail($user,$request->subject,$request->message,$attachment));
+
+            Mail::to($user)->send(new GeneralUserMail($user,Email::create($param)));
         }
 
         session()->flash('message','Email(s) sent successfully');

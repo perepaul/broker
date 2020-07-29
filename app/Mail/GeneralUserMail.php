@@ -12,18 +12,16 @@ class GeneralUserMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $user, $sub, $messageText, $files;
+    public $user, $email;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(User $user, $subject, $message,$attachment)
+    public function __construct(User $user, $email)
     {
         $this->user = $user;
-        $this->sub = $subject;
-        $this->messageText = $message;
-        $this->files = $attachment;
+        $this->email = $email;
     }
 
     /**
@@ -33,11 +31,11 @@ class GeneralUserMail extends Mailable
      */
     public function build()
     {
-        $mail = $this->subject($this->sub)->markdown('emails.general.mail');
-        if(!empty($this->attachments)){
-            foreach($this->files['attachment'] as $attachment){
-                // dd(config('constants.email_attachment_dir').$attachment);
-                $mail->attachFromStorage(config('constants.email_attachment_dir').$attachment);
+        $mail = $this->subject($this->email->subject)->markdown('emails.general.mail');
+        if(!is_null($this->email->attachment)){
+            foreach($this->email->attachment as $media)
+            {
+                $mail->attach(public_path(config('constants.email_attachment_dir').$media));
             }
         }
         return $mail;
