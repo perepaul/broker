@@ -17,7 +17,7 @@ Thanks,<br>
 {{ config('app.name') }}
 @slot('footer')
 @component('mail::footer')
-© {{ date('Y') }} {{ config('app.name') }}. @lang('All rights reserved.')
+© {{ date('Y') }} <a href="{{url('/')}}">{{ config('app.name') }}</a>. @lang('All rights reserved.')
 @endcomponent
 @endslot
 @endcomponent
