@@ -117,7 +117,7 @@ img {
 /* Logo */
 
 .logo {
-    width: 120px;
+    width: 180px;
     height: auto;
 }
 
@@ -180,7 +180,7 @@ img {
 }
 
 .footer a {
-    color: #d39c5e;
+    color: #ef3232;
     text-decoration: underline;
 }
 
