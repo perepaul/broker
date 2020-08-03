@@ -78,7 +78,7 @@
                         <div class="card box-shadow">
                           <div class="card-header pb-0">
                             <h2 class="my-0 font-weight-bold danger">
-                                <img height="25" src="https://miro.medium.com/max/1009/1*nhszIhUonirsqTPGelkoFg.jpeg" alt="paystack">
+                                <img height="25" src="{{asset('assets/back/stripe.png')}}" alt="paystack">
                             </h2>
                           </div>
                           <div class="card-body">
