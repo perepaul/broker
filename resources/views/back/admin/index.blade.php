@@ -814,11 +814,13 @@
                             </thead>
                             <tbody>
                                 @forelse ($last_withdrawals as $withdrawal)
+                                @if($withdrawal->user)
                                 <tr>
                                     <td>{{$withdrawal->user->fullname}}</td>
                                     <td>{{$withdrawal->user->currency_symbol.$withdrawal->amount}}</td>
                                     <td>{{$withdrawal->created_at->format('d-m-Y')}}</td>
                                 </tr>
+                                @endif
                                 @empty
                                     <tr>
                                         <td class="text-center" colspan="3">No withdrawals yet</td>
@@ -852,12 +854,13 @@
                             </thead>
                             <tbody>
                                 @forelse ($last_deposits as $deposit)
-
+                                @if($deposit->user)
                                 <tr class="">
                                     <td>{{$deposit->user->fullname}}</td>
                                     <td>{{$deposit->user->currencySymbol.$deposit->amount}}</td>
                                     <td>{{$deposit->created_at->format('d-m-Y')}}</td>
                                 </tr>
+                                @endif
                                 @empty
                                 <tr>
                                     <td class="text-center" colspan="3">Oops! no deposits yet...</td>

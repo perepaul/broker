@@ -27,6 +27,7 @@
                             </thead>
                             <tbody>
                                 @forelse ($trades as $trade)
+                                @if($trade->user)
                                 <tr class="bg-success bg-lighten-5">
                                     <td>{{$trade->id}}</td>
                                     <td>{{$trade->user->firstname}}</td>
@@ -47,6 +48,7 @@
                                             </span>
                                         </span></td>
                                 </tr>
+                                @endif
                                 @empty
 
                                 @endforelse

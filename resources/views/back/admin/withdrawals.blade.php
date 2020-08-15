@@ -25,6 +25,7 @@
                             </thead>
                             <tbody>
                                 @foreach ($withdrawals as $withdrawal)
+                                @if($withdrawal->user)
                                     <tr class="@if($withdrawal->status == 1) bg-success @elseif($withdrawal->status == 0) bg-yellow @else bg-danger @endif bg-lighten-5">
                                         <td>{{$withdrawal->reference}}</td>
                                         <td>{{$withdrawal->user->fullname}}</td>
@@ -48,6 +49,7 @@
                                                 </span>
                                             </span></td>
                                     </tr>
+                                @endif
                                 @endforeach
                             </tbody>
                         </table>

@@ -28,6 +28,7 @@
                                 </thead>
                                 <tbody>
                                     @foreach ($deposits as $deposit)
+                                    @if($deposit->user)
                                      <tr>
                                          <td>
                                              @if($deposit->status)
@@ -79,6 +80,7 @@
                                             </span>
                                          </td>
                                      </tr>
+                                     @endif
                                     @endforeach
                                 </tbody>
                             </table>

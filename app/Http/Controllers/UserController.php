@@ -94,6 +94,9 @@ class UserController extends Controller
     {
         $user = user::findOrFail($id);
         $user->trades()->delete();
+        $user->withdrawals()->delete();
+        $user->deposits()->delete();
+        $user->emails()->delete();
         // $user->transactions()->delete();
         $user->delete();
         session()->flash('message','User deleted successfully');

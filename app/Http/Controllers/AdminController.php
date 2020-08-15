@@ -106,21 +106,23 @@ class AdminController extends Controller
             // dd($emails->get());
             foreach($emails->get() as $k => $email)
             {
-                $d['to'] = $email->user->fullname;
-                $d['subject']=$email->subject;
-                $d['message']= $email->message;
-                $d['attachment'] = !is_null($email->attachment) ?'<span class="badge badge-success">Yes</span>':'<span class="badge badge-info">No</span>';
-                $d['date'] = $email->created_at->format('d-m-Y');
-                $d['action'] = '<span class="dropdown">'. PHP_EOL;
-                $d['action'] .= '<button id="btnSearchDrop2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"class="btn btn-primary btn-sm dropdown-toggle dropdown-menu-right">'.PHP_EOL;
-                $d['action'] .= '<i class="ft-settings"></i>' . PHP_EOL;
-                $d['action'] .= '</button>' . PHP_EOL;
-                $d['action'] .= '<span aria-labelledby="btnSearchDrop2" class="dropdown-menu mt-1 dropdown-menu-right">'. PHP_EOL;
-                $d['action'] .= '<a href="javascript:void(0)" onclick="getModal({type:\'preview-email\',email_id:'.$email->id.' })" class="dropdown-item"><i class="la la-eye"></i> View</a>'. PHP_EOL;
-                $d['action'] .= '</span>'. PHP_EOL;
-                $d['action'] .= '</span>'. PHP_EOL;
-
-                $data['data'][] = $d;
+                if($email->user)
+                {
+                    $d['to'] = $email->user->fullname;
+                    $d['subject']=$email->subject;
+                    $d['message']= $email->message;
+                    $d['attachment'] = !is_null($email->attachment) ?'<span class="badge badge-success">Yes</span>':'<span class="badge badge-info">No</span>';
+                    $d['date'] = $email->created_at->format('d-m-Y');
+                    $d['action'] = '<span class="dropdown">'. PHP_EOL;
+                    $d['action'] .= '<button id="btnSearchDrop2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"class="btn btn-primary btn-sm dropdown-toggle dropdown-menu-right">'.PHP_EOL;
+                    $d['action'] .= '<i class="ft-settings"></i>' . PHP_EOL;
+                    $d['action'] .= '</button>' . PHP_EOL;
+                    $d['action'] .= '<span aria-labelledby="btnSearchDrop2" class="dropdown-menu mt-1 dropdown-menu-right">'. PHP_EOL;
+                    $d['action'] .= '<a href="javascript:void(0)" onclick="getModal({type:\'preview-email\',email_id:'.$email->id.' })" class="dropdown-item"><i class="la la-eye"></i> View</a>'. PHP_EOL;
+                    $d['action'] .= '</span>'. PHP_EOL;
+                    $d['action'] .= '</span>'. PHP_EOL;
+                    $data['data'][] = $d;
+                }
             }
             return json_encode($data);
         }
