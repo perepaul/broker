@@ -7,6 +7,15 @@
     @endphp
 @endif
 <div class="content-body">
+    @if(session()->has('info'))
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <h4 class="alert-heading">Howdy {{$user->firstname}}!</h4>
+        <p>{{session()->get('info')}}</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    @endif
     <div id="user-profile" class="col-12">
         <div class="row">
             <div class="card col-12 profile-with-cover">
@@ -47,20 +56,20 @@
 
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" id="homeIcon-tab" data-toggle="tab" href="#link1"
+                    <a class="nav-link @if(!session('idTab')) active @endif" id="homeIcon-tab" data-toggle="tab" href="#link1"
                         aria-controls="homeIcon" aria-expanded="true"><i class="la la-user"></i>
                         Profile</a>
                 </li>
                 @if(!auth()->user()->is_admin)
                 <li class="nav-item">
-                    <a class="nav-link" id="profileIcon-tab" data-toggle="tab" href="#link2"
+                    <a class="nav-link @if(session('idTab')) active @endif" id="profileIcon-tab" data-toggle="tab" href="#link2"
                         aria-controls="profileIcon" aria-expanded="false"><i class="la la-money"></i>
                         ID & Documents</a>
                 </li>
                 @endif
             </ul>
             <div class="tab-content pt-1">
-                <div role="tabpanel" class="tab-pane active" id="link1" aria-labelledby="homeIcon-tab"
+                <div role="tabpanel" class="tab-pane @if(!session('idTab')) active @endif" id="link1" aria-labelledby="homeIcon-tab"
                     aria-expanded="true">
                     <div class="p-2">
                         <div class="mb-2">
@@ -168,7 +177,7 @@
                 </div>
 
                 @if(!auth()->user()->is_admin)
-                <div class="tab-pane" id="link2" role="tabpanel" aria-labelledby="profileIcon-tab"
+                <div class="tab-pane @if(session('idTab')) active @endif" id="link2" role="tabpanel" aria-labelledby="profileIcon-tab"
                     aria-expanded="false">
                     <div class="p-2">
                         <div class="mb-2 d-flex justify-content-between">

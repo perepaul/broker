@@ -39,9 +39,22 @@ class AdminController extends Controller
     {
         return view('back.admin.withdrawals');
     }
-    public function users()
+    public function users($status)
     {
-        return view('back.admin.users');
+        if(!in_array($status,['verified','unverified'])) return abort(404);
+        $status = $status == 'verified' ? 1 : 0;
+        // dd($status);
+        $Users = User::ofAccepted($status)->get();
+        return view('back.admin.users',compact('Users'));
+    }
+
+    public function acceptUser($id)
+    {
+        $user = User::findOrFail($id);
+        $user->accepted = 1;
+        $user->save();
+        session()->flash('message','User Accepted Successfully');
+        return redirect()->route('admin.users','verified');
     }
 
     public function email()

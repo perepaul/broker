@@ -16,8 +16,12 @@
             {{-- <li class=" nav-item"><a href="{{route('admin.tickets')}}"><i class="la la-book"></i><span
                         class="menu-title" data-i18n="nav.vertical_nav.main">Tickets</span></a>
             </li> --}}
-            <li class=" nav-item"><a href="{{route('admin.users')}}"><i class="la la-users"></i><span class="menu-title"
+            <li class="has-sub nav-item"><a href=""><i class="la la-users"></i><span class="menu-title"
                         data-i18n="nav.users.main">Users</span></a>
+                        <ul class="menu-content">
+                            <li><a href="{{route('admin.users',['status'=>'verified'])}}"><i class="la la-check"></i> Verified Users</a></li>
+                            <li><a href="{{route('admin.users',['status'=>'unverified'])}}"><i class="la la-times"></i> Unverified Users</a></li>
+                        </ul>
             </li>
             <li class="has-sub nav-item"><a href="javascript:void(0)"><i class="la la-envelope"></i><span class="menu-title"
                 data-i18n="nav.users.main">Mail</span></a>

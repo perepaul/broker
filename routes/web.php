@@ -40,7 +40,8 @@ Route::group(['middleware' => 'web'],function () {
 
                 Route::get('/', 'AdminController@index')->name('index');
 
-                Route::get('users', 'AdminController@users')->name('users');
+                Route::get('users/{status}', 'AdminController@users')->name('users');
+                Route::get('users/{id}/accept','AdminController@acceptUser')->name('users.accept');
 
                 Route::get('users/{id}/status','UserController@togleStatus')->name('user.toggle.status');
                 Route::group(['prefix' => 'settings', 'as' => 'settings.'], function () {
@@ -81,7 +82,7 @@ Route::group(['middleware' => 'web'],function () {
             });
 
             //users Route
-            Route::group(['prefix'=>'users', 'as'=> 'users.','middleware'=>'isUser'], function() {
+            Route::group(['prefix'=>'users', 'as'=> 'users.','middleware'=>['isUser','hasDocument']], function() {
                 Route::get('/', 'UserController@index')->name('index');
                 Route::get('deposit', 'UserController@deposit')->name('deposit');
                 Route::post('deposit','DepositController@deposit')->name('deposit.make');

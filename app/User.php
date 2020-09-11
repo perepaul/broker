@@ -88,4 +88,9 @@ class User extends Authenticatable
         return $this->hasMany(Email::class);
     }
 
+    public function scopeOfAccepted($query,$value)
+    {
+        return $this->where('accepted',$value);
+    }
+
 }

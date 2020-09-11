@@ -883,7 +883,7 @@
                     <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                     <div class="heading-elements">
                         <td>
-                            <a href="{{route('admin.users')}}" class="btn btn-sm round btn-primary btn-glow text-white"><i
+                            <a href="{{route('admin.users','verified')}}" class="btn btn-sm round btn-primary btn-glow text-white"><i
                                     class="la la-eye font-medium-1"></i> View all</a>
                         </td>
                     </div>

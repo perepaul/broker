@@ -632,6 +632,42 @@
                     <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Close">
                 </div>
             </form>
+            @elseif($type == 'accept-user')
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel41">User Verification</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>User: {{$user->fullname}}</h4>
+                <h6>Email: {{$user->email}}</h6>
+                <div class="p-1">
+                    <p>Documents</p>
+                        <ul class="list-group">
+                            @forelse ($user->documents as $document)
+                            <li class="list-group-item  p-1">
+                                <span class="float-right">
+                                    <a class="btn btn-danger btn-sm"
+                                        href="{{asset(config('constants.document_dir').$document->image)}}" target="_blank">
+                                        <i class="la la-eye white"></i> Preview
+                                    </a>
+                                </span>
+                                {{$document->name}}
+                            </li>
+                            @empty
+                            <li class="list-group-item p-1 text-center">
+                                No documents uploaded yet
+                            </li>
+                            @endforelse
+                        </ul>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+            <a href="{{route('admin.users.accept',$user->id)}}" class="btn btn-outline-primary btn-md">Accept</a>
+                <input type="reset" class="btn btn-outline-secondary btn-md" data-dismiss="modal" value="Close">
+            </div
             @endif
         </div>
     </div>

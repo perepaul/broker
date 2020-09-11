@@ -67,11 +67,11 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($users as $user)
+                                @foreach ($Users as $user)
                                 @if(!$user->is_admin)
                                 <tr>
                                     <td>{{$user->id}}</td>
-                                    <td><a href="">{{$user->firstname.' '.$user->lastname}}</a></td>
+                                    <td>{{$user->firstname.' '.$user->lastname}}</td>
                                     <td>{{$user->email}}</td>
                                     <td>{{$user->balance}}</td>
                                     <td>{{$user->demo_balance}}</td>
@@ -83,6 +83,9 @@
                                                 class="btn btn-primary btn-sm dropdown-toggle dropdown-menu-right"><i
                                                     class="ft-settings"></i></button>
                                             <span class="dropdown-menu mt-1 dropdown-menu-right">
+                                                @if($user->accepted == 0)
+                                                <a href="javascript:void(0)" onclick="getModal({type:'accept-user',user_id:{{$user->id}}})"  class="dropdown-item"><i class="la la-check"></i>Verify</a>
+                                                @endif
                                                 <a href="javascript:void(0)" onclick="getModal({type:'edit-user',user_id:{{$user->id}}})"  class="dropdown-item"><i class="la la-edit"></i>Edit</a>
                                                 <span onclick="deleteUser({{$user->id}})" class="dropdown-item d-block"><i class="la la-trash"></i>Delete</span>
                                                 <a href="{{route('admin.trades.user.trades',$user->id)}}" class="dropdown-item"><i class="la la-eye"></i>Trades</a>
