@@ -22,7 +22,7 @@
                               <li>Online support</li>
                               <li>Help center access</li>
                             </ul>
-                            <button type="button" class="btn btn-lg btn-block btn-danger btn-glow payment-method">Select</button>
+                            <button type="button" class="btn btn-lg btn-block btn-danger btn-glow payment-method bitcoin-toggle">Select</button>
                           </div>
                         </div>
                     </div>
@@ -50,13 +50,13 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="col-xl-3 col-md-6 col-12">
+             <div class="col-xl-3 col-md-6 col-12">
                 <div class="card profile-card-with-cover">
                     <div class="card-content card-deck text-center">
                         <div class="card box-shadow">
                           <div class="card-header pb-0">
                             <h2 class="my-0 font-weight-bold danger">
-                                <img height="25" src="https://miro.medium.com/max/1009/1*nhszIhUonirsqTPGelkoFg.jpeg" alt="paystack">
+                                <img height="25" src="/assets/back/bank.jpg" alt="paystack">
                             </h2>
                           </div>
                           <div class="card-body">
@@ -66,13 +66,13 @@
                               <li>Email support</li>
                               <li>Help center access</li>
                             </ul>
-                            <button type="button" class="btn btn-lg btn-block btn-danger btn-glow payment-method disabled">Select</button>
+                            <button type="button" class="btn btn-lg btn-block btn-success btn-glow payment-method bank-toggle">Wire Transfer</button>
                           </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-md-6 col-12">
+            {{--<div class="col-xl-3 col-md-6 col-12">
                 <div class="card profile-card-with-cover">
                     <div class="card-content card-deck text-center">
                         <div class="card box-shadow">
@@ -95,7 +95,7 @@
                 </div>
             </div> --}}
         </div>
-        <div class="card pay" style="display: none">
+        <div class="card bitcoin" style="display: none">
             <div class="card-header">
             <h4 class="card-title">Bitcoin Method </h4>
             <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
@@ -125,6 +125,67 @@
                                 @if(!auth()->user()->wallet)
                                 <div class="d-flex justify-content-between p-1">
                                     <h4>Save address?</h4>
+                                        <input type="checkbox" class="text-centers" name="save" id="save">
+                                </div>
+                                @endif
+                                <div class="form-group">
+                                    <button class="btn btn-success btn-block">Complete</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bank" style="display: none">
+            <div class="card-header">
+            <h4 class="card-title">Wire Transfer</h4>
+            <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
+
+            </div>
+            <div class="card-content collapse show">
+                <div class="card-body">
+
+                    <div class="row">
+                    <div class="col-md-5 m-auto col-sm-12">
+                        <div class="card">
+                        <div class="text-center">
+                            <div class="card-body p-0">
+                            <form class="form" action="{{route('users.withdraw.bank')}}" method="POST">
+                                @csrf
+                                <div class="form-group text-left">
+                                    <label for="">Name</label>
+                                    <div class="input-group">
+                                        <input type="text" value="{{auth()->user()->fullname}}" class="form-control" id="address" name="address" placeholder="Enter Bitcoin address here">
+                                    </div>
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="">Bank Name</label>
+                                    <input type="text" class="form-control" name="bank_name" value="{{auth()->user()->bank_details->bank_name ?? old('bank_name')}}" placeholder="Enter Iban number">
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="">IBAN</label>
+                                    <input type="text" class="form-control" name="iban_number" value="{{auth()->user()->bank_details->iban_number ?? old('iban_number')}}" placeholder="Enter Iban number">
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="">Routing Number</label>
+                                    <input type="text" class="form-control" name="routing_number" value="{{auth()->user()->bank_details->routing_number ?? old('routing_number')}}" placeholder="Enter routing number">
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="">Swift code</label>
+                                    <input type="text" class="form-control" name="swift_code" value="{{auth()->user()->bank_details->swift_code ?? old('swift_code')}}" placeholder="Enter swift code">
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="">AMOUNT</label>
+                                    <input type="text" class="form-control" name="amount" value="{{old('amount')}}" placeholder="Enter amount">
+                                </div>
+                                @if(!auth()->user()->wallet)
+                                <div class="d-flex justify-content-between p-1">
+                                    <h4>{{!is_null(auth()->user()->bank_details) ? 'Update' : 'Save'}} details?</h4>
                                         <input type="checkbox" class="text-centers" name="save" id="save">
                                 </div>
                                 @endif

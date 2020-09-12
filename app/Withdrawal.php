@@ -6,7 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Withdrawal extends Model
 {
-    protected $fillable = ['image','status','reference','amount','approved','address'];
+    protected $casts = [
+        'bank_details' => 'object'
+    ];
+    protected $fillable = ['image','status','reference','method','amount','approved','address','bank_details'];
 
     public function user()
     {

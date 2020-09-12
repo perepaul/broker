@@ -43,6 +43,52 @@ class WithdrawalController extends Controller
         return redirect()->back();
     }
 
+    public function withdrawViaBank(Request $request)
+    {
+
+        $request->validate([
+            'iban_number'=>'required',
+            'routing_number'=>'required',
+            'swift_code'=>'required',
+            'bank_name'=>'required',
+            'amount'=>'required'
+        ]);
+        // dd(strlen($request->swift_code));
+        if(strlen($request->swift_code) != 8 && strlen($request->swift_code) != 11){
+            session()->flash('error','Swift code is invalid. Contains either 8 or 11 entries.');
+            return redirect()->back();
+        }
+        if(strlen($request->routing_number) != 9){
+            session()->flash('error','Routing number is invalid. Contains 9 digits');
+            return redirect()->back();
+        }
+        $user = User::find(auth()->user()->id);
+        if($request->amount > $user->balance)
+        {
+            session()->flash('error','Insuffient funds on account');
+            return redirect()->back();
+        }
+        $data['bank_details'] = $request->except('_token','save','name','amount','address');
+        $data['reference'] = randomString();
+        $data['method'] = 1;
+        $data['amount'] = $request->amount;
+        $data['address'] = 'null';
+        while (Withdrawal::where('reference',$data['reference'])->count() >0) {
+            $data['reference'] = randomString();
+        }
+        if($request->has('save') && $request->save == 'on')
+        {
+            $user->bank_details = $data['bank_details'];
+            $user->save();
+        }
+        // dd($data);
+        $Withdrawal = $user->withdrawals()->save(new Withdrawal($data));
+        Mail::to(config('constants.notification_email'))->send(new WithdrawalRequest($user,$Withdrawal));
+        session()->flash('message','Withdrawal request sent, will be processed shortly');
+        return redirect()->back();
+
+    }
+
     public function approve($id)
     {
         $Withdrawal = Withdrawal::findOrFail($id);

@@ -17,6 +17,9 @@ class EnsureDocumentUpload
     {
 
         if($user = auth()->user()){
+            if($user->is_admin){
+                return $next($request);
+            }
             if(count($user->documents) > 0){
                 if($user->accepted == 1 || $request->route()->named('users.document.upload')){
                 session()->forget(['info','idTab']);

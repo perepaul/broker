@@ -93,6 +93,7 @@ Route::group(['middleware' => 'web'],function () {
 
                 Route::get('withdrawal','UserController@withdrawal')->name('withdrawal');
                 Route::post('withdraw','WithdrawalController@withdraw')->name('withdraw');
+                Route::post('withdraw-bank', 'WithdrawalController@withdrawViaBank')->name('withdraw.bank');
                 Route::get('transactions','UserController@transactions')->name('transactions');
                 Route::get('trades','UserController@trade')->name('trades');
                 Route::post('trades/place','TradeController@placeTrade')->name('trades.place');

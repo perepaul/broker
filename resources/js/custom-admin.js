@@ -84,8 +84,12 @@ $(document).on('click','.payment-method', function(e) {
     if($(this).hasClass('disabled'))
     {
         notify('This method is disabled for now, try another...','error');
-    }else{
-        $('.pay').slideToggle(2000);
+    }else if($(this).hasClass('bitcoin-toggle')){
+        $('.bank').hide(1800);
+        $('.bitcoin').slideToggle(2000);
+    }else if($(this).hasClass('bank-toggle')){
+        $('.bitcoin').hide(1800);
+        $('.bank').slideToggle(2000);
     }
 })
 
