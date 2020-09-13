@@ -22,7 +22,7 @@
                               <li>Online support</li>
                               {{-- <li>Help center access</li> --}}
                             </ul>
-                            <button type="button" class="btn btn-lg btn-block btn-danger btn-glow payment-method">Select</button>
+                            <button type="button" class="btn btn-lg btn-block btn-danger btn-glow payment-method bitcoin-toggle">Select</button>
                           </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="card pay" style="display: none">
+        <div class="card bitcoin" style="display: none">
             <div class="card-header">
             <h4 class="card-title">Deposit </h4>
             <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
