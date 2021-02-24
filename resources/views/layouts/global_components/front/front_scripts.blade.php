@@ -34,7 +34,7 @@
 @endauth
 
 @guest
-<script src="//code.tidio.co/jxfmguoufoy8wxihfoxuvcwjyqr7iuik.js" async></script> 
+<script src="//code.tidio.co/jxfmguoufoy8wxihfoxuvcwjyqr7iuik.js" async></script>
 @endguest
 
 
