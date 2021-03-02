@@ -17,7 +17,7 @@ class UserTableSeeder extends Seeder
             [
                 'firstname'=>'Perekpo',
                 'lastname' => 'Emmanuel',
-                'email' => 'admin@lottrades.com',
+                'email' => 'admin@pipstradeway.com',
                 'phone' => '3833939393',
                 'is_admin'=>1,
                 'currency_id'=>1,
@@ -28,7 +28,7 @@ class UserTableSeeder extends Seeder
             [
                 'firstname'=>'Perekpo',
                 'lastname' => 'Emmanuel',
-                'email' => 'user1@lottrades.com',
+                'email' => 'user1@pipstradeway.com',
                 'phone' => '3833939393',
                 'is_admin'=>0,
                 'currency_id'=>1,

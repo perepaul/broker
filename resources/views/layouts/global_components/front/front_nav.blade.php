@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div id="sidebar">
-                        <h1><a href="#">Lottrades</a></h1>
+                        <h1><a href="#">Pipstradeway</a></h1>
                         <div id="toggle_close">&times;</div>
                         <div id='cssmenu' class="wd_single_index_menu">
                             <ul>

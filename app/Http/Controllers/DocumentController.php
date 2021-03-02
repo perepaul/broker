@@ -13,7 +13,7 @@ class DocumentController extends Controller
     public function save(Request $request)
     {
         $request->validate([
-            'name' => 'required|string|min:3:max:10',
+            'name' => 'required|string|min:3|max:30',
             'image' => 'required|image|mimes:png,jpg,jpeg'
         ]);
         $user =  User::findOrFail(auth()->user()->id);

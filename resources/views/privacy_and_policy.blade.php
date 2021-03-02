@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Lottrades</title>
+    <title>Pipstradeway</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    
+
     <div id="preloader">
         <div id="status"><img src="/assets/front/images/banner/loader.gif" id="preloader_image" alt="loader">
         </div>
@@ -29,15 +29,15 @@
            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="about-content">
                  <h2 class="f-40 fw-400">Privacy Policy</h2>
-                 <p>Lottrades respects your privacy and is committed to protecting your personal data. This privacy policy aims to give you information on how we collect and process any personal data and how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you. i.e. information about a Client (as defined below) who is a natural person on the basis of which that Client can be identified (hereinafter the data) in accordance with the applicable data protection legislation and best practice. This version of Privacy Policy takes effect on May 25, 2018.
+                 <p>Pipstradeway respects your privacy and is committed to protecting your personal data. This privacy policy aims to give you information on how we collect and process any personal data and how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you. i.e. information about a Client (as defined below) who is a natural person on the basis of which that Client can be identified (hereinafter the data) in accordance with the applicable data protection legislation and best practice. This version of Privacy Policy takes effect on May 25, 2018.
 
                     We strive to create the most secure infrastructure of any broker in the world. In this privacy policy we would like to tell why you can trust us with your data and rest assured that your data is safe.
-                    
+
                     It is important that you read this privacy policy together with any other privacy policy we may provide on specific occasions when we are collecting or processing your data about you so that you are fully aware of how and why we are using your data.
-                    
+
                     </p>
                 <h2 class="f-40 fw-400">WHO WE ARE</h2>
-                <p>lottrades LTD, is a company registered in St. Vincent and the Grenadines and having its registered address at Hinds Building, Kingstown, St. Vincent and the Grenadines (hereinafter lottrades). lottrades is the controller and responsible for the data of its Client disclosed to it in order to register for a Trading Account, Demo Account and/or to make use of any other services offered by the lottrades Group (as defined in Appendix A) through the website (hereinafter “Website”) (this term shall at all times include Website’s desktop and mobile versions). lottrades exercises control over the processing of data in undertakings affiliated to it and which belong to the lottrades Group of companies.</p>
+                <p>pipstradeway LTD, is a company registered in St. Vincent and the Grenadines and having its registered address at Hinds Building, Kingstown, St. Vincent and the Grenadines (hereinafter Pipstradeway). Pipstradeway is the controller and responsible for the data of its Client disclosed to it in order to register for a Trading Account, Demo Account and/or to make use of any other services offered by the pipstradeway Group (as defined in Appendix A) through the website (hereinafter “Website”) (this term shall at all times include Website’s desktop and mobile versions). Pipstradeway exercises control over the processing of data in undertakings affiliated to it and which belong to the pipstradeway Group of companies.</p>
                 <p>The Company takes measures to implement advanced data protection policies and procedures and to update them from time to time for the purpose of safeguarding its Client's data and the Client’s account. Your data is protected by the legal, administrative and technical measures that we take to ensure the privacy, integrity and accessibility of data. To prevent security incidents with your data, we use a mixed organizational and technical approach based on the results of annual risk assessment.</p>
                 <p>The Company takes measures to implement advanced data protection policies and procedures and to update them from time to time for the purpose of safeguarding its Client's data and the Client’s account. Your data is protected by the legal, administrative and technical measures that we take to ensure the privacy, integrity and accessibility of data. To prevent security incidents with your data, we use a mixed organizational and technical approach based on the results of annual risk assessmen</p>
 
@@ -59,7 +59,7 @@
                 <p><span class="text-danger ml-5">10.</span> Location Data includes details on your actual location when interacting with our Website (for example, a set of parameters that determine regional settings of your interface, namely residency country, time zone, and the interface language) </p>
                 <p><span class="text-danger ml-5">11.</span> Audio Data includes full voice recordings of calls that you receive from us or make to us. (the above collectively referred to as Personal Data) </p>
                 <p><span class="text-danger ml-5">12.</span> Economic Profile Data includes details on annual income, net profit, expected annual amount of investment, sources of funds. </p>
-                
+
                </div>
            </div>
            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -79,7 +79,7 @@
 
              <p>Automated Technologies or Interactions. When using our services, your device automatically transmits to us its technical characteristics. Locale (a set of parameters that determine regional settings of your interface, namely, residence country, time zone and the interface language) is used for the purpose of providing you with the best possible service within our platform. Using the information about IP address, cookies files, information about browser and operating system used, the date and time of access to the site, and the requested pages addresses allows us to provide you with the optimal operation on our web application, mobile and/or desktop versions of our application and monitor your behaviour for the purpose of improving the efficiency and usability of our Services. We use web analytics tools to track performance of our website and marketing source of user by cookies in order to optimize our marketing costs and provide users with better experience. You may at any time request that we refrain from any such transmissions (to the degree this is possible and subject to any of our legal obligations) by sending your request to the DPO using our details in the OUR CONTACT DETAILS below. We will address your request within 30 business days.</p>
 
-    
+
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -89,7 +89,7 @@
 
              <p>Cookies stored may determine the path the Client took on our site and used to anonymously identify repeat users of the website and what pages were most popular for Clients. However, the Company protects the Client’s privacy by not storing the Client’s names, personal details, emails, etc. Using cookies is an industry standard and is currently used by most major websites. Stored cookies allow the Website to be more user-friendly and efficient for Clients by allowing IQOPTION to learn what information is more valued by Clients versus what isn’t. You can set your browser not to save any cookies of this website and you may also delete cookies automatically or manually. However, please note that by doing so you may not be able to use all the provided functions of our website in full.</p>
 
-    
+
             </div>
         </div>
         </div>
