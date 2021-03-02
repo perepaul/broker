@@ -25,10 +25,7 @@ Route::group(['middleware' => 'web'],function () {
 
     Route::get('/home', 'HomeController@index')->name('home');
 
-    Route::get('login-form', function () {
-
-        return view('login_form');
-    });
+    Route::get('login-form', 'HomeController@loginForm');
 
     Route::get('terms-and-condition', 'SupportController@terms')->name('terms');
     Route::get('privacy-and-policy', 'SupportController@policy')->name('policy');

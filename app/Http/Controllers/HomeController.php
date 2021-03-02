@@ -31,4 +31,9 @@ class HomeController extends Controller
         return redirect()->to('/users');
 
     }
+
+    public function loginForm()
+    {
+        return view('login_form');
+    }
 }
