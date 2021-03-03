@@ -20,7 +20,7 @@ Route::group(['middleware' => 'web'],function () {
 
     Route::get('/', 'SupportController@index');
 
-    Route::get('logout','UserController@logout')->name('logout');
+    // Route::get('logout','UserController@logout')->name('logout');
     Auth::routes();
 
     Route::get('/home', 'HomeController@index')->name('home');
