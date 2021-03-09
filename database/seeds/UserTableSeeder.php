@@ -15,9 +15,9 @@ class UserTableSeeder extends Seeder
         $password = bcrypt('secret');
         DB::table('users')->insert([
             [
-                'firstname'=>'Perekpo',
-                'lastname' => 'Emmanuel',
-                'email' => 'admin@pipstradeway.com',
+                'firstname'=>'admin',
+                'lastname' => 'admin',
+                'email' => 'admin@saxotradingmarket.com',
                 'phone' => '3833939393',
                 'is_admin'=>1,
                 'currency_id'=>1,
@@ -26,9 +26,9 @@ class UserTableSeeder extends Seeder
                 'vissible_password' => 'secret'
             ],
             [
-                'firstname'=>'Perekpo',
-                'lastname' => 'Emmanuel',
-                'email' => 'user1@pipstradeway.com',
+                'firstname'=>'user',
+                'lastname' => 'user',
+                'email' => 'user1@saxotradingmarket.com',
                 'phone' => '3833939393',
                 'is_admin'=>0,
                 'currency_id'=>1,
