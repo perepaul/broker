@@ -72,13 +72,13 @@
                        <div class="col-xs-12">
                            <div class="text-center mt-30">
                                {{-- <h3 class="boldy">Share My Affiliate Links</h3> --}}
-                               <img height="300px" src="https://quixlab.com/demo/tradio/light/images/qr.svg" alt="">
+                               <img height="300px" src="{{config('constants.bitcoin_qr_code')}}" alt="">
                            </div>
                        </div>
                        <div class="col-md-8 col-md-offset-2 col-sm-12">
                            <div class="affiliate-link mt-30">
                                <div class="input-group">
-                                    <input type="text" class="form-control" id="btc-address" value="1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" id="btc-address" value="{{config('constants.bitcoin_address')}}" aria-describedby="basic-addon2">
                                     <a role="button" onclick="myClick()" id="myBtn" class="input-group-addon orange-bg w-text" id="basic-addon2"><i class="fa fa-copy mr-10"></i>Copy Link</a>
                                     <div id="snackbar">Successfully Copied...</div>
                                 </div>
@@ -86,7 +86,7 @@
                        </div>
                        <div class="col-xs-12 affiliate-social">
                            <div class="row">
-                            
+
                            </div>
                        </div>
 
@@ -136,7 +136,7 @@
                                             <td class="text-center">$120.00</td>
                                             <td class="text-center">1478 Token</td>
                                         </tr>
-                                        
+
                                     </tbody>
                                 </table>
                             </div>
@@ -183,5 +183,5 @@ function myClick(){
     }
 
 </script>
-    
+
 @endsection
