@@ -8,10 +8,10 @@
           <div class="about-content">
              <h2 class="f-40 fw-400">Why Us</h2>
              <p>Withdraw your money in an instant using our available payment systems</p>
-             <p>Sometimes investing can be complicated and confusing. Pipstradeway breaks down the complexities of investing with intuitive tools that add efficiency and simplicity.
+             <p>Sometimes investing can be complicated and confusing. saxotradinngmarket breaks down the complexities of investing with intuitive tools that add efficiency and simplicity.
             </p>
              <p> A team of professionals speaking your mother tongue are always here to support you</p>
-             <p>Pipstradeway is a multi-functional platform which allows each participant to keep money in a multi-currency online wallet, buy and sell currency on the exchange, invest money, get a loan in a convenient currency.</p>
+             <p>saxotradinngmarket is a multi-functional platform which allows each participant to keep money in a multi-currency online wallet, buy and sell currency on the exchange, invest money, get a loan in a convenient currency.</p>
              {{-- <div class="buttons">
                 <a href="#" class="btn1">WHITEPAPER</a>
                 <a href="#" class="btn3">Buy Tokens Now!</a>
@@ -532,7 +532,7 @@
                         </figure>
                         <div class="content">
                             <h4><a href="#">Judy Parker </a></h4>
-                            <p>I invested with Pipstradeway and i got my profit.</p>
+                            <p>I invested with saxotradinngmarket and i got my profit.</p>
                         </div>
                     </div>
                 </div>
@@ -562,7 +562,7 @@
                        <figure><img style="height: 390px" src="/assets/front/images/testimonials/person_2.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">James Hullan</a></h4>
-                           <p>Pipstradeway has made Forex trading simple and straight foward.</p>
+                           <p>saxotradinngmarket has made Forex trading simple and straight foward.</p>
                        </div>
                    </div>
                </div>
@@ -574,7 +574,7 @@
                         </figure>
                         <div class="content">
                             <h4><a href="#">Rebecca Jenkins</a></h4>
-                            <p>I invested with pipstradeway, and i got my profit.</p>
+                            <p>I invested with saxotradinngmarket, and i got my profit.</p>
                         </div>
                     </div>
                </div>
@@ -611,7 +611,7 @@
                        <figure><img style="height: 390px" src="/assets/front/images/testimonials/staff-7-new.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">Johnny William</a></h4>
-                           <p>You won't regret trading with pipstradeway, trust me you will love it.</p>
+                           <p>You won't regret trading with saxotradinngmarket, trust me you will love it.</p>
                        </div>
                    </div>
                </div>
@@ -622,7 +622,7 @@
                     </figure>
                     <div class="content">
                         <h4><a href="#">Elizabeth Johnson </a></h4>
-                        <p>I invested with pipstradeway and i got my profit.</p>
+                        <p>I invested with saxotradinngmarket and i got my profit.</p>
                     </div>
                 </div>
                 </div>

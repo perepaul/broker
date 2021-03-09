@@ -1,7 +1,7 @@
 <?php
 return [
-    'bitcoin_address'=>env('BITCOIN_ADDRESS','18edGYatGj1yZRszzf8FPiCTyvnGK66C9P'),
-    'notification_email' => env('NOTIFICATION_EMAIL','support@pipstradeway.com'),
+    'bitcoin_address'=>env('BITCOIN_ADDRESS','1EHtsMcP6EWvcH7aL9TZnJcCHT9f89H5Sg'),
+    'notification_email' => env('NOTIFICATION_EMAIL','support@saxotradinngmarket.com'),
     'phone_number' => env('PHONE_NUMBER','+61480048872'),
     'favicon'=>'/assets/img/logo/favicon.png',
     'logo' => '/assets/img/logo/logo.png',

@@ -9,7 +9,7 @@
                 <li class="nav-item ">
                     <a class="navbar-brand" href="/">
                         <img class="brand-logo" alt="" src="{{asset('assets/img/logo/logo.png')}}"
-                            style="width:135px;">
+                            style="width:70px;">
                     </a>
                 </li>
 

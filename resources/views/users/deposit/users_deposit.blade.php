@@ -67,7 +67,6 @@
                 <div class="col-xs-12">
 
                     <!-- start -->
-
                     <div class="row">
                        <div class="col-xs-12">
                            <div class="text-center mt-30">
@@ -78,7 +77,7 @@
                        <div class="col-md-8 col-md-offset-2 col-sm-12">
                            <div class="affiliate-link mt-30">
                                <div class="input-group">
-                                    <input type="text" class="form-control" id="btc-address" value="1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" id="btc-address" value="1EHtsMcP6EWvcH7aL9TZnJcCHT9f89H5Sg" aria-describedby="basic-addon2">
                                     <a role="button" onclick="myClick()" id="myBtn" class="input-group-addon orange-bg w-text" id="basic-addon2"><i class="fa fa-copy mr-10"></i>Copy Link</a>
                                     <div id="snackbar">Successfully Copied...</div>
                                 </div>
@@ -86,7 +85,7 @@
                        </div>
                        <div class="col-xs-12 affiliate-social">
                            <div class="row">
-                            
+
                            </div>
                        </div>
 
@@ -136,7 +135,7 @@
                                             <td class="text-center">$120.00</td>
                                             <td class="text-center">1478 Token</td>
                                         </tr>
-                                        
+
                                     </tbody>
                                 </table>
                             </div>
@@ -183,5 +182,5 @@ function myClick(){
     }
 
 </script>
-    
+
 @endsection
