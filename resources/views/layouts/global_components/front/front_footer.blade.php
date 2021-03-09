@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="copyright wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                        <p>© 2017-2020 <a href="/"><span>saxotradinngmarket</span></a> | All rights reserved.
+                        <p>© 2017-2021 <a href="/"><span>saxotradinngmarket</span></a> | All rights reserved.
 
                         </p>
                     </div>
