@@ -66,13 +66,13 @@
             <div class="row">
 
                 <div class="col-xs-12">
-                    
+
                     <!-- start -->
                     <div class="row">
                        <div class="col-xs-12">
                            <div class="text-center mt-30">
                                {{-- <h3 class="boldy">Share My Affiliate Links</h3> --}}
-                               <img height="300px" src="https://quixlab.com/demo/tradio/light/images/qr.svg" alt="">
+                               <img height="300px" src="/assets/img/deposit/btc-saxo.png" alt="">
                            </div>
                        </div>
                        <div class="col-md-8 col-md-offset-2 col-sm-12">
