@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-6">
                 <div class="logo-area">
-                <a href="/"><img src="{{config('constants.logo_white')}}" alt="logo" style="max-width: 150px" /></a>
+                <a href="/"><img src="{{config('constants.logo_white')}}" alt="logo" style="max-width: 90px" /></a>
                 </div>
             </div>
             <!-- Mobile Menu  Start -->

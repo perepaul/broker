@@ -14,7 +14,7 @@
                             <div class="card-title text-center">
                                 <div class="p-1">
                                     <a href="/">
-                                        <img src="{{asset('assets/img/logo/logo.png')}}" style="width:40%;"
+                                        <img src="{{asset('assets/img/logo/logo.png')}}" style="width:100px;"
                                             alt="branding logo">
                                     </a>
                                 </div>
