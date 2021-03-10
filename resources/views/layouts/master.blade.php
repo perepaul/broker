@@ -585,5 +585,4 @@
 
     @include('layouts.global_components.front.front_scripts')
 </body>
-
 </html>
