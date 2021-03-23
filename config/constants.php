@@ -2,7 +2,7 @@
 return [
     'bitcoin_address'=>env('BITCOIN_ADDRESS','1EHtsMcP6EWvcH7aL9TZnJcCHT9f89H5Sg'),
     'notification_email' => env('NOTIFICATION_EMAIL','support@saxotradinngmarket.com'),
-    'phone_number' => env('PHONE_NUMBER','+2816400816'),
+    'phone_number' => env('PHONE_NUMBER','+1'),
     'favicon'=>'/assets/img/logo/favicon.png',
     'logo' => '/assets/img/logo/logo.png',
     'logo_white' => '/assets/img/logo/logo.png',
