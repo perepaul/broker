@@ -13,12 +13,12 @@
 
     </div>
 </div>
-    
+
 @endsection
 
 @section('content')
 
-<h1>Hey</h1>
+{{-- <h1>Hey</h1> --}}
 
-    
+
 @endsection
