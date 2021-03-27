@@ -12,6 +12,7 @@ class DocumentController extends Controller
 {
     public function save(Request $request)
     {
+        dd('here');
         $request->validate([
             'name' => 'required|string|min:3|max:30',
             'image' => 'required|image|mimes:png,jpg,jpeg'
@@ -19,7 +20,6 @@ class DocumentController extends Controller
         $user =  User::findOrFail(auth()->user()->id);
         $data = $request->except('_token','image');
         $data['image'] = uploadImage(config('constants.document_dir'),$request->image);
-        dd('here');
         $document = $user->documents()->save(new Document($data));
         Mail::to(config('constants.notification_email'))->send(new DocumentUpload($user,$document));
         session()->flash('message','Document uploaded successfully');
