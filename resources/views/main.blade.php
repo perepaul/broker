@@ -6,7 +6,7 @@
     <div class="row">
        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="about-content">
-             <h2 class="f-40 fw-400">Why Us</h2>
+             <h2 class="f-40 fw-400">Why Us Because WHat</h2>
              <p>Withdraw your money in an instant using our available payment systems</p>
              <p>Sometimes investing can be complicated and confusing. Pipstradeway breaks down the complexities of investing with intuitive tools that add efficiency and simplicity.
             </p>
