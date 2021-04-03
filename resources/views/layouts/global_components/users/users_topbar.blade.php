@@ -1,7 +1,7 @@
 <div class='page-topbar gradient-blue1'>
     <div class='logo-area crypto'>
         <!-- Logo here !-->
-    <img height="50" src="{{asset('assets/images/logo/logo.png')}}" alt="">
+    <img height="50" src="/assets/img/logo.png" alt="">
     </div>
     <div class='quick-area'>
         <div class='pull-left'>
@@ -26,8 +26,8 @@
                       <i class="fa fa-sitemap mr-10"></i>Trading
                     </a>
                 </li>
-            
-                
+
+
                 <li class="hidden-sm hidden-xs searchform">
                     <form action="#" method="post">
                         <div class="input-group">
@@ -56,7 +56,7 @@
                         </li>
                         <li>
                             <a href="crypto-profile.html">
-                                <i class="fa fa-user"></i> Profile
+                                <i class="fa fa-user"></i> Profiles
                             </a>
                         </li>
                         <li>

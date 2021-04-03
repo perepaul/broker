@@ -25,10 +25,25 @@ Route::group(['middleware' => 'web'],function () {
 
     Route::get('/home', 'HomeController@index')->name('home');
 
+    Route::get('regulatory-information', function(){
+
+        return view('regulatory_information');
+
+    });
+
+    Route::get('payment-method', function(){
+
+        return view('payment_method');
+
+    });
+
+
     Route::get('login-form', 'HomeController@loginForm');
 
     Route::get('terms-and-condition', 'SupportController@terms')->name('terms');
     Route::get('privacy-and-policy', 'SupportController@policy')->name('policy');
+
+    Route::get('our-leadership', 'SupportController@leader')->name('leader');
 
 });
         Route::group(['middleware' => ['auth','web']], function () {

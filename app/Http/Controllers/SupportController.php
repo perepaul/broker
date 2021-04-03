@@ -100,4 +100,9 @@ class SupportController extends Controller
     {
         return view('privacy_and_policy');
     }
+
+    public function leader()
+    {
+        return view('leadership');
+    }
 }

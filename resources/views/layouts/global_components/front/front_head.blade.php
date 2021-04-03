@@ -1,32 +1,28 @@
 <head>
+    <!-- Standard Meta -->
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Pipstradeway</title>
-    <meta name="description" content="">
+    <meta name="description" content="Premium HTML5 Template by Indonez">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, vanilla javascript">
+    <meta name="author" content="Indonez">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="{{asset(config('constants.favicon'))}}" />
-    <!-- Place favicon.ico in the root directory -->
-    <!-- all css here -->
-    <!-- bootstrap v3.3.6 css -->
-    <link rel="stylesheet" href="{{asset('assets/front/css/bootstrap.min.css')}}">
-    <!-- animate css -->
-    <link rel="stylesheet" href="{{asset('assets/front/css/animate.css')}}">
-    <!-- jquery-ui.min css -->
-    <link rel="stylesheet" href="{{asset('assets/front/css/jquery-ui.min.css')}}">
-    <!-- meanmenu css -->
-    <link rel="stylesheet" href="{{asset('assets/front/css/meanmenu.min.css')}}">
-    <!-- owl.carousel css -->
-    <link rel="stylesheet" href="{{asset('assets/front/css/owl.carousel.min.css')}}">
-    <!-- bxslider css -->
-    <!--flaticon css -->
-    <link rel="stylesheet" href="{{asset('assets/front/css/flaticon.css')}}">
-    <!-- font-awesome css -->
-    <link rel="stylesheet" href="{{asset('assets/front/css/font-awesome.min.css')}}">
-    <link href="{{asset('assets/front/css/video-js.css')}}" rel="stylesheet">
-    <!-- style css -->
-    <link rel="stylesheet" href="{{asset('assets/front/style.css')}}">
-    <!-- responsive css -->
-    <link rel="stylesheet" href="{{asset('assets/front/css/responsive.css')}}">
-    <!-- modernizr css -->
-    <script src="{{asset('assets/front/js/vendor/modernizr-2.8.3.min.js')}}"></script>
+    <meta name="theme-color" content="#f2f3f5" />
+    <!-- Site Properties -->
+    <title>Online trading platform | Forex, commodities and indices | Deriv</title>
+    <!-- Critical preload -->
+    <link rel="preload" href="/assets/front/js/vendors/uikit.min.js" as="script">
+    <link rel="preload" href="/assets/front/css/vendors/uikit.min.css" as="style">
+    <link rel="preload" href="/assets/front/css/style.css" as="style">
+    <!-- Icon preload -->
+    <link rel="preload" href="/assets/front/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/front/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Font preload -->
+    <link rel="preload" href="/assets/front/fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/front/fonts/inter-v2-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/front/fonts/inter-v2-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Favicon and apple icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/front/css/vendors/uikit.min.css">
+    <link rel="stylesheet" href="/assets/front/css/style.css">
 </head>

@@ -1,4 +1,108 @@
-<header class="gc_main_menu_wrapper pt-0">
+<header>
+    <!-- header content begin -->
+    <div class="uk-section uk-padding-remove-vertical">
+        <nav class="uk-navbar-container" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+            <div class="uk-container" data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <div class="uk-navbar-item">
+                        <!-- logo begin -->
+                        <a class="uk-logo" href="/">
+                            <img src="assets/img/logo.png" data-src="assets/img/logo.png" alt="logo" width="160" height="34" data-uk-img>
+                        </a>
+                        <!-- logo end -->
+                        <!-- navigation begin -->
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            {{-- <li><a href="index-2.html">Trade<i class="fas fa-chevron-down"></i></a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">DTrader</a></li>
+                                        <li><a href="#">DBot</a></li>
+                                        <li><a href="#">DMT5</a></li>
+                                        <li><a href="#">SmartTrader</a></li>
+                                    </ul>
+                                </div>
+                            </li> --}}
+                            <li><a href="#">Trade<i class="fas fa-chevron-down"></i></a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" data-uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">DTrader<i class="fas fa-external-link-square-alt fa-sm"></i></a></li>
+                                                <li><a href="#">DBot</a></li>
+                                                <li><a href="#">DMT5</a></li>
+                                                <li><a href="#">Smart Trader</a></li>
+                                                {{-- <li><a href="3">Legal Docs<i class="fas fa-gavel fa-sm"></i></a></li> --}}
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">Margin Trading</a></li>
+                                                <li><a href="#">Options</a></li>
+                                                <li><a href="#">Multipliers</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Market<i class="fas fa-chevron-down"></i></a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">Forex</a></li>
+                                        <li><a href="#">Synthetic Indicies</a></li>
+                                        <li><a href="#">Stock Indicies</a></li>
+                                        <li><a href="#">Commodities </a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li><a href="#">About us<i class="fas fa-chevron-down"></i></a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">Our Story</a></li>
+                                        <li><a href="our-leadership">Our leadership</a></li>
+                                        <li><a href="regulatory-information">Regulatory Information</a></li>
+                                        <li><a href="terms-and-condition">terms and condition</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            {{-- <li><a href="education.html">Education</a></li> --}}
+                            <li><a href="#">Resources<i class="fas fa-chevron-down"></i></a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" data-uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">Documentation<i class="fas fa-external-link-square-alt fa-sm"></i></a></li>
+                                                <li><a href="#">Help Center</a></li>
+                                                <li><a href="#">Customers</a></li>
+                                                <li><a href="#">Roadmap</a></li>
+                                                <li><a href="#">Legal Docs<i class="fas fa-gavel fa-sm"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a class="uk-disabled" href="#">Adipiscing elit sed do eiusmod incididunt ut labore dolore magna lorem ipsum sit dolor amet consectetur</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- navigation end -->
+                    </div>
+                </div>
+                <div class="uk-navbar-right">
+                    <div class="uk-navbar-item uk-visible@m in-optional-nav">
+                        <a href="login" class="uk-button uk-button-primary uk-border-rounded">Log In</a>
+                        {{-- <a href="signin.html" class="uk-button uk-button-text"><i class="fas fa-user-circle"></i></a> --}}
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- header content end -->
+</header>
+
+{{-- <header class="gc_main_menu_wrapper pt-0">
     <div class="text-center text-sm"><a href="tel:{{config('constants.phone_number')}}" class="text-white"><i class="fa fa-phone"></i> {{config('constants.phone_number')}}</a></div>
     <div class="container-fluid">
         <div class="row">
@@ -7,7 +111,7 @@
                 <a href="/"><img src="{{config('constants.logo_white')}}" alt="logo" style="max-width: 150px" /></a>
                 </div>
             </div>
-            <!-- Mobile Menu  Start -->
+
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-6">
                 <div class="menu-area  hidden-xs">
                     <nav class="wd_single_index_menu btc_main_menu">
@@ -17,23 +121,15 @@
                             <li><a href="2">Features</a></li>
                             <li><a href="3">Benefit</a></li>
                             <li><a href="4">Steps</a></li>
-                            {{-- <li><a href="5">Road Map</a></li> --}}
                             <li><a href="6">Plan</a></li>
                             <li><a href="7">Testimonials</a></li>
                         </ul>
                     </nav>
-                    {{-- <div class="language">
-                        <span class="lng-in"><img src="/assets/front/images/icons/12.png" alt=""/></span>
-                        <ul class="lng-out">
-                            <li><img src="/assets/front/images/icons/12.png" alt="" /></li>
-                            <li><img src="/assets/front/images/icons/12.png" alt="" /></li>
-                        </ul>
-                    </div> --}}
                     <div class="login-btn">
                         <a href="login" class="btn1"><i class="fa fa-user"></i><span>Login</span></a>
                     </div>
                 </div>
-                <!-- mobile menu area start -->
+
                 <div class="rp_mobail_menu_main_wrapper visible-xs">
                     <div class="row">
                         <div class="col-xs-12">
@@ -70,15 +166,13 @@
                                 <li><a href="2">Features</a></li>
                                 <li><a href="3">Benefits</a></li>
                                 <li><a href="4">Steps</a></li>
-                                {{-- <li><a href="5">Road Map</a></li> --}}
                                 <li><a href="6">Plans</a></li>
                                 <li><a href="7">Testimonials</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <!-- Mobile Menu  End -->
             </div>
         </div>
     </div>
-</header>
+</header> --}}

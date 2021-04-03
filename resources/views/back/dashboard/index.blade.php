@@ -14,7 +14,7 @@
                     <div class="card-body pb-0">
                         <div class="row">
                             <div class="col-5 pl-2">
-                                <h4>Balance</h4>
+                                <h4>Total Deposit</h4>
                             </div>
                             <div class="col-5 text-right">
                                 <h4>{{auth()->user()->currency->symbol.auth()->user()->balance}}</h4>
@@ -35,7 +35,7 @@
                     <div class="card-body pb-0">
                         <div class="row">
                             <div class="col-6 pl-2">
-                                <h4>Demo Balance</h4>
+                                <h4>Trading Balance</h4>
                             </div>
                             <div class="col-5 text-right">
                                 <h4>{{auth()->user()->currency->symbol.auth()->user()->demo_balance}}</h4>
@@ -56,7 +56,7 @@
                     <div class="card-body pb-0">
                         <div class="row">
                             <div class="col-5 pl-2">
-                                <h4>Total Trades</h4>
+                                <h5>Referral Bonus</h5>
                             </div>
                             <div class="col-5 text-right">
                                 <h4>{{auth()->user()->trades->count()}}</h4>

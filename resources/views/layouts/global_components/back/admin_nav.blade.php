@@ -8,7 +8,7 @@
                             class="ft-menu font-large-1"></i></a></li>
                 <li class="nav-item ">
                     <a class="navbar-brand" href="/">
-                        <img class="brand-logo" alt="" src="{{asset('assets/img/logo/logo.png')}}"
+                        <img class="brand-logo" alt="" src="/assets/img/logo.png"
                             style="width:135px;">
                     </a>
                 </li>

@@ -25,11 +25,11 @@
             <div class="wrapper main-wrapper row" style=''>
 
                @yield('content_header')
-               
+
                 @yield('content')
 
 
-            
+
                 <div class="clearfix"></div>
 
                 <!-- MAIN CONTENT AREA ENDS -->
@@ -47,5 +47,4 @@
 </body>
 
 
-<!-- Mirrored from cryptodash.netlify.app/html/index-crypto-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Jun 2020 21:06:53 GMT -->
 </html>
