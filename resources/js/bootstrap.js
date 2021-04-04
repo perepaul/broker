@@ -100,7 +100,7 @@ $('.password-toggle').click(function(){
 })
 
 $('.dt').dataTable({
-    responsive:true,
+    responsive:true
 });
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
