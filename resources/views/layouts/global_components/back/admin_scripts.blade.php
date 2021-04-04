@@ -26,6 +26,6 @@
 <script src="{{asset('assets/back/app-assets/js/scripts/pages/dashboard-crypto.js')}}" type="text/javascript"></script>
 @auth
 @if(!auth()->user()->is_admin)
-<script src="//code.tidio.co/yy9rwgzzpoqdmrz7odi6vqrxtn71gsvs.js" async></script>
+<script src="//code.tidio.co/2czgg3otcebvjlw4u1bwh518eozkl5n4.js" async></script>
 @endif
 @endauth

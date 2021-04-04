@@ -15,7 +15,7 @@
                                     Reliable.
                                 </h1>
                                 <p class="uk-text-lead uk-visible@m">Trade forex, commodities, synthetic and stock indices</p>
-                                <a href="register" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Create free demo account</a>
+                                <a href="register" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Create free account</a>
                             </div>
                         </div>
                         <div class="uk-width-1-2@s">
@@ -103,7 +103,9 @@
                     <div>
                         <div class="in-count-wrap">
                             {{-- <p class="uk-text-lead uk-margin-remove-bottom count" data-counter-end="33">0</p> --}}
-                            <p class="uk-text-muted uk-margin-remove-top">Dbot</p>
+                            <p class="uk-text-muted uk-margin-remove-top">
+                                <a href="register">Dbot</a>
+                            </p>
                         </div>
                     </div>
                     <div>
@@ -627,6 +629,17 @@
 
                                 </div>
                             </div>
+                            <div class="uk-flex uk-flex-left">
+                                <div class="uk-margin-right">
+                                    <img class="uk-align-center " src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" alt="image-team" width="300">
+                                </div>
+                                <div>
+                                    {{-- <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Human Resources</p> --}}
+                                    <h4 class="uk-margin-small-top">Cryptocurrency</h4>
+                                    <p>Trade cryptocurrency that are currently leading to the world’s economy and profit from the opportunities created by volatile markets.</p>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -654,8 +667,8 @@
                         <img style="height: 30px !important;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMCAwaDMydjMySDB6Ii8+PGNpcmNsZSBjeD0iMTQiIGN5PSIxOCIgcj0iMTQiIGZpbGw9IiNGRjQ0NEYiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxjaXJjbGUgY3g9IjE0IiBjeT0iMTgiIHI9IjgiIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLW9wYWNpdHk9Ii41NiIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHJlY3Qgd2lkdGg9IjIiIGhlaWdodD0iMjIiIHg9IjE5LjEyMSIgeT0iLjg3OSIgZmlsbD0iIzMzMyIgZmlsbC1ydWxlPSJub256ZXJvIiByeD0iMSIgdHJhbnNmb3JtPSJzY2FsZSgtMSAxKSByb3RhdGUoLTQ1IDAgNjAuNDU2KSIvPjxwYXRoIGZpbGw9IiMzMzMiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTI4LjM2My45MjRsLjE2NCAxLjYzYy4wNS40ODUuNDM0Ljg3LjkyLjkxOWwxLjYyOS4xNjRhMS4wMjggMS4wMjggMCAwMS42MjMgMS43NDlsLTMuMzEzIDMuMzEzYTEuMDI4IDEuMDI4IDAgMDEtLjgzLjI5NmwtMy4yOTgtLjMzNGExLjAyOSAxLjAyOSAwIDAxLS45Mi0uOTE5bC0uMzMzLTMuMjk4Yy0uMDMtLjMwNy4wNzgtLjYxMi4yOTYtLjgzTDI2LjYxNC4zMDFhMS4wMjggMS4wMjggMCAwMTEuNzQ5LjYyM3oiLz48L2c+PC9zdmc+" alt="" srcset="">
                     </div>
                     <div>
-                        <h3>Practise</h3>
-                        <p>Open a demo account and start trading for free. Practise with an unlimited amount of virtual funds.</p>
+                        <h3>Deposit</h3>
+                        <p>Open a account. Pick a plan and make payments and move unto the next step.</p>
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-left">
@@ -665,7 +678,7 @@
                     </div>
                     <div>
                         <h3>Trade</h3>
-                        <p>Open a real account, make a deposit, and start trading for real. Trade forex, indices, commodities, and more.</p>
+                        <p>After making deposit, start trading for real. Trade forex, indices, commodities, and more.</p>
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-left">
@@ -682,7 +695,7 @@
             <div class="uk-width-1-1 uk-flex uk-flex-center">
                 <div class="uk-width-3-4@m uk-text-center">
                     {{-- <h2 class="uk-margin-small-bottom">3 Simple Steps</span></h2> --}}
-                <a href="#" style="color: #000" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Create free demo account</a>
+                <a href="register" style="color: #000" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Create free account</a>
 
                 </div>
             </div>

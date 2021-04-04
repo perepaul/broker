@@ -4,7 +4,7 @@
  * Author URI  : http://www.indonez.com
  *
  * Indonez Copyright 2020 All Rights Reserved.
- * -------------------------------------------------------------------------- 
+ * --------------------------------------------------------------------------
  * javascript handle initialization
     1. Slideshow
     2. Counter
@@ -42,8 +42,8 @@ const HomepageApp = {
         mobileNav({
             addonButtons: true,
             buttons: [{
-                name: 'Log in', // button name
-                url: '/signin.html', // button url
+                name: 'Register', // button name
+                url: 'register', // button url
                 type: 'primary', // button type (default, primary, secondary, danger, text)
                 icon: 'sign-in-alt' // button icon, you can use all icons from here : https://fontawesome.com/icons?d=gallery&s=solid&m=free
             }]

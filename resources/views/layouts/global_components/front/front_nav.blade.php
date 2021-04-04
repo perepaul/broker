@@ -27,24 +27,22 @@
                                     <div class="uk-navbar-dropdown-grid uk-child-width-1-2" data-uk-grid>
                                         <div>
                                             <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li><a href="#">DTrader<i class="fas fa-external-link-square-alt fa-sm"></i></a></li>
-                                                <li><a href="#">DBot</a></li>
-                                                <li><a href="#">DMT5</a></li>
-                                                <li><a href="#">Smart Trader</a></li>
+                                                <li><a href="login">DTrader<i class="fas fa-external-link-square-alt fa-sm"></i></a></li>
+                                                <li><a href="login">DBot</a></li>
+                                                <li><a href="login">DMT5</a></li>
+                                                <li><a href="login">Smart Trader</a></li>
                                                 {{-- <li><a href="3">Legal Docs<i class="fas fa-gavel fa-sm"></i></a></li> --}}
                                             </ul>
                                         </div>
                                         <div>
                                             <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li><a href="#">Margin Trading</a></li>
-                                                <li><a href="#">Options</a></li>
-                                                <li><a href="#">Multipliers</a></li>
+                                            <p>Please login or create acount to see these information</p>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="#">Market<i class="fas fa-chevron-down"></i></a>
+                            {{-- <li><a href="#">Market<i class="fas fa-chevron-down"></i></a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li><a href="#">Forex</a></li>
@@ -53,7 +51,7 @@
                                         <li><a href="#">Commodities </a></li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> --}}
 
                             <li><a href="#">About us<i class="fas fa-chevron-down"></i></a>
                                 <div class="uk-navbar-dropdown">
@@ -66,7 +64,7 @@
                                 </div>
                             </li>
                             {{-- <li><a href="education.html">Education</a></li> --}}
-                            <li><a href="#">Resources<i class="fas fa-chevron-down"></i></a>
+                            {{-- <li><a href="#">Resources<i class="fas fa-chevron-down"></i></a>
                                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
                                     <div class="uk-navbar-dropdown-grid uk-child-width-1-2" data-uk-grid>
                                         <div>
@@ -85,7 +83,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li> --}}
                         </ul>
                         <!-- navigation end -->
                     </div>

@@ -1,9 +1,9 @@
 <head>
     <!-- Standard Meta -->
     <meta charset="utf-8">
-    <meta name="description" content="Premium HTML5 Template by Indonez">
-    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, vanilla javascript">
-    <meta name="author" content="Indonez">
+    <meta name="description" content="Deriv Trading">
+    {{-- <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, vanilla javascript"> --}}
+    {{-- <meta name="author" content="Indonez"> --}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f2f3f5" />
     <!-- Site Properties -->
@@ -20,8 +20,8 @@
     <link rel="preload" href="/assets/front/fonts/inter-v2-latin-500.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/front/fonts/inter-v2-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <!-- Favicon and apple icon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+    {{-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> --}}
+    {{-- <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png"> --}}
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/front/css/vendors/uikit.min.css">
     <link rel="stylesheet" href="/assets/front/css/style.css">

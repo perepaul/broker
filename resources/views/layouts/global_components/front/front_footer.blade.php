@@ -41,7 +41,7 @@
                 <div class="in-footer-logo">
                     <img src="img/in-lazy.gif" data-src="img/in-logo-1.svg" alt="logo" width="127" height="27" data-uk-img>
                 </div>
-                <div class="uk-flex uk-flex-right@m">
+                {{-- <div class="uk-flex uk-flex-right@m">
                     <div class="in-footer-socials">
                         <a href="#"><i class="fab fa-facebook-square"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -51,7 +51,7 @@
                     </div>
                     <a class="uk-button uk-button-text uk-margin-large-left uk-visible@m" href="#">Company News</a>
                     <a class="uk-button uk-button-text uk-margin-large-left uk-visible@m" href="#">Partnership</a>
-                </div>
+                </div> --}}
             </div>
             <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-margin-large-top" data-uk-grid>
                 <div>
@@ -68,10 +68,10 @@
                 <div>
                     <h5>Trade</h5>
                     <ul class="uk-list uk-link-text">
-                        <li><a href="#">DTrader</a></li>
-                        <li><a href="#">DBot</a></li>
-                        <li><a href="#">DMT5</a></li>
-                        <li><a href="#">SmartTrader</a></li>
+                        <li><a href="login">DTrader</a></li>
+                        <li><a href="login">DBot</a></li>
+                        <li><a href="login">DMT5</a></li>
+                        <li><a href="login">SmartTrader</a></li>
                     </ul>
                 </div>
                 <div>
@@ -83,34 +83,34 @@
                         {{-- <li><a href="#">Islamic acount</a></li> --}}
                     </ul>
                 </div>
-                <div>
+                {{-- <div>
                     <h5>Markets</h5>
                     <ul class="uk-list uk-link-text">
-                        <li><a href="#">Forex</a></li>
-                        <li><a href="#">Synthetic indices</a></li>
-                        <li><a href="#">Stock indices</a></li>
-                        <li><a href="#">Commodities</a></li>
+                        <li><a href="/">Forex</a></li>
+                        <li><a href="/">Synthetic indices</a></li>
+                        <li><a href="/">Stock indices</a></li>
+                        <li><a href="/">Commodities</a></li>
                     </ul>
-                </div>
+                </div> --}}
                 <div>
                     <h5>Legal</h5>
                     <ul class="uk-list uk-link-text">
                         <li><a href="regulatory-information">Regulatory information</a></li>
                         <li><a href="terms-and-condition">Terms and conditions</a></li>
-                        <li><a href="#">Secure and responsible trading</a></li>
+                        {{-- <li><a href="#">Secure and responsible trading</a></li> --}}
                         {{-- <li><a href="#">Commodities</a></li> --}}
                     </ul>
                 </div>
-                <div>
+                {{-- <div>
                     <h5>Partners</h5>
                     <ul class="uk-list uk-link-text">
                         <li><a href="#">Affiliates and IBs</a></li>
                         <li><a href="#">Payment agents</a></li>
-                        {{-- <li><a href="#">Stock indices</a></li> --}}
-                        {{-- <li><a href="#">Commodities</a></li> --}}
+                        <li><a href="#">Stock indices</a></li>
+                        <li><a href="#">Commodities</a></li>
                     </ul>
-                </div>
-                <div>
+                </div> --}}
+                {{-- <div>
                     <h5>Resources</h5>
                     <ul class="uk-list uk-link-text">
                         <li><a href="#">Help centre</a></li>
@@ -120,7 +120,7 @@
                         <li><a href="#">Status page</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
-                </div>
+                </div> --}}
                 {{-- <div>
                     <h5>Markets</h5>
                     <ul class="uk-list uk-link-text">
