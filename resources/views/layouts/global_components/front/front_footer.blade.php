@@ -74,7 +74,7 @@
                         <li><a href="login">SmartTrader</a></li>
                     </ul>
                 </div>
-                <div>
+                {{-- <div>
                     <h5>Additional terms</h5>
                     <ul class="uk-list uk-link-text">
                         <li><a href="{{asset('assets/pdf/deriv-(fx)-ltd.pdf')}}" target="_blank">Deriv(FX) Ltd</a></li>
@@ -82,7 +82,7 @@
                         <li><a href="{{asset('assets/pdf/deriv-(bvi)-ltd.pdf')}}" target="_blank">Deriv (BVI) Ltd</a></li>
                         <li><a href="{{asset('assets/pdf/security-and-privacy.pdf')}}" target="_blank">Security & privacy</a></li>
                     </ul>
-                </div>
+                </div> --}}
                 {{-- <div>
                     <h5>Markets</h5>
                     <ul class="uk-list uk-link-text">
@@ -97,6 +97,10 @@
                     <ul class="uk-list uk-link-text">
                         <li><a href="regulatory-information">Regulatory information</a></li>
                         <li><a href="terms-and-condition">Terms and conditions</a></li>
+                        <li><a href="{{asset('assets/pdf/deriv-(fx)-ltd.pdf')}}" target="_blank">Deriv(FX) Ltd</a></li>
+                        <li><a href="{{asset('assets/pdf/deriv-investments-(europe)-limited.pdf')}}" target="_blank">Deriv Investments (Europe) Limited</a></li>
+                        <li><a href="{{asset('assets/pdf/deriv-(bvi)-ltd.pdf')}}" target="_blank">Deriv (BVI) Ltd</a></li>
+                        <li><a href="{{asset('assets/pdf/security-and-privacy.pdf')}}" target="_blank">Security & privacy</a></li>
                         {{-- <li><a href="#">Secure and responsible trading</a></li> --}}
                         {{-- <li><a href="#">Commodities</a></li> --}}
                     </ul>
