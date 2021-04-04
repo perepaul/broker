@@ -78,7 +78,7 @@
                                                 id="defaultCheck1">
                                             <label class="form-check-label" for="defaultCheck1">
                                                 <span>&nbsp; By click on register,<br>
-                                                    you agree to our <a href="{{route('terms')}}" class="card-link">terms</a></span>
+                                                    you agree to our <a href="{{asset('assets/pdf/general-terms.pdf')}}" class="card-link">terms</a></span>
                                             </label>
                                             <div class="pull-right">
                                                 Already registered?<a href="{{route('login')}}" class="card-link">

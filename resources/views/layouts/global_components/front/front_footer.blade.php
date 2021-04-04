@@ -75,12 +75,12 @@
                     </ul>
                 </div>
                 <div>
-                    <h5>Trading Types</h5>
+                    <h5>Additional terms</h5>
                     <ul class="uk-list uk-link-text">
-                        <li><a href="#">Margin trading</a></li>
-                        <li><a href="#">Options</a></li>
-                        <li><a href="#">Multipliers</a></li>
-                        {{-- <li><a href="#">Islamic acount</a></li> --}}
+                        <li><a href="{{asset('assets/pdf/deriv-(fx)-ltd.pdf')}}" target="_blank">Deriv(FX) Ltd</a></li>
+                        <li><a href="{{asset('assets/pdf/deriv-investments-(europe)-limited.pdf')}}" target="_blank">Deriv Investments (Europe) Limited</a></li>
+                        <li><a href="{{asset('assets/pdf/deriv-(bvi)-ltd.pdf')}}" target="_blank">Deriv (BVI) Ltd</a></li>
+                        <li><a href="{{asset('assets/pdf/security-and-privacy.pdf')}}" target="_blank">Security & privacy</a></li>
                     </ul>
                 </div>
                 {{-- <div>

@@ -92,10 +92,10 @@ class SupportController extends Controller
         ]);
     }
 
-    public function terms()
-    {
-        return view('terms_and_condition');
-    }
+    // public function terms()
+    // {
+    //     return view('terms_and_condition');
+    // }
     public function policy()
     {
         return view('privacy_and_policy');
