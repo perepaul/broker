@@ -51,7 +51,7 @@
                                 </div>
                                 <div>
                                     <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Trader</p>
-                                    <h4 class="uk-margin-small-top">Tehila Raines</h4>
+                                    {{-- <h4 class="uk-margin-small-top">Tehila Raines</h4> --}}
                                     {{-- <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.</p>
                                     <div>
                                         <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>
@@ -66,7 +66,7 @@
                                 </div>
                                 <div>
                                     <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Trader</p>
-                                    <h4 class="uk-margin-small-top">Aman Nathaniel</h4>
+                                    {{-- <h4 class="uk-margin-small-top">Aman Nathaniel</h4> --}}
                                     {{-- <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.</p>
                                     <div>
                                         <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>
@@ -81,7 +81,22 @@
                                 </div>
                                 <div>
                                     <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Mentor</p>
-                                    <h4 class="uk-margin-small-top">Sean Lee</h4>
+                                    {{-- <h4 class="uk-margin-small-top">Sean Lee</h4> --}}
+                                    {{-- <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.</p>
+                                    <div>
+                                        <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>
+                                        <a class="uk-link-muted" href="#"><i class="fab fa-twitter uk-margin-small-right"></i></a>
+                                        <a class="uk-link-muted" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div> --}}
+                                </div>
+                            </div>
+                            <div class="uk-flex uk-flex-left">
+                                <div class="uk-margin-right">
+                                    <img class="uk-align-center " src="assets/img/deriv-trader3.jpeg" alt="image-team" width="300">
+                                </div>
+                                <div>
+                                    <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Mentor</p>
+                                    {{-- <h4 class="uk-margin-small-top">Sean Lee</h4> --}}
                                     {{-- <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.</p>
                                     <div>
                                         <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>

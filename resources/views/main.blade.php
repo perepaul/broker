@@ -636,7 +636,7 @@
                                 <div>
                                     {{-- <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Human Resources</p> --}}
                                     <h4 class="uk-margin-small-top">Cryptocurrency</h4>
-                                    <p>Trade cryptocurrency that are currently leading to the world’s economy and profit from the opportunities created by volatile markets.</p>
+                                    <p>Mine Cryptocurrency and Trade cryptocurrency that are currently leading to the world’s economy and profit from the opportunities created by volatile markets.</p>
 
                                 </div>
                             </div>
