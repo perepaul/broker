@@ -17,7 +17,7 @@ class UserTableSeeder extends Seeder
             [
                 'firstname'=>'Lesley',
                 'lastname' => 'Ayemi',
-                'email' => 'admin@derivtrading.com',
+                'email' => 'admin@smartfxsignals.com',
                 'phone' => '3833939393',
                 'is_admin'=>1,
                 'currency_id'=>1,
@@ -28,7 +28,7 @@ class UserTableSeeder extends Seeder
             [
                 'firstname'=>'Perekpo',
                 'lastname' => 'Emmanuel',
-                'email' => 'user1@derivtrading.com',
+                'email' => 'user1@smartfxsignals.com',
                 'phone' => '3833939393',
                 'is_admin'=>0,
                 'currency_id'=>1,
