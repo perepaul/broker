@@ -501,8 +501,14 @@
 {{-- @endsection --}}
 
 @section('content-trading')
-<div style="align:center;">
+{{-- <div style="align:center;">
     <a href="register" class="uk-button uk-button-default uk-border-rounded uk-margin-remove" style="margin:auto">Create account</a>
+</div> --}}
+
+<div class="uk-width-3-4@m uk-text-center">
+    {{-- <h2 class="uk-margin-small-bottom">3 Simple Steps</span></h2> --}}
+<a href="#" style="color: #000" class="uk-button uk-button-default uk-border-rounded">Create free demo account</a>
+
 </div>
 
 <div class="uk-section uk-section-muted uk-padding-large in-liquid-8">
@@ -686,7 +692,7 @@
             <div class="uk-width-1-1 uk-flex uk-flex-center">
                 <div class="uk-width-3-4@m uk-text-center">
                     {{-- <h2 class="uk-margin-small-bottom">3 Simple Steps</span></h2> --}}
-                <a href="#" style="color: #000" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Create free demo account</a>
+                <a href="#" style="color: #000" class="uk-button uk-button-default uk-border-rounded">Create free demo account</a>
 
                 </div>
             </div>
