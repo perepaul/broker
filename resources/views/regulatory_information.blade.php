@@ -30,10 +30,10 @@
 
             <div class="uk-width-1-1 uk-flex uk-flex-center">
                 <div class="uk-width-3-4@m uk-text-center">
-                    <h2 class="uk-margin-small-bottom">Deriv Investments (Europe) Limited</h2>
-                    <p class="uk-text-lead uk-margin-remove">Deriv Investments (Europe) Limited, W Business Centre, Level 3, Triq Dun Karm, Birkirkara BKR 9033, Malta, is licensed in Malta (licence no. IS/70156) and authorised by the Malta Financial Services Authority under the Investments Services Act to provide investment services in the European Union. </p>
+                    <h2 class="uk-margin-small-bottom">Smart Forex Signals</h2>
+                    <p class="uk-text-lead uk-margin-remove">Smart Forex Signals, W Business Centre, Level 3, Triq Dun Karm, Birkirkara BKR 9033, Malta, is licensed in Malta (licence no. IS/70156) and authorised by the Malta Financial Services Authority under the Investments Services Act to provide investment services in the European Union. </p>
                     <p class="uk-text-lead uk-margin-remove"> It is also authorised and subject to limited regulation by the Financial Conduct Authority in the UK. Details about the extent of our authorisation and regulation by the Financial Conduct Authority are available from us on request.</p>
-                    <p class="uk-text-lead uk-margin-remove"> Clients in the European Union who wish to trade investment products can have accounts under Deriv Investments (Europe) Limited.</p>
+                    <p class="uk-text-lead uk-margin-remove"> Clients in the European Union who wish to trade investment products can have accounts under Smart Forex Signals.</p>
                 </div>
             </div>
 

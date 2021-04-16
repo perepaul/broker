@@ -93,7 +93,6 @@
                 <div class="uk-navbar-right">
                     <div class="uk-navbar-item uk-visible@m in-optional-nav">
                         <a href="login" class="uk-button uk-button-primary uk-border-rounded">Log In</a>
-                        {{-- <a href="signin.html" class="uk-button uk-button-text"><i class="fas fa-user-circle"></i></a> --}}
                     </div>
                 </div>
             </div>

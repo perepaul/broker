@@ -133,7 +133,7 @@
             </div>
             <div class="uk-grid uk-margin-large-top">
                 <div class="uk-width-1-1">
-                    <p class="uk-heading-line uk-margin-large-bottom"><span>In the EU, financial products are offered by Deriv Investments (Europe) Limited, W Business Centre, Level 3, Triq Dun Karm, Birkirkara BKR 9033, Malta, licensed as a Category 3 Investment Services provider by the Malta Financial Services Authority (licence no. IS/70156).
+                    <p class="uk-heading-line uk-margin-large-bottom"><span>In the EU, financial products are offered by Smart Forex Signals, W Business Centre, Level 3, Triq Dun Karm, Birkirkara BKR 9033, Malta, licensed as a Category 3 Investment Services provider by the Malta Financial Services Authority (licence no. IS/70156).
 
                         Outside the EU, financial products are offered by the following companies: Deriv (FX) Ltd, F16, Level 1, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, licensed by Labuan Financial Services Authority (licence no. MB/18/0024); Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, licensed by the British Virgin Islands Financial Services Commission (licence no. SIBA/L/18/1114); Deriv (V) Ltd (view licence), 1276, Kumul Highway, Port Vila, Vanuatu, licensed and regulated by the Vanuatu Financial Services Commission; Champion Group Ltd (view licence), 1276, Kumul Highway, Port Vila, Vanuatu, Republic of Vanuatu, licensed by the Vanuatu Financial Services Commission; and Deriv (SVG) LLC, Hinds Buildings, Kingstown, St. Vincent and the Grenadines.
 
