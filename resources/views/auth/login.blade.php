@@ -14,7 +14,7 @@
                             <div class="card-title text-center">
                                 <div class="p-1">
                                     <a href="/">
-                                        <img src="/assets/img/logo.png" style="width:40%;"
+                                        <img src="/assets/img/logo.png" width="90"
                                             alt="branding logo">
                                     </a>
                                 </div>

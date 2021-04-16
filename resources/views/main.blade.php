@@ -501,11 +501,15 @@
 {{-- @endsection --}}
 
 @section('content-trading')
+<div style="align:center;">
+    <a href="register" class="uk-button uk-button-default uk-border-rounded uk-margin-remove" style="margin:auto">Create account</a>
+</div>
+
 <div class="uk-section uk-section-muted uk-padding-large in-liquid-8">
     <div class="uk-container">
-
         <div class="uk-grid uk-flex uk-flex-center in-offset-bottom-20">
             <div class="uk-width-5-6@m uk-text-center">
+
                 <h2 class="uk-margin-remove">Trade Types</h2>
                 <p class="uk-text-lead uk-text-muted uk-margin-small-top">Explore different trade types to trade on your preferred market.</p>
                 <div class="uk-grid-medium uk-child-width-1-3@m" data-uk-grid>

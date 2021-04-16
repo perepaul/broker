@@ -11,7 +11,7 @@
                             <div class="card-title text-center">
                                 <a href="/">
                                     <img src="/assets/img/logo.png" alt="branding logo"
-                                        style="width:200px">
+                                        width="100">
                                 </a>
                             </div>
                             <h4 class="card-subtitle line-on-side text-muted text-center pt-2">

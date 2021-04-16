@@ -7,7 +7,7 @@
                     <div class="uk-navbar-item">
                         <!-- logo begin -->
                         <a class="uk-logo" href="/">
-                            <img src="assets/img/logo.png" data-src="assets/img/logo.png" alt="logo" width="160" height="34" data-uk-img>
+                            <img src="assets/img/logo.png" data-src="assets/img/logo.png" alt="logo" width="70" data-uk-img>
                         </a>
                         <!-- logo end -->
                         <!-- navigation begin -->
