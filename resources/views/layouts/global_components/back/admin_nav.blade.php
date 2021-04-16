@@ -8,8 +8,7 @@
                             class="ft-menu font-large-1"></i></a></li>
                 <li class="nav-item ">
                     <a class="navbar-brand" href="/">
-                        <img class="brand-logo" alt="" src="/assets/img/logo.png"
-                            style="width:135px;">
+                        <img class="brand-logo" alt="" src="/assets/img/logo.png">
                     </a>
                 </li>
 
