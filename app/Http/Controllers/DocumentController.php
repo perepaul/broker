@@ -14,7 +14,7 @@ class DocumentController extends Controller
     {
         $request->validate([
             'name' => 'required|string|min:3|max:30',
-            'image' => 'required|image|mimes:png,jpg,jpeg|max:1024'
+            'image' => 'required|mimes:png,jpg,jpeg|max:1024'
         ]);
         $user =  User::findOrFail(auth()->user()->id);
         $data = $request->except('_token', 'image');
