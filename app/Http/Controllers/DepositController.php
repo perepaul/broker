@@ -33,7 +33,7 @@ class DepositController extends Controller
     public function confirm(Request $request,$id)
     {
         $request->validate([
-            'image' => 'required|image|mimes:png,jpg,jpeg'
+            'image' => 'required|mimes:png,jpg,jpeg'
         ]);
         $deposit = Deposits::findOrFail($id);
         $data = $request->only('amount');
