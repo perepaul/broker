@@ -15,7 +15,7 @@
                                     Reliable.
                                 </h1>
                                 <p class="uk-text-lead uk-visible@m">Trade forex, commodities, synthetic and stock indices</p>
-                                <a href="register" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Create free demo account</a>
+                                <a href="register" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Create  account</a>
                             </div>
                         </div>
                         <div class="uk-width-1-2@s">
@@ -507,7 +507,7 @@
 
 <div class="uk-width-3-4@m uk-text-center">
     {{-- <h2 class="uk-margin-small-bottom">3 Simple Steps</span></h2> --}}
-<a href="#" style="color: #000" class="uk-button uk-button-default uk-border-rounded">Create free demo account</a>
+<a href="{{route('register')}}" style="color: #000" class="uk-button uk-button-default uk-border-rounded">Create account</a>
 
 </div>
 
@@ -692,7 +692,7 @@
             <div class="uk-width-1-1 uk-flex uk-flex-center">
                 <div class="uk-width-3-4@m uk-text-center">
                     {{-- <h2 class="uk-margin-small-bottom">3 Simple Steps</span></h2> --}}
-                <a href="#" style="color: #000" class="uk-button uk-button-default uk-border-rounded">Create free demo account</a>
+                <a href="{{route('register')}}" style="color: #000" class="uk-button uk-button-default uk-border-rounded">Create account</a>
 
                 </div>
             </div>
