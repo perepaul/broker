@@ -2,19 +2,15 @@
 
 @section('content')
 
-
-<div class="content-header row">
-</div>
-
 <div class="content-body">
     <div id="crypto-stats-3" class="row">
-        <div class="col-xl-4 col-12">
+        <div class="col-xl-3 col-6">
             <div class="card crypto-card-3 pull-up">
                 <div class="card-content">
                     <div class="card-body pb-0">
                         <div class="row">
                             <div class="col-5 pl-2">
-                                <h4>Total Deposit</h4>
+                                <h5>Account Balance</h5>
                             </div>
                             <div class="col-5 text-right">
                                 <h4>{{auth()->user()->currency->symbol.auth()->user()->balance}}</h4>
@@ -29,16 +25,16 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 col-12">
+        <div class="col-xl-3 col-6">
             <div class="card crypto-card-3 pull-up">
                 <div class="card-content">
                     <div class="card-body pb-0">
                         <div class="row">
                             <div class="col-6 pl-2">
-                                <h4>Trading Balance</h4>
+                                <h5>Trading Capital</h5>
                             </div>
                             <div class="col-5 text-right">
-                                <h4>{{auth()->user()->currency->symbol.auth()->user()->demo_balance}}</h4>
+                                <h4>{{auth()->user()->currency->symbol.auth()->user()->trades()->sum('amount')}}</h4>
                             </div>
                         </div>
                     </div>
@@ -50,16 +46,37 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 col-12">
+        <div class="col-xl-3 col-6">
             <div class="card crypto-card-3 pull-up">
                 <div class="card-content">
                     <div class="card-body pb-0">
                         <div class="row">
                             <div class="col-5 pl-2">
-                                <h5>Referral Bonus</h5>
+                                <h5>Trading profit</h5>
                             </div>
                             <div class="col-5 text-right">
-                                <h4>{{auth()->user()->trades->count()}}</h4>
+                                <h4>{{auth()->user()->currency->symbol.auth()->user()->trades()->sum('profit')}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <canvas id="btc-chartjs1" class="height-75"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-6">
+            <div class="card crypto-card-3 pull-up">
+                <div class="card-content">
+                    <div class="card-body pb-0">
+                        <div class="row">
+                            <div class="col-5 pl-2">
+                                <h5>Active trades</h5>
+                            </div>
+                            <div class="col-5 text-right">
+                                <h4>{{auth()->user()->trades->where('status',1)->count()}}</h4>
                             </div>
                         </div>
                     </div>
@@ -71,11 +88,10 @@
                 </div>
             </div>
         </div>
+
     </div>
     <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
-        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener"
-                target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
         <script type="text/javascript"
             src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
             {

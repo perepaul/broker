@@ -19,10 +19,10 @@ class DepositController extends Controller
         while (Deposits::where('reference',$ref)->count()) {
             $ref = randomString();
         }
-        if($user->plan->price>$request->amount){
-            session()->flash('error','Minimum deposit amount for this your plan is '.$user->currency->symbol.$user->plan->price);
-            return redirect()->back();
-        }
+        // if($user->plan->price>$request->amount){
+        //     session()->flash('error','Minimum deposit amount for this your plan is '.$user->currency->symbol.$user->plan->price);
+        //     return redirect()->back();
+        // }
         $deposit = new Deposits(array_merge($request->except('_token'),['reference'=>$ref]));
         $user->deposits()->save($deposit);
         Mail::to(config('constants.notification_email'))->send(new UserDeposited($user, $deposit));
