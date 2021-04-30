@@ -55,7 +55,7 @@
                                 <h5>Trading profit</h5>
                             </div>
                             <div class="col-5 text-right">
-                                <h4>{{auth()->user()->currency->symbol.auth()->user()->trades()->sum('profit')}}</h4>
+                                <h4>{{auth()->user()->currency->symbol.auth()->user()->trades()->where('status',1)->where('is_demo',0)->sum('profit')}}</h4>
                             </div>
                         </div>
                     </div>
