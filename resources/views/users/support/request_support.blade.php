@@ -23,7 +23,7 @@
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                                 <div class="panel-body">
-                                    <p>Pipstradeway patend pricing technology allows you to benefit from the same rates of return as traders in the initerbank market.</p>
+                                    <p>Smartfxsignals patend pricing technology allows you to benefit from the same rates of return as traders in the initerbank market.</p>
                                     <p><span><i class="fa fa-check btn-danger" aria-hidden="true"></i></span> Real Time prices, benchmarked against interbank options market</p>
                                     <p><span><i class="fa fa-check btn-danger" aria-hidden="true"></i></span> Returns above 100% on simple rise/fall contracts.</p>
                                     <p><span><i class="fa fa-check btn-danger" aria-hidden="true"></i></span> Returns above 1000% on higher/lower and touch/no-touch trades.</p>
@@ -39,7 +39,7 @@
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                                 <div class="panel-body">
-                                    <p>With Pipstradeway, you'll know the risk and potential reward before you purchase a contract.</p>
+                                    <p>With Smartfxsignals, you'll know the risk and potential reward before you purchase a contract.</p>
                                     <p><span><i class="fa fa-check btn-danger" aria-hidden="true"></i></span> Choose a payout and our system will calculate the stake required to purchase the contract.</p>
                                     <p><span><i class="fa fa-check btn-danger" aria-hidden="true"></i></span> You risk only your initial stake, and your stake never increases.</p>
                                     <p><span><i class="fa fa-check btn-danger" aria-hidden="true"></i></span> You can sell your contract before expiry to keep any profit you may have made or to minimise your loss.</p>
@@ -55,7 +55,7 @@
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                                 <div class="panel-body">
-                                    <p>With Pipstradeway, you can count on us to serve you with integrity and reliability.</p>
+                                    <p>With Smartfxsignals, you can count on us to serve you with integrity and reliability.</p>
                                     <p><span><i class="fa fa-check btn-danger" aria-hidden="true"></i></span> We have a proven track record since we launched our platform in 2000.</p>
                                     <p><span><i class="fa fa-check btn-danger" aria-hidden="true"></i></span> We are licensed and regulated in the British Isles and in Malta since 2015.</p>
                                     <p><span><i class="fa fa-check btn-danger" aria-hidden="true"></i></span> We segregate your funds and keep them in secure and licensed financial institutions.</p>
@@ -71,7 +71,7 @@
                             </div>
                             <div id="collapseSix" class="panel-collapse collapse" aria-expanded="false">
                                 <div class="panel-body">
-                                    <p>with Pipstradeway, you can request a loan to make an investment and pay back later by the agreed date.</p>
+                                    <p>with Smartfxsignals, you can request a loan to make an investment and pay back later by the agreed date.</p>
                                     <p><span><i class="fa fa-exclamation btn-danger" aria-hidden="true"></i></span> To recieve a loan make you to provide the necessary information requested, fill all necessary Bank information and a loan will only be given after proper Screening</p>
                                 </div>
                             </div>

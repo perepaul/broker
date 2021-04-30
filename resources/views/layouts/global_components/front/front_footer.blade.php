@@ -2,7 +2,7 @@
     <!-- footer content begin -->
     <div style="background: white" class="uk-section uk-section-secondary in-footer-feature uk-margin-medium-top">
         <div class="uk-container">
-            <img style="width: 10%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDcgMjUiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9Ii0zODguMTMiIHkxPSIxMzIxLjQ0IiB4Mj0iLTM4OC4xMyIgeTI9IjEzMjAuNDQiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMjYuOTEgMCAwIC0yNSAxMDQ1Ny44NCAzMzAzNikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZjY1NDQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjQ0NDkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PGcgZGF0YS1uYW1lPSIyLS1sb2dvZ3JhbSI+PGcgZGF0YS1uYW1lPSJsb2dvL2xvZ29ncmFtIj48cGF0aCBkPSJNNS44NiAwbDkuNzMgMTIuNUwwIDI1aDE1Ljc0YTkuODMgOS44MyAwIDAwOS42MS03LjUzbDEuMzEtNS41N2E5LjYgOS42IDAgMDAtMS45LTguMjNBOS45IDkuOSAwIDAwMTcuMDUgMHoiIGZpbGw9InVybCgjYSkiLz48cGF0aCBkYXRhLW5hbWU9IlBhdGgiIGZpbGw9IiNiNTFhMzEiIGQ9Ik0xNS41OCAxMi41M0w4Ljc0IDI1SDBsMTUuNTgtMTIuNDd6Ii8+PC9nPjwvZz48cGF0aCBkPSJNMTI5LjU3IDFsMy4xNSAxNi43OEwxNDEuNTYgMUgxNDdsLTEzLjM0IDI0aC00LjQ2TDEyNCAxek00OC4zNSAxQzU1Ljc1IDEgNjAgNi4xOCA1OC44MSAxMi45M1YxM2ExNC43MSAxNC43MSAwIDAxLTE0LjYyIDEySDM1bDQuMTUtMjR6bTUxLjg1IDBjMyAwIDUuMjYuODYgNi41NiAyLjQ0YTYuNTcgNi41NyAwIDAxMS4wOSA1LjQ4di4wN2E5LjMyIDkuMzIgMCAwMS02LjQ0IDcuNDRsNC4zMyA4LjU3aC02LjE3bC01Ljc1LTEyLjM1aDRjMi41NyAwIDQuMjgtMS4zOCA0LjY0LTMuMzl2LS4wN2MuNC0yLjI2LTEtMy40Mi0zLjU0LTMuNDJoLTUuMjVMOTAuMjggMjVIODVsNC4yMy0yNHpNMTE4IDFsLTQgMjRoLTVsNC0yNHpNODQgMWwtLjgyIDQuN0g3MC41MmwtLjg1IDQuODdoOC4xOGwtLjg1IDQuN2gtOC4xNGwtLjg4IDVoMTIuODRMODAgMjVINjJsNC4xNy0yNHpNNDcuNzcgNmgtNC4xNkw0MSAyMGg0LjE3YTguNTMgOC41MyAwIDAwOC42OC02LjkzVjEzYy43OC00LjExLTEuNjYtNy02LjA4LTd6Ii8+PC9nPjwvZz48L3N2Zz4=" alt="" srcset="">
+            {{-- <img style="width: 10%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDcgMjUiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9Ii0zODguMTMiIHkxPSIxMzIxLjQ0IiB4Mj0iLTM4OC4xMyIgeTI9IjEzMjAuNDQiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMjYuOTEgMCAwIC0yNSAxMDQ1Ny44NCAzMzAzNikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZjY1NDQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjQ0NDkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PGcgZGF0YS1uYW1lPSIyLS1sb2dvZ3JhbSI+PGcgZGF0YS1uYW1lPSJsb2dvL2xvZ29ncmFtIj48cGF0aCBkPSJNNS44NiAwbDkuNzMgMTIuNUwwIDI1aDE1Ljc0YTkuODMgOS44MyAwIDAwOS42MS03LjUzbDEuMzEtNS41N2E5LjYgOS42IDAgMDAtMS45LTguMjNBOS45IDkuOSAwIDAwMTcuMDUgMHoiIGZpbGw9InVybCgjYSkiLz48cGF0aCBkYXRhLW5hbWU9IlBhdGgiIGZpbGw9IiNiNTFhMzEiIGQ9Ik0xNS41OCAxMi41M0w4Ljc0IDI1SDBsMTUuNTgtMTIuNDd6Ii8+PC9nPjwvZz48cGF0aCBkPSJNMTI5LjU3IDFsMy4xNSAxNi43OEwxNDEuNTYgMUgxNDdsLTEzLjM0IDI0aC00LjQ2TDEyNCAxek00OC4zNSAxQzU1Ljc1IDEgNjAgNi4xOCA1OC44MSAxMi45M1YxM2ExNC43MSAxNC43MSAwIDAxLTE0LjYyIDEySDM1bDQuMTUtMjR6bTUxLjg1IDBjMyAwIDUuMjYuODYgNi41NiAyLjQ0YTYuNTcgNi41NyAwIDAxMS4wOSA1LjQ4di4wN2E5LjMyIDkuMzIgMCAwMS02LjQ0IDcuNDRsNC4zMyA4LjU3aC02LjE3bC01Ljc1LTEyLjM1aDRjMi41NyAwIDQuMjgtMS4zOCA0LjY0LTMuMzl2LS4wN2MuNC0yLjI2LTEtMy40Mi0zLjU0LTMuNDJoLTUuMjVMOTAuMjggMjVIODVsNC4yMy0yNHpNMTE4IDFsLTQgMjRoLTVsNC0yNHpNODQgMWwtLjgyIDQuN0g3MC41MmwtLjg1IDQuODdoOC4xOGwtLjg1IDQuN2gtOC4xNGwtLjg4IDVoMTIuODRMODAgMjVINjJsNC4xNy0yNHpNNDcuNzcgNmgtNC4xNkw0MSAyMGg0LjE3YTguNTMgOC41MyAwIDAwOC42OC02LjkzVjEzYy43OC00LjExLTEuNjYtNy02LjA4LTd6Ii8+PC9nPjwvZz48L3N2Zz4=" alt="" srcset=""> --}}
             {{-- <div class="uk-grid uk-flex uk-flex-center">
                 <div class="uk-width-5-6@m">
                     <div class="uk-grid uk-child-width-1-3@s" data-uk-grid>
@@ -39,7 +39,8 @@
         <div class="uk-container uk-text-small">
             <div class="uk-child-width-1-2@m" data-uk-grid>
                 <div class="in-footer-logo">
-                    <img src="img/in-lazy.gif" data-src="img/in-logo-1.svg" alt="logo" width="127" height="27" data-uk-img>
+                    <img src="img/in-lazy.gif" data-src="img/in-logo-1.svg" alt="logo" width="127" height="27"
+                        data-uk-img>
                 </div>
                 <div class="uk-flex uk-flex-right@m">
                     <div class="in-footer-socials">
@@ -133,21 +134,41 @@
             </div>
             <div class="uk-grid uk-margin-large-top">
                 <div class="uk-width-1-1">
-                    <p class="uk-heading-line uk-margin-large-bottom"><span>In the EU, financial products are offered by Smart Forex Signals, W Business Centre, Level 3, Triq Dun Karm, Birkirkara BKR 9033, Malta, licensed as a Category 3 Investment Services provider by the Malta Financial Services Authority (licence no. IS/70156).
+                    <p class="uk-heading-line uk-margin-large-bottom"><span>In the EU, financial products are offered by
+                            Smart Forex Signals, W Business Centre, Level 3, Triq Dun Karm, Birkirkara BKR 9033, Malta,
+                            licensed as a Category 3 Investment Services provider by the Malta Financial Services
+                            Authority (licence no. IS/70156).
 
-                        Outside the EU, financial products are offered by the following companies: Deriv (FX) Ltd, F16, Level 1, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, licensed by Labuan Financial Services Authority (licence no. MB/18/0024); Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, licensed by the British Virgin Islands Financial Services Commission (licence no. SIBA/L/18/1114); Deriv (V) Ltd (view licence), 1276, Kumul Highway, Port Vila, Vanuatu, licensed and regulated by the Vanuatu Financial Services Commission; Champion Group Ltd (view licence), 1276, Kumul Highway, Port Vila, Vanuatu, Republic of Vanuatu, licensed by the Vanuatu Financial Services Commission; and Deriv (SVG) LLC, Hinds Buildings, Kingstown, St. Vincent and the Grenadines.
+                            Outside the EU, financial products are offered by the following companies: Smartfxsignals
+                            Ltd, F16, Level 1, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, licensed by
+                            Labuan Financial Services Authority (licence no. MB/18/0024); Smartfxsignals (BVI) Ltd,
+                            Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, licensed by the
+                            British Virgin Islands Financial Services Commission (licence no. SIBA/L/18/1114);
+                            Smartfxsignals (V) Ltd (view licence), 1276, Kumul Highway, Port Vila, Vanuatu, licensed and
+                            regulated by the Vanuatu Financial Services Commission; Champion Group Ltd (view licence),
+                            1276, Kumul Highway, Port Vila, Vanuatu, Republic of Vanuatu, licensed by the Vanuatu
+                            Financial Services Commission; and Smartfxsignals (SVG) LLC, Hinds Buildings, Kingstown, St.
+                            Vincent and the Grenadines.
 
-                        This website's services are not made available in certain countries, including the USA, Canada, and Hong Kong, or to persons below 18.
+                            This website's services are not made available in certain countries, including the USA,
+                            Canada, and Hong Kong, or to persons below 18.
 
                         </span></p>
                     <p class="in-trading-risk">
-                        CFDs are considered complex derivatives and may not be suitable for retail clients. CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. The products mentioned here may be affected by changes in currency exchange rates. If you invest in these products, you may lose some or all of your investment, and the value of your investment may fluctuate. You should never invest money that you cannot afford to lose and never trade with borrowed money.
+                        CFDs are considered complex derivatives and may not be suitable for retail clients. CFDs are
+                        complex instruments and come with a high risk of losing money rapidly due to leverage. You
+                        should consider whether you understand how CFDs work and whether you can afford to take the high
+                        risk of losing your money. The products mentioned here may be affected by changes in currency
+                        exchange rates. If you invest in these products, you may lose some or all of your investment,
+                        and the value of your investment may fluctuate. You should never invest money that you cannot
+                        afford to lose and never trade with borrowed money.
 
-                        Before trading in the complex financial products offered, please be sure to understand the risks involved and learn about Secure and responsible trading.
+                        Before trading in the complex financial products offered, please be sure to understand the risks
+                        involved and learn about Secure and responsible trading.
                     </p>
                     <p class="uk-heading-line uk-margin-large-bottom"><span>copyright
 
-                        2021 Deriv | All rights reserved</span></p>
+                            2021 Smartfxsignals | All rights reserved</span></p>
                 </div>
             </div>
         </div>

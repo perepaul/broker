@@ -22,7 +22,7 @@ CodeMirror.defineMode('yacas', function(_config, _parserConfig) {
     return obj;
   }
 
-  var bodiedOps = words("Assert BackQuote D Defun Deriv For ForEach FromFile " +
+  var bodiedOps = words("Assert BackQuote D Defun Smartfxsignals For ForEach FromFile " +
                         "FromString Function Integrate InverseTaylor Limit " +
                         "LocalSymbols Macro MacroRule MacroRulePattern " +
                         "NIntegrate Rule RulePattern Subst TD TExplicitSum " +

@@ -23,7 +23,7 @@
             <div class="uk-width-1-1 uk-flex uk-flex-center">
                 <div class="uk-width-3-4@m uk-text-center">
                     <h2 class="uk-margin-small-bottom">Regulatory  <span class="in-highlight">information</span></h2>
-                    <p class="uk-text-lead uk-margin-remove">The services offered on Deriv.com and Binary.com are provided by the Deriv Group. The group has several subsidiary companies that are licensed to operate Deriv.com and Binary.com in their registered jurisdictions. </p>
+                    <p class="uk-text-lead uk-margin-remove">The services offered on smartfxsignals.com are provided by the Smartfx Group. The group has several subsidiary companies that are licensed to operate smartfxsignals.com and Binary.com in their registered jurisdictions. </p>
                     <p class="uk-text-lead uk-margin-remove"> Since 1999, the group has served traders around the world with integrity and reliability. We always hold ourselves to the highest ethical standards and regulatory requirements.</p>
                 </div>
             </div>

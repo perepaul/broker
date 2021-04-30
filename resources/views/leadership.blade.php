@@ -32,7 +32,7 @@
                         <div class="uk-grid uk-child-width-1-2@m uk-margin-medium-top" data-uk-grid>
                             <div class="uk-flex uk-flex-left">
                                 <div class="uk-margin-right">
-                                    <img class="uk-align-center " src="https://deriv.com/static/2536925b798be0d0ab2813a494db4bb3/955cf/jean-yves.webp" alt="image-team" width="300">
+                                    <img class="uk-align-center " src="https://smartfxsignals.com/static/2536925b798be0d0ab2813a494db4bb3/955cf/jean-yves.webp" alt="image-team" width="300">
                                 </div>
                                 <div>
                                     <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Founder and Chief Executive Officer</p>

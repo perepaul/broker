@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f2f3f5" />
     <!-- Site Properties -->
-    <title>Online trading platform | Forex, commodities and indices | Deriv</title>
+    <title>Online trading platform | Forex, commodities and indices | Smartfxsignals</title>
     <!-- Critical preload -->
     <link rel="preload" href="/assets/front/js/vendors/uikit.min.js" as="script">
     <link rel="preload" href="/assets/front/css/vendors/uikit.min.css" as="style">

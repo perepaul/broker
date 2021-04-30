@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Pipstradeway</title>
+    <title>Smartfxsignals</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -29,7 +29,7 @@
            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="about-content">
                  <h2 class="f-40 fw-400">Privacy Policy</h2>
-                 <p>Pipstradeway respects your privacy and is committed to protecting your personal data. This privacy policy aims to give you information on how we collect and process any personal data and how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you. i.e. information about a Client (as defined below) who is a natural person on the basis of which that Client can be identified (hereinafter the data) in accordance with the applicable data protection legislation and best practice. This version of Privacy Policy takes effect on May 25, 2018.
+                 <p>Smartfxsignals respects your privacy and is committed to protecting your personal data. This privacy policy aims to give you information on how we collect and process any personal data and how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you. i.e. information about a Client (as defined below) who is a natural person on the basis of which that Client can be identified (hereinafter the data) in accordance with the applicable data protection legislation and best practice. This version of Privacy Policy takes effect on May 25, 2018.
 
                     We strive to create the most secure infrastructure of any broker in the world. In this privacy policy we would like to tell why you can trust us with your data and rest assured that your data is safe.
 
@@ -37,7 +37,7 @@
 
                     </p>
                 <h2 class="f-40 fw-400">WHO WE ARE</h2>
-                <p>pipstradeway LTD, is a company registered in St. Vincent and the Grenadines and having its registered address at Hinds Building, Kingstown, St. Vincent and the Grenadines (hereinafter Pipstradeway). Pipstradeway is the controller and responsible for the data of its Client disclosed to it in order to register for a Trading Account, Demo Account and/or to make use of any other services offered by the pipstradeway Group (as defined in Appendix A) through the website (hereinafter “Website”) (this term shall at all times include Website’s desktop and mobile versions). Pipstradeway exercises control over the processing of data in undertakings affiliated to it and which belong to the pipstradeway Group of companies.</p>
+                <p>Smartfxsignals LTD, is a company registered in St. Vincent and the Grenadines and having its registered address at Hinds Building, Kingstown, St. Vincent and the Grenadines (hereinafter Smartfxsignals). Smartfxsignals is the controller and responsible for the data of its Client disclosed to it in order to register for a Trading Account, Demo Account and/or to make use of any other services offered by the Smartfxsignals Group (as defined in Appendix A) through the website (hereinafter “Website”) (this term shall at all times include Website’s desktop and mobile versions). Smartfxsignals exercises control over the processing of data in undertakings affiliated to it and which belong to the Smartfxsignals Group of companies.</p>
                 <p>The Company takes measures to implement advanced data protection policies and procedures and to update them from time to time for the purpose of safeguarding its Client's data and the Client’s account. Your data is protected by the legal, administrative and technical measures that we take to ensure the privacy, integrity and accessibility of data. To prevent security incidents with your data, we use a mixed organizational and technical approach based on the results of annual risk assessment.</p>
                 <p>The Company takes measures to implement advanced data protection policies and procedures and to update them from time to time for the purpose of safeguarding its Client's data and the Client’s account. Your data is protected by the legal, administrative and technical measures that we take to ensure the privacy, integrity and accessibility of data. To prevent security incidents with your data, we use a mixed organizational and technical approach based on the results of annual risk assessmen</p>
 

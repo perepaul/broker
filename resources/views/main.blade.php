@@ -821,7 +821,7 @@
                         </figure>
                         <div class="content">
                             <h4><a href="#">Judy Parker </a></h4>
-                            <p>I invested with Pipstradeway and i got my profit.</p>
+                            <p>I invested with Smartfxsignals and i got my profit.</p>
                         </div>
                     </div>
                 </div>
@@ -841,7 +841,7 @@
                        <figure><img style="height: 390px" src="/assets/front/images/testimonials/person_2.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">James Hullan</a></h4>
-                           <p>Pipstradeway has made Forex trading simple and straight foward.</p>
+                           <p>Smartfxsignals has made Forex trading simple and straight foward.</p>
                        </div>
                    </div>
                </div>
@@ -852,7 +852,7 @@
                         </figure>
                         <div class="content">
                             <h4><a href="#">Rebecca Jenkins</a></h4>
-                            <p>I invested with pipstradeway, and i got my profit.</p>
+                            <p>I invested with Smartfxsignals, and i got my profit.</p>
                         </div>
                     </div>
                </div>
@@ -889,7 +889,7 @@
                        <figure><img style="height: 390px" src="/assets/front/images/testimonials/staff-7-new.jpg" alt="" /></figure>
                        <div class="content">
                            <h4><a href="#">Johnny William</a></h4>
-                           <p>You won't regret trading with pipstradeway, trust me you will love it.</p>
+                           <p>You won't regret trading with Smartfxsignals, trust me you will love it.</p>
                        </div>
                    </div>
                </div>
@@ -900,7 +900,7 @@
                     </figure>
                     <div class="content">
                         <h4><a href="#">Elizabeth Johnson </a></h4>
-                        <p>I invested with pipstradeway and i got my profit.</p>
+                        <p>I invested with Smartfxsignals and i got my profit.</p>
                     </div>
                 </div>
                 </div>
