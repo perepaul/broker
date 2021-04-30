@@ -34,7 +34,7 @@
                                 <h5>Trading Capital</h5>
                             </div>
                             <div class="col-5 text-right">
-                                <h4>{{auth()->user()->currency->symbol.auth()->user()->trades()->sum('amount')}}</h4>
+                                <h4>{{auth()->user()->currency->symbol.auth()->user()->trades()->where('status',1)->where('is_demo',0)->sum('amount')}}</h4>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                                 <h5>Active trades</h5>
                             </div>
                             <div class="col-5 text-right">
-                                <h4>{{auth()->user()->trades->where('status',0)->count()}}</h4>
+                                <h4>{{auth()->user()->trades->where('status',1)->count()}}</h4>
                             </div>
                         </div>
                     </div>
