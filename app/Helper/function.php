@@ -31,3 +31,11 @@ function randomString()
     }
     return $randomString;
 }
+
+function format_phone_number($number)
+{
+    $number = str_replace('(','',$number);
+    $number = str_replace(')','',$number);
+    $number = str_replace(' ','',$number);
+    return $number;
+}
