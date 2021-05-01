@@ -13,7 +13,7 @@
                 </li>
 
                 <li class="dropdown-user nav-item d-md-none float-right">
-                    <a class="mt-1 nav-link dropdown-user-link" href="#">
+                    <a class="mt-1 nav-link dropdown-user-link" href="javascript:void(0)" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <i class="ft-power text-danger text-bold-700" style="font-size:18px;"></i>
                     </a>
                 </li>

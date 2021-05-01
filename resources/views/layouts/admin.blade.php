@@ -14,7 +14,7 @@
     @if(!auth()->user()->is_admin)
     <div class="cen">
         <a href="https://wa.me/{{format_phone_number(config('constants.phone_number'))}}" class="phone bg-danger d-block text-white">
-            <i class="la la-phone text-sm"></i>
+            <i class="la la-whatsapp text-sm"></i>
                {{config('constants.phone_number')}}
         </a>
     </div>
