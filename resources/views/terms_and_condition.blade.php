@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Piptradeway</title>
+    <title>Piptradesway</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -30,14 +30,14 @@
            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="about-content">
                  <h2 class="f-40 fw-400">Terms & Conditions</h2>
-                 <p>This Agreement is entered into by and these Terms & Conditions (hereinafter referred to as the “Agreement”) shall regulate the relationship between PIPSTRADEWAY LTD, with company No. 24840 IBC 2018, and registered at: 782 Bourke street Waterloo, Australia and the Grenadines (hereinafter referred to as the “Company”), and the user (a natural or legal entity) (hereinafter referred to as the “Client”) of https://piptradeway.com (hereinafter referred as the “Website”). </p>
+                 <p>This Agreement is entered into by and these Terms & Conditions (hereinafter referred to as the “Agreement”) shall regulate the relationship between PIPSTRADEWAY LTD, with company No. 24840 IBC 2018, and registered at: 782 Bourke street Waterloo, Australia and the Grenadines (hereinafter referred to as the “Company”), and the user (a natural or legal entity) (hereinafter referred to as the “Client”) of https://piptradesway.com (hereinafter referred as the “Website”). </p>
                  <p> <span class="text-danger ml-5">1.</span> The Client confirms that he/she has read, understood and accepted all information, conditions and terms set out on Website which are open to be reviewed and can be examined by the public and which include important legal Information.</p>
                  <p> <span class="text-danger ml-5">2.</span> By accepting this Agreement, the Client agrees and irrevocably accepts the terms and conditions contained in this Agreement, its annexes and/or appendices as well as other documentation/information published on the Website, including without limitation to the Privacy Policy, Payment Policy, Withdrawal Policy, Code of Conduct, Order Execution Policy and Anti-Money Laundering Policy. The Client accepts this Agreement by registering an Account on the Website and depositing funds. By accepting the Agreement, and subject to the Company’s final approval, the Client enters into a legal and binding agreement with the Company.</p>
                  <p> <span class="text-danger ml-5">3.</span> The terms of this Agreement shall be considered accepted unconditionally by the Client upon the Company’s receipt of an advance payment made by the Client. As soon as the Company receives the Client's advance payment, every operation made by the Client on the Trading Platform shall be subject to the terms of this Agreement and other documentation/information on the Website.</p>
 
                  <p><span class="text-danger ml-5">4.</span> The Client hereby acknowledges that each and any Operation, activity, transaction, order and/or communication performed by him/her on the Trading Platform, including without limitation through the Account, and the Website, shall be governed by and/or must be executed in accordance with the terms and conditions of this Agreement and other documentation/information on the Website.</p>
                  <p> <span class="text-danger ml-5">5.</span> By accepting this current agreement, the Client confirms that he/she is able to receive information, including amendments to the present Agreement either via email or through the Website.</p>
-                 <p><span class="text-danger ml-5">6.</span> A client that is a legal entity can register with the Company not through the Website but by sending an email with its request to support@piptradeway.com. All terms and and conditions contained herein, including without limitation to 1 to 5 above, shall at all times be applicable to the Legal Entity and the latter shall conform with such terms and conditions, obligations and rights at all times.</p>
+                 <p><span class="text-danger ml-5">6.</span> A client that is a legal entity can register with the Company not through the Website but by sending an email with its request to support@piptradesway.com. All terms and and conditions contained herein, including without limitation to 1 to 5 above, shall at all times be applicable to the Legal Entity and the latter shall conform with such terms and conditions, obligations and rights at all times.</p>
 
               </div>
            </div>

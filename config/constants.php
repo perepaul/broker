@@ -2,7 +2,7 @@
 return [
     'bitcoin_address'=>env('BITCOIN_ADDRESS','18edGYatGj1yZRszzf8FPiCTyvnGK66C9P'),
     'bitcoin_qr_code'=> '/assets/back/qr.png',
-    'notification_email' => env('NOTIFICATION_EMAIL','support@piptradeway.com'),
+    'notification_email' => env('NOTIFICATION_EMAIL','support@piptradesway.com'),
     'phone_number' => env('PHONE_NUMBER','+61480048872'),
     'favicon'=>'/assets/img/logo/favicon.png',
     'logo' => '/assets/img/logo/logo.png',
