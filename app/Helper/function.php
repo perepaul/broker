@@ -29,5 +29,6 @@ function randomString()
     for ($i = 0; $i < 12; $i++) {
         $randomString .= $characters[rand(0, $charactersLength - 1)];
     }
+
     return $randomString;
 }
